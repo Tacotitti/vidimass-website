@@ -13,11 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const mobileMenu = document.createElement('div');
         mobileMenu.className = 'mobile-menu';
         mobileMenu.innerHTML = `
-            <a href="#features">Features</a>
-            <a href="#stats">Stats</a>
-            <a href="#packages">Packages</a>
+            <a href="#features" data-i18n="nav_features">Features</a>
+            <a href="#stats" data-i18n="nav_stats">Stats</a>
+            <a href="#packages" data-i18n="nav_packages">Packages</a>
+            <div id="mobile-lang-selector" class="mobile-lang-selector"></div>
             <button class="w-full mt-4 px-6 py-3 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg transition-all">
-                Get Started
+                <span data-i18n="nav_get_started">Get Started</span>
             </button>
         `;
         body.appendChild(mobileMenu);

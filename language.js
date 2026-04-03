@@ -196,6 +196,34 @@ function createLanguageSelector() {
         }
     }
     
+    // Also create mobile version
+    const mobileLangContainer = document.getElementById('mobile-lang-selector');
+    if (mobileLangContainer) {
+        const mobileLangSelector = document.createElement('div');
+        mobileLangSelector.className = 'mobile-lang-grid';
+        mobileLangSelector.innerHTML = `
+            <div class="mobile-lang-title">🌍 Language / Sprache</div>
+            ${Object.entries(SUPPORTED_LANGUAGES).map(([code, info]) => `
+                <button class="mobile-lang-btn ${code === currentLanguage ? 'active' : ''}" data-lang="${code}">
+                    <span class="flag">${info.flag}</span>
+                    <span class="name">${info.name}</span>
+                </button>
+            `).join('')}
+        `;
+        mobileLangContainer.appendChild(mobileLangSelector);
+        
+        // Add click handlers for mobile
+        mobileLangSelector.querySelectorAll('.mobile-lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.dataset.lang;
+                changeLanguage(lang);
+                // Close mobile menu
+                document.querySelector('.mobile-menu')?.classList.remove('active');
+                document.querySelector('.mobile-overlay')?.classList.remove('active');
+            });
+        });
+    }
+    
     // Add event listeners
     const langButton = document.getElementById('lang-button');
     const langDropdown = document.getElementById('lang-dropdown');
