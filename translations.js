@@ -31,8 +31,8 @@ const translations = {
         stats_distribution_desc: "Automated & Always Active",
         
         // Features Section
-        features_title_1: "Enterprise-Grade",
-        features_title_2: "Features",
+        features_title_1: "Charting für Labels",
+        features_title_2: "und Künstler weltweit",
         features_subtitle: "Built for creators and brands who need massive scale and reliability",
         
         feature_1_title: "Creation Velocity",
@@ -127,8 +127,8 @@ const translations = {
         stats_distribution_desc: "Automatisiert & Immer Aktiv",
         
         // Features Section
-        features_title_1: "Enterprise-Level",
-        features_title_2: "Funktionen",
+        features_title_1: "Charting für Labels",
+        features_title_2: "und Künstler weltweit",
         features_subtitle: "Entwickelt für Creators und Marken, die massive Skalierung und Zuverlässigkeit benötigen",
         
         feature_1_title: "Creation Velocity",
