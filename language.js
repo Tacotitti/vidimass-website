@@ -207,9 +207,15 @@ function createLanguageSelector() {
     
     attachLanguageSelectorEvents();
     
-    // Also create mobile version
+    // Also create mobile version - with retry for dynamically created menu
+    createMobileLanguageSelector();
+}
+
+// Create mobile language selector (separate function with retry)
+function createMobileLanguageSelector() {
     const mobileLangContainer = document.getElementById('mobile-lang-selector');
-    if (mobileLangContainer) {
+    
+    if (mobileLangContainer && !mobileLangContainer.querySelector('.mobile-lang-grid')) {
         const mobileLangSelector = document.createElement('div');
         mobileLangSelector.className = 'mobile-lang-grid';
         mobileLangSelector.innerHTML = `
@@ -233,6 +239,12 @@ function createLanguageSelector() {
                 document.querySelector('.mobile-overlay')?.classList.remove('active');
             });
         });
+        
+        console.log('✅ Mobile language selector created!');
+    } else if (!mobileLangContainer) {
+        // Retry after mobile menu is created
+        console.log('⏳ Mobile menu not ready yet, retrying in 100ms...');
+        setTimeout(createMobileLanguageSelector, 100);
     }
 }
 
