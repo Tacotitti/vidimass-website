@@ -1,4 +1,4 @@
-# VIDIMASS Modern - Redesign 🚀
+# MediaMass Modern - Redesign 🚀
 
 **Session:** fred-2026-03-31-2255  
 **Created by:** Fred, Web Development Specialist  
@@ -6,7 +6,7 @@
 
 ## 📋 Project Overview
 
-Modern, premium redesign of VIDIMASS (https://vidimass.com/) with focus on:
+Modern, premium redesign of MediaMass (https://MediaMass.com/) with focus on:
 - **Modern design language** (gradients, glassmorphism)
 - **Premium aesthetics** (violet/pink gradient theme)
 - **Smooth animations** (scroll effects, hover states)
@@ -48,7 +48,7 @@ Modern, premium redesign of VIDIMASS (https://vidimass.com/) with focus on:
 ## 📁 File Structure
 
 ```
-Fred/projects/vidimass-modern/
+Fred/projects/MediaMass-modern/
 ├── index.html       # Main HTML structure
 ├── styles.css       # Custom CSS (glassmorphism, animations)
 ├── script.js        # Interactive features
@@ -147,7 +147,7 @@ Accents:             green-400 (trust indicators)
 ### Option 1: Open Directly
 ```bash
 # Navigate to project folder
-cd Fred/projects/vidimass-modern/
+cd Fred/projects/MediaMass-modern/
 
 # Open in browser (Windows)
 start index.html
@@ -276,3 +276,4 @@ A modern, premium website that:
 ---
 
 *Session wird NIEMALS gelöscht* ✨
+

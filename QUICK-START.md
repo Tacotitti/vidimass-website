@@ -1,4 +1,4 @@
-# 🚀 QUICK START - VIDIMASS Modern
+# 🚀 QUICK START - MediaMass Modern
 
 **Session:** fred-2026-03-31-2255  
 **Time to launch:** < 2 minutes! ⏱️
@@ -9,21 +9,21 @@
 
 ### Windows:
 ```bash
-1. Navigate to: Fred/projects/vidimass-modern/
+1. Navigate to: Fred/projects/MediaMass-modern/
 2. Double-click: index.html
 3. Done! 🎉
 ```
 
 ### Mac:
 ```bash
-1. Navigate to: Fred/projects/vidimass-modern/
+1. Navigate to: Fred/projects/MediaMass-modern/
 2. Right-click index.html → Open With → Browser
 3. Done! 🎉
 ```
 
 ### Linux:
 ```bash
-cd Fred/projects/vidimass-modern/
+cd Fred/projects/MediaMass-modern/
 xdg-open index.html
 ```
 
@@ -33,28 +33,28 @@ xdg-open index.html
 
 ### Python 3 (Pre-installed on Mac/Linux):
 ```bash
-cd Fred/projects/vidimass-modern/
+cd Fred/projects/MediaMass-modern/
 python -m http.server 8000
 ```
 **Then open:** http://localhost:8000
 
 ### Python 2 (If you have it):
 ```bash
-cd Fred/projects/vidimass-modern/
+cd Fred/projects/MediaMass-modern/
 python -m SimpleHTTPServer 8000
 ```
 **Then open:** http://localhost:8000
 
 ### Node.js (If you have it):
 ```bash
-cd Fred/projects/vidimass-modern/
+cd Fred/projects/MediaMass-modern/
 npx serve
 ```
 **Then open:** http://localhost:3000
 
 ### PHP (If you have it):
 ```bash
-cd Fred/projects/vidimass-modern/
+cd Fred/projects/MediaMass-modern/
 php -S localhost:8000
 ```
 **Then open:** http://localhost:8000
@@ -193,10 +193,11 @@ Just edit the text in `index.html`:
 
 ## 🎊 Enjoy Your New Website!
 
-**The modern VIDIMASS is ready to impress! 🚀**
+**The modern MediaMass is ready to impress! 🚀**
 
 Questions? Check the detailed documentation!
 
 ---
 
 *Created by Fred - Session fred-2026-03-31-2255*
+

@@ -1,4 +1,4 @@
-# Visual Preview Guide - VIDIMASS Modern
+# Visual Preview Guide - MediaMass Modern
 
 ## 🎨 Color Scheme
 
@@ -60,7 +60,7 @@ TEXT COLORS
 │   └────────┘ └────────┘ └────────┘        │
 │                                             │
 ├─────────────────────────────────────────────┤
-│  VIDIMASS    Links    © 2026               │ ← Footer
+│  MediaMass    Links    © 2026               │ ← Footer
 └─────────────────────────────────────────────┘
 ```
 
@@ -200,7 +200,7 @@ Shadow: 0 8px 32px rgba(0, 0, 0, 0.1)
 
 ### Gradient Examples
 ```
-Text:    VIDIMASS
+Text:    MediaMass
          ↓
          𝗩𝗜𝗗𝗜𝗠𝗔𝗦𝗦 (Violet → Pink)
 
@@ -375,3 +375,4 @@ When viewing the website, you should see:
 
 *Use this guide to understand the visual design without opening the site!*
 *Created by Fred - Session fred-2026-03-31-2255*
+
