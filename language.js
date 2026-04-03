@@ -169,9 +169,9 @@ function createLanguageSelector() {
     langSelector.innerHTML = `
         <button class="lang-current" id="lang-button">
             <span class="flag">${SUPPORTED_LANGUAGES[currentLanguage].flag}</span>
-            <span class="lang-code">${currentLanguage.toUpperCase()}</span>
-            <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <span class="lang-name">${SUPPORTED_LANGUAGES[currentLanguage].name}</span>
+            <svg class="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </button>
         <div class="lang-dropdown" id="lang-dropdown">
@@ -185,10 +185,15 @@ function createLanguageSelector() {
         </div>
     `;
     
-    // Insert before the last child (mobile menu toggle or CTA button)
+    // Insert before CTA button (rightmost position)
     const desktopNav = nav.querySelector('.hidden.md\\:flex');
     if (desktopNav) {
-        desktopNav.insertBefore(langSelector, desktopNav.lastElementChild);
+        const ctaButton = desktopNav.querySelector('.cta-button');
+        if (ctaButton) {
+            desktopNav.insertBefore(langSelector, ctaButton);
+        } else {
+            desktopNav.appendChild(langSelector);
+        }
     }
     
     // Add event listeners
@@ -222,9 +227,9 @@ function updateLanguageSelector() {
     if (currentButton) {
         currentButton.innerHTML = `
             <span class="flag">${SUPPORTED_LANGUAGES[currentLanguage].flag}</span>
-            <span class="lang-code">${currentLanguage.toUpperCase()}</span>
-            <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <span class="lang-name">${SUPPORTED_LANGUAGES[currentLanguage].name}</span>
+            <svg class="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         `;
     }
