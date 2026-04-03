@@ -35,23 +35,23 @@ const translations = {
         features_title_2: "Features",
         features_subtitle: "Built for creators and brands who need massive scale and reliability",
         
-        feature_1_title: "Lightning Fast",
-        feature_1_desc: "Upload and distribute thousands of videos in minutes, not hours.",
+        feature_1_title: "Creation Velocity",
+        feature_1_desc: "TikTok's algorithm prioritizes growth rate over total count. 250K creations in 48 hours triggers viral push mechanisms and trending status.",
         
-        feature_2_title: "Secure & Reliable",
-        feature_2_desc: "Enterprise-grade security with 99.9% uptime guarantee.",
+        feature_2_title: "Viral Thresholds",
+        feature_2_desc: "Break critical milestones: 10K creations = Trending eligibility, 50K = Top 100 charts, 100K+ = mainstream media attention and label deals.",
         
-        feature_3_title: "Analytics Dashboard",
-        feature_3_desc: "Track performance across all platforms in real-time.",
+        feature_3_title: "FYP Domination",
+        feature_3_desc: "Mass creations flood the For You Page algorithm. Each video = new entry point for millions of users, multiplying organic reach exponentially.",
         
-        feature_4_title: "Smart Scheduling",
-        feature_4_desc: "AI-powered optimal posting times for maximum reach.",
+        feature_4_title: "Spotify/Apple Explosion",
+        feature_4_desc: "TikTok users who hear your song in creations stream it 23x more on Spotify. High creation count = automatic playlist placements and Shazam spikes.",
         
-        feature_5_title: "Multi-Account",
-        feature_5_desc: "Manage unlimited accounts from one dashboard.",
+        feature_5_title: "Auto-Activated Features",
+        feature_5_desc: "At 10K+ creations, TikTok auto-enables: Trending badge, 'Use This Sound' prominence, push notifications, and Spotify/Apple Music link integration.",
         
-        feature_6_title: "API Access",
-        feature_6_desc: "Full API for custom integrations and automation.",
+        feature_6_title: "Critical 48-Hour Window",
+        feature_6_desc: "First 48-72 hours determine viral potential. Our system delivers 250K creations instantly, overwhelming TikTok's trending threshold logic before momentum fades.",
         
         // Packages Section
         packages_title_1: "Choose Your",
@@ -131,23 +131,23 @@ const translations = {
         features_title_2: "Funktionen",
         features_subtitle: "Entwickelt für Creators und Marken, die massive Skalierung und Zuverlässigkeit benötigen",
         
-        feature_1_title: "Blitzschnell",
-        feature_1_desc: "Laden Sie Tausende von Videos in Minuten hoch und verteilen Sie sie, nicht in Stunden.",
+        feature_1_title: "Creation Velocity",
+        feature_1_desc: "TikToks Algorithmus priorisiert Wachstumsrate über Gesamtzahl. 250K Creations in 48 Stunden triggern virale Push-Mechanismen und Trending-Status.",
         
-        feature_2_title: "Sicher & Zuverlässig",
-        feature_2_desc: "Enterprise-Sicherheit mit 99,9% Verfügbarkeitsgarantie.",
+        feature_2_title: "Virale Schwellenwerte",
+        feature_2_desc: "Durchbreche kritische Meilensteine: 10K Creations = Trending-Berechtigung, 50K = Top 100 Charts, 100K+ = Mainstream-Medienaufmerksamkeit und Label-Deals.",
         
-        feature_3_title: "Analytics Dashboard",
-        feature_3_desc: "Verfolgen Sie die Performance auf allen Plattformen in Echtzeit.",
+        feature_3_title: "FYP-Dominierung",
+        feature_3_desc: "Massen-Creations fluten den For You Page-Algorithmus. Jedes Video = neuer Einstiegspunkt für Millionen Nutzer, organische Reichweite vervielfacht sich exponentiell.",
         
-        feature_4_title: "Intelligente Planung",
-        feature_4_desc: "KI-gestützte optimale Posting-Zeiten für maximale Reichweite.",
+        feature_4_title: "Spotify/Apple Explosion",
+        feature_4_desc: "TikTok-Nutzer, die deinen Song in Creations hören, streamen ihn 23x häufiger auf Spotify. Hohe Creation-Anzahl = automatische Playlist-Platzierungen und Shazam-Spikes.",
         
-        feature_5_title: "Multi-Account",
-        feature_5_desc: "Verwalten Sie unbegrenzte Konten von einem Dashboard aus.",
+        feature_5_title: "Auto-Aktivierte Features",
+        feature_5_desc: "Ab 10K+ Creations aktiviert TikTok automatisch: Trending-Badge, 'Use This Sound'-Prominenz, Push-Benachrichtigungen und Spotify/Apple Music Link-Integration.",
         
-        feature_6_title: "API-Zugang",
-        feature_6_desc: "Vollständige API für benutzerdefinierte Integrationen und Automatisierung.",
+        feature_6_title: "Kritisches 48-Stunden-Fenster",
+        feature_6_desc: "Die ersten 48-72 Stunden bestimmen das virale Potenzial. Unser System liefert 250K Creations sofort und überwältigt TikToks Trending-Schwellenwert-Logik, bevor Momentum nachlässt.",
         
         // Packages Section
         packages_title_1: "Wählen Sie Ihr",
