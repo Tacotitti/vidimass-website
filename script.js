@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <a href="#features" data-i18n="nav_features">Features</a>
             <a href="how-it-works.html">How It Works</a>
             <a href="#packages" data-i18n="nav_packages">Packages</a>
+            <a href="contact.html" data-i18n="nav_contact">Kontakt</a>
             
             <!-- Mobile Language Selector -->
             <div class="mobile-lang-selector">
