@@ -213,6 +213,27 @@ function createLanguageSelector() {
 
 // Create mobile language selector (separate function with retry)
 function createMobileLanguageSelector() {
+    // Check if mobile language buttons already exist in HTML
+    const existingMobileBtns = document.querySelectorAll('.mobile-lang-btn');
+    
+    if (existingMobileBtns.length > 0) {
+        console.log('✅ Mobile language buttons found in HTML, attaching events...');
+        
+        // Add click handlers for existing buttons
+        existingMobileBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.dataset.lang;
+                changeLanguage(lang);
+                // Close mobile menu
+                document.querySelector('.mobile-menu')?.classList.remove('active');
+                document.querySelector('.mobile-overlay')?.classList.remove('active');
+            });
+        });
+        
+        return; // Exit early, buttons already exist
+    }
+    
+    // Otherwise, try to find the container and create buttons dynamically
     const mobileLangContainer = document.getElementById('mobile-lang-selector');
     
     if (mobileLangContainer && !mobileLangContainer.querySelector('.mobile-lang-grid')) {
@@ -240,8 +261,8 @@ function createMobileLanguageSelector() {
             });
         });
         
-        console.log('✅ Mobile language selector created!');
-    } else if (!mobileLangContainer) {
+        console.log('✅ Mobile language selector created dynamically!');
+    } else if (!mobileLangContainer && !existingMobileBtns.length) {
         // Retry after mobile menu is created
         console.log('⏳ Mobile menu not ready yet, retrying in 100ms...');
         setTimeout(createMobileLanguageSelector, 100);

@@ -16,7 +16,46 @@ document.addEventListener('DOMContentLoaded', function() {
             <a href="#features" data-i18n="nav_features">Features</a>
             <a href="#stats" data-i18n="nav_stats">Stats</a>
             <a href="#packages" data-i18n="nav_packages">Packages</a>
-            <div id="mobile-lang-selector" class="mobile-lang-selector"></div>
+            
+            <!-- Mobile Language Selector -->
+            <div class="mobile-lang-selector">
+                <div class="mobile-lang-title">🌍 Language / Sprache</div>
+                <div class="mobile-lang-grid" id="mobile-lang-grid">
+                    <button class="mobile-lang-btn active" data-lang="en">
+                        <span class="flag">🇬🇧</span>
+                        <span class="name">English</span>
+                    </button>
+                    <button class="mobile-lang-btn" data-lang="de">
+                        <span class="flag">🇩🇪</span>
+                        <span class="name">Deutsch</span>
+                    </button>
+                    <button class="mobile-lang-btn" data-lang="tr">
+                        <span class="flag">🇹🇷</span>
+                        <span class="name">Türkçe</span>
+                    </button>
+                    <button class="mobile-lang-btn" data-lang="pt">
+                        <span class="flag">🇵🇹</span>
+                        <span class="name">Português</span>
+                    </button>
+                    <button class="mobile-lang-btn" data-lang="es">
+                        <span class="flag">🇪🇸</span>
+                        <span class="name">Español</span>
+                    </button>
+                    <button class="mobile-lang-btn" data-lang="ru">
+                        <span class="flag">🇷🇺</span>
+                        <span class="name">Русский</span>
+                    </button>
+                    <button class="mobile-lang-btn" data-lang="zh">
+                        <span class="flag">🇨🇳</span>
+                        <span class="name">中文</span>
+                    </button>
+                    <button class="mobile-lang-btn" data-lang="ar">
+                        <span class="flag">🇸🇦</span>
+                        <span class="name">العربية</span>
+                    </button>
+                </div>
+            </div>
+            
             <button class="w-full mt-4 px-6 py-3 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg transition-all">
                 <span data-i18n="nav_get_started">Get Started</span>
             </button>
@@ -42,6 +81,18 @@ document.addEventListener('DOMContentLoaded', function() {
         // Close menu when clicking links
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+        });
+        
+        // Language button click handlers (will be re-attached by language.js)
+        // Placeholder - language.js will handle the actual switching
+        mobileMenu.querySelectorAll('.mobile-lang-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const lang = btn.dataset.lang;
+                // This will be overridden by language.js if loaded
+                console.log('Language button clicked:', lang);
                 mobileMenu.classList.remove('active');
                 overlay.classList.remove('active');
             });
