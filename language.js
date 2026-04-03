@@ -161,6 +161,15 @@ function setHTML(selector, html) {
 
 // Create language selector dropdown
 function createLanguageSelector() {
+    // Check if language selector already exists in HTML
+    const existingSelector = document.querySelector('.language-selector');
+    if (existingSelector) {
+        console.log('Language selector already in HTML, attaching events...');
+        attachLanguageSelectorEvents();
+        return;
+    }
+    
+    // If not, create it dynamically (fallback)
     const nav = document.querySelector('nav .container > div');
     if (!nav) return;
     
@@ -196,6 +205,8 @@ function createLanguageSelector() {
         }
     }
     
+    attachLanguageSelectorEvents();
+    
     // Also create mobile version
     const mobileLangContainer = document.getElementById('mobile-lang-selector');
     if (mobileLangContainer) {
@@ -223,10 +234,17 @@ function createLanguageSelector() {
             });
         });
     }
-    
-    // Add event listeners
+}
+
+// Attach event listeners to language selector
+function attachLanguageSelectorEvents() {
     const langButton = document.getElementById('lang-button');
     const langDropdown = document.getElementById('lang-dropdown');
+    
+    if (!langButton || !langDropdown) {
+        console.error('Language selector elements not found');
+        return;
+    }
     
     langButton.addEventListener('click', (e) => {
         e.stopPropagation();

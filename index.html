@@ -32,6 +32,53 @@
                     <a href="#features" class="nav-link text-gray-300 hover:text-white transition-colors"><span data-i18n="nav_features">Features</span></a>
                     <a href="#stats" class="nav-link text-gray-300 hover:text-white transition-colors"><span data-i18n="nav_stats">Stats</span></a>
                     <a href="#packages" class="nav-link text-gray-300 hover:text-white transition-colors"><span data-i18n="nav_packages">Packages</span></a>
+                    
+                    <!-- Language Selector -->
+                    <div class="language-selector">
+                        <button class="lang-current" id="lang-button">
+                            <span class="flag">🇬🇧</span>
+                            <span class="lang-name">English</span>
+                            <svg class="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="lang-dropdown" id="lang-dropdown">
+                            <button class="lang-option active" data-lang="en">
+                                <span class="flag">🇬🇧</span>
+                                <span class="name">English</span>
+                                <span class="checkmark">✓</span>
+                            </button>
+                            <button class="lang-option" data-lang="de">
+                                <span class="flag">🇩🇪</span>
+                                <span class="name">Deutsch</span>
+                            </button>
+                            <button class="lang-option" data-lang="tr">
+                                <span class="flag">🇹🇷</span>
+                                <span class="name">Türkçe</span>
+                            </button>
+                            <button class="lang-option" data-lang="pt">
+                                <span class="flag">🇵🇹</span>
+                                <span class="name">Português</span>
+                            </button>
+                            <button class="lang-option" data-lang="es">
+                                <span class="flag">🇪🇸</span>
+                                <span class="name">Español</span>
+                            </button>
+                            <button class="lang-option" data-lang="ru">
+                                <span class="flag">🇷🇺</span>
+                                <span class="name">Русский</span>
+                            </button>
+                            <button class="lang-option" data-lang="zh">
+                                <span class="flag">🇨🇳</span>
+                                <span class="name">中文</span>
+                            </button>
+                            <button class="lang-option" data-lang="ar">
+                                <span class="flag">🇸🇦</span>
+                                <span class="name">العربية</span>
+                            </button>
+                        </div>
+                    </div>
+                    
                     <button class="cta-button px-6 py-2.5 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/50 transition-all">
                         <span data-i18n="nav_get_started">Get Started</span>
                     </button>
