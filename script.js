@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenu.className = 'mobile-menu';
         mobileMenu.innerHTML = `
             <a href="#features" data-i18n="nav_features">Features</a>
-            <a href="#stats" data-i18n="nav_stats">Stats</a>
             <a href="how-it-works.html">How It Works</a>
             <a href="#packages" data-i18n="nav_packages">Packages</a>
             
