@@ -411,3 +411,129 @@ a:focus {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* ============================================
+   Language Selector Styles
+   ============================================ */
+
+.language-selector {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-current {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.lang-current:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(139, 92, 246, 0.5);
+}
+
+.lang-current .flag {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.lang-current .lang-code {
+    font-weight: 600;
+}
+
+.lang-current .chevron {
+    transition: transform 0.2s ease;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.lang-dropdown.active .chevron {
+    transform: rotate(180deg);
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 200px;
+    background: rgba(15, 15, 26, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.lang-dropdown.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 12px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+    font-size: 14px;
+}
+
+.lang-option:hover {
+    background: rgba(139, 92, 246, 0.2);
+    color: white;
+}
+
+.lang-option.active {
+    background: rgba(139, 92, 246, 0.15);
+    color: #a78bfa;
+}
+
+.lang-option .flag {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.lang-option .name {
+    flex: 1;
+}
+
+.lang-option .checkmark {
+    color: #a78bfa;
+    font-weight: bold;
+}
+
+/* RTL Support for Arabic */
+body.rtl {
+    direction: rtl;
+}
+
+body.rtl .language-selector {
+    left: 0;
+    right: auto;
+}
+
+body.rtl .lang-dropdown {
+    left: 0;
+    right: auto;
+}
