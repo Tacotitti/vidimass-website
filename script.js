@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenu.className = 'mobile-menu';
         mobileMenu.innerHTML = `
             <a href="#features" data-i18n="nav_features">Features</a>
-            <a href="how-it-works.html">How It Works</a>
+            <a href="how-it-works.html">TikTok Charting</a>
             <a href="#packages" data-i18n="nav_packages">Packages</a>
             <a href="contact.html" data-i18n="nav_contact">Kontakt</a>
             
