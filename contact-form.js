@@ -1,4 +1,4 @@
-// Contact Form Handler
+// Contact Form Handler with Formspree
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     const formMessage = document.getElementById('formMessage');
@@ -8,43 +8,35 @@ document.addEventListener('DOMContentLoaded', function() {
     contactForm.addEventListener('submit', async function(e) {
         e.preventDefault();
 
-        // Get form data
-        const formData = {
-            name: document.getElementById('name').value.trim(),
-            email: document.getElementById('email').value.trim(),
-            category: document.getElementById('category').value,
-            message: document.getElementById('message').value.trim()
-        };
-
-        // Validate
-        if (!formData.name || !formData.email || !formData.category || !formData.message) {
-            showMessage('Bitte füllen Sie alle Felder aus.', 'error');
-            return;
-        }
-
         // Disable submit button
         const submitButton = contactForm.querySelector('button[type="submit"]');
         const originalButtonText = submitButton.innerHTML;
         submitButton.disabled = true;
         submitButton.innerHTML = '<span class="inline-block animate-spin mr-2">⏳</span> Wird gesendet...';
 
+        // Get form data
+        const formData = new FormData(contactForm);
+
         try {
-            // Send to Cloudflare Worker
-            const response = await fetch('https://contact.masspost.store/submit', {
+            // Send directly to Formspree (FREE - 50 submissions/month)
+            const response = await fetch('https://formspree.io/f/mvgoebdv', {
                 method: 'POST',
+                body: formData,
                 headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData)
+                    'Accept': 'application/json'
+                }
             });
 
-            const result = await response.json();
-
-            if (result.success) {
+            if (response.ok) {
                 showMessage('✅ Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.', 'success');
                 contactForm.reset();
             } else {
-                showMessage('❌ ' + (result.error || 'Fehler beim Senden. Bitte versuchen Sie es erneut.'), 'error');
+                const data = await response.json();
+                if (data.errors) {
+                    showMessage('❌ ' + data.errors.map(error => error.message).join(', '), 'error');
+                } else {
+                    showMessage('❌ Fehler beim Senden. Bitte versuchen Sie es erneut.', 'error');
+                }
             }
         } catch (error) {
             console.error('Form submission error:', error);
