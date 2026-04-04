@@ -205,27 +205,7 @@
     <!-- JavaScript -->
     <script src="translations.js"></script>
     <script src="language.js"></script>
-    <script>
-        // Form submission handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formMessage = document.getElementById('formMessage');
-            
-            // Show success message
-            formMessage.className = 'mt-4 p-4 rounded-lg bg-green-500/20 border border-green-500/50 text-green-400';
-            formMessage.textContent = '✓ Vielen Dank! Ihre Nachricht wurde gesendet. Wir melden uns innerhalb von 24 Stunden bei Ihnen.';
-            formMessage.classList.remove('hidden');
-            
-            // Reset form
-            this.reset();
-            
-            // Hide message after 5 seconds
-            setTimeout(() => {
-                formMessage.classList.add('hidden');
-            }, 5000);
-        });
-    </script>
+    <script src="contact-form.js"></script>
 </body>
 </html>
 
