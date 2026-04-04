@@ -118,6 +118,10 @@ const translations = {
         footer_privacy: "Privacy Policy",
         footer_terms: "Terms of Service",
         footer_contact: "Contact",
+        cta_get_started: "Get Started",
+        cta_contact: "Contact",
+        footer_terms: "Terms of Service",
+        footer_copyright: "© 2026 MediaMass. All rights reserved.",
         footer_copyright: "© 2026 MediaMass. All rights reserved.",
     },
     
@@ -238,6 +242,10 @@ const translations = {
         footer_privacy: "Datenschutz",
         footer_terms: "Nutzungsbedingungen",
         footer_contact: "Kontakt",
+        cta_get_started: "Jetzt starten",
+        cta_contact: "Kontakt",
+        footer_terms: "Nutzungsbedingungen",
+        footer_copyright: "© 2026 MediaMass. Alle Rechte vorbehalten.",
         footer_copyright: "© 2026 MediaMass. Alle Rechte vorbehalten.",
     },
     
@@ -352,6 +360,10 @@ const translations = {
         footer_privacy: "Gizlilik Politikası",
         footer_terms: "Hizmet Şartları",
         footer_contact: "İletişim",
+        cta_get_started: "Başlayın",
+        cta_contact: "İletişim",
+        footer_terms: "Kullanım Şartları",
+        footer_copyright: "© 2026 MediaMass. Tüm hakları saklıdır.",
         footer_copyright: "© 2026 MediaMass. Tüm hakları saklıdır.",
     },
     
@@ -454,6 +466,10 @@ const translations = {
         footer_privacy: "Política de Privacidade",
         footer_terms: "Termos de Serviço",
         footer_contact: "Contato",
+        cta_get_started: "Começar",
+        cta_contact: "Contato",
+        footer_terms: "Termos de Serviço",
+        footer_copyright: "© 2026 MediaMass. Todos os direitos reservados.",
         footer_copyright: "© 2026 MediaMass. Todos os direitos reservados.",
     },
     
@@ -556,6 +572,10 @@ const translations = {
         footer_privacy: "Política de Privacidad",
         footer_terms: "Términos de Servicio",
         footer_contact: "Contacto",
+        cta_get_started: "Empezar",
+        cta_contact: "Contacto",
+        footer_terms: "Términos de Servicio",
+        footer_copyright: "© 2026 MediaMass. Todos los derechos reservados.",
         footer_copyright: "© 2026 MediaMass. Todos los derechos reservados.",
     },
     
@@ -658,6 +678,10 @@ const translations = {
         footer_privacy: "Политика конфиденциальности",
         footer_terms: "Условия обслуживания",
         footer_contact: "Контакты",
+        cta_get_started: "Начать",
+        cta_contact: "Контакт",
+        footer_terms: "Условия использования",
+        footer_copyright: "© 2026 MediaMass. Все права защищены.",
         footer_copyright: "© 2026 MediaMass. Все права защищены.",
     },
     
@@ -760,6 +784,10 @@ const translations = {
         footer_privacy: "隐私政策",
         footer_terms: "服务条款",
         footer_contact: "联系我们",
+        cta_get_started: "开始使用",
+        cta_contact: "联系我们",
+        footer_terms: "服务条款",
+        footer_copyright: "© 2026 MediaMass. 保留所有权利。",
         footer_copyright: "© 2026 MediaMass. 保留所有权利。",
     },
     
@@ -862,6 +890,10 @@ const translations = {
         footer_privacy: "سياسة الخصوصية",
         footer_terms: "شروط الخدمة",
         footer_contact: "اتصل بنا",
+        cta_get_started: "ابدأ",
+        cta_contact: "اتصل بنا",
+        footer_terms: "شروط الخدمة",
+        footer_copyright: "© 2026 MediaMass. جميع الحقوق محفوظة.",
         footer_copyright: "© 2026 MediaMass. جميع الحقوق محفوظة.",
     }
 };
