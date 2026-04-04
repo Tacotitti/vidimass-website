@@ -36,7 +36,7 @@ const translations = {
         features_subtitle: "Built for creators and brands who need massive scale and reliability",
         
         feature_1_title: "Creation Velocity",
-        feature_1_desc: "هاشتاجات مخصصة وتعليقات فيديو في كل تحميل لأقصى دفع فيروسي. محرك الذكاء الاصطناعي لدينا ينتج #علامات وتسميات فريدة تحفز بشكل مثالي نظام توصيات TikTok وتضاعف الوصول العضوي.",
+        feature_1_desc: "Personalized hashtags and video comments in every upload for maximum viral push. Our AI engine generates unique #tags and captions that optimally trigger TikTok's recommendation system and multiply organic reach.",
         
         feature_2_title: "Viral Thresholds",
         feature_2_desc: "Break critical milestones: 10K creations = Trending eligibility, 50K = Top 100 charts, 100K+ = mainstream media attention and label deals.",
@@ -132,7 +132,7 @@ const translations = {
         features_subtitle: "Entwickelt für Creators und Marken, die massive Skalierung und Zuverlässigkeit benötigen",
         
         feature_1_title: "Creation Velocity",
-        feature_1_desc: "TikToks Algorithmus priorisiert Wachstumsrate über Gesamtzahl. 250K Creations in 48 Stunden triggern virale Push-Mechanismen und Trending-Status.",
+        feature_1_desc: "Personalisierte Hashtags und Video-Kommentare in jedem Upload für maximalen viralen Push. Unsere KI-Engine generiert unique #Tags und Captions, die TikToks Recommendation-System optimal triggern und organische Reichweite multiplizieren.",
         
         feature_2_title: "Virale Schwellenwerte",
         feature_2_desc: "Durchbreche kritische Meilensteine: 10K Creations = Trending-Berechtigung, 50K = Top 100 Charts, 100K+ = Mainstream-Medienaufmerksamkeit und Label-Deals.",
@@ -228,7 +228,7 @@ const translations = {
         features_subtitle: "Büyük ölçek ve güvenilirlik gerektiren içerik üreticileri ve markalar için geliştirildi",
         
         feature_1_title: "Şimşek Hızında",
-        feature_1_desc: "Binlerce videoyu saatler değil, dakikalar içinde yükleyin ve dağıtın.",
+        feature_1_desc: "Her yüklemede maksimum viral etki için kişiselleştirilmiş hashtagler ve video yorumları. AI motorumuz, TikTok'un öneri sistemini optimal tetikleyen ve organik erişimi çoğaltan benzersiz #taglar ve altyazılar üretir.",
         
         feature_2_title: "Güvenli ve Güvenilir",
         feature_2_desc: "%99,9 çalışma süresi garantisi ile kurumsal düzeyde güvenlik.",
@@ -324,7 +324,7 @@ const translations = {
         features_subtitle: "Criado para criadores e marcas que precisam de escala massiva e confiabilidade",
         
         feature_1_title: "Super Rápido",
-        feature_1_desc: "Carregue e distribua milhares de vídeos em minutos, não em horas.",
+        feature_1_desc: "Hashtags personalizadas e comentários de vídeo em cada upload para máximo impulso viral. Nosso motor de IA gera #tags e legendas únicas que acionam otimamente o sistema de recomendação do TikTok e multiplicam o alcance orgânico.",
         
         feature_2_title: "Seguro e Confiável",
         feature_2_desc: "Segurança de nível empresarial com garantia de 99,9% de disponibilidade.",
@@ -420,7 +420,7 @@ const translations = {
         features_subtitle: "Creado para creadores y marcas que necesitan escala masiva y confiabilidad",
         
         feature_1_title: "Súper Rápido",
-        feature_1_desc: "Cargue y distribuya miles de videos en minutos, no en horas.",
+        feature_1_desc: "Hashtags personalizados y comentarios de video en cada carga para máximo impulso viral. Nuestro motor de IA genera #tags y subtítulos únicos que activan óptimamente el sistema de recomendación de TikTok y multiplican el alcance orgánico.",
         
         feature_2_title: "Seguro y Confiable",
         feature_2_desc: "Seguridad de nivel empresarial con garantía del 99,9% de disponibilidad.",
@@ -516,7 +516,7 @@ const translations = {
         features_subtitle: "Создано для создателей и брендов, которым нужен массовый масштаб и надежность",
         
         feature_1_title: "Молниеносная скорость",
-        feature_1_desc: "Загружайте и распространяйте тысячи видео за минуты, а не часы.",
+        feature_1_desc: "Персонализированные хэштеги и комментарии к видео в каждой загрузке для максимального вирусного эффекта. Наш ИИ-движок генерирует уникальные #теги и подписи, которые оптимально активируют систему рекомендаций TikTok и умножают органический охват.",
         
         feature_2_title: "Безопасность и надежность",
         feature_2_desc: "Корпоративная безопасность с гарантией доступности 99,9%.",
@@ -612,7 +612,7 @@ const translations = {
         features_subtitle: "为需要大规模和可靠性的创作者和品牌打造",
         
         feature_1_title: "闪电般快速",
-        feature_1_desc: "在几分钟内上传和分发数千个视频，而不是几小时。",
+        feature_1_desc: "每次上传都有个性化标签和视频评论，实现最大病毒式传播。我们的 AI 引擎生成独特的 #标签和标题，最优触发 TikTok 推荐系统并倍增有机覆盖。",
         
         feature_2_title: "安全可靠",
         feature_2_desc: "企业级安全，保证 99.9% 的正常运行时间。",
@@ -708,7 +708,7 @@ const translations = {
         features_subtitle: "مصمم للمبدعين والعلامات التجارية التي تحتاج إلى حجم كبير وموثوقية",
         
         feature_1_title: "سريع البرق",
-        feature_1_desc: "قم بتحميل وتوزيع آلاف الفيديوهات في دقائق، وليس ساعات.",
+        feature_1_desc: "هاشتاجات مخصصة وتعليقات فيديو في كل تحميل لأقصى دفع فيروسي. محرك الذكاء الاصطناعي لدينا ينتج #علامات وتسميات فريدة تحفز بشكل مثالي نظام توصيات TikTok وتضاعف الوصول العضوي.",
         
         feature_2_title: "آمن وموثوق",
         feature_2_desc: "أمان على مستوى المؤسسات مع ضمان 99.9% وقت تشغيل.",
