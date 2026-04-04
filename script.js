@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenu.innerHTML = `
             <a href="#features" data-i18n="nav_features">Features</a>
             <a href="tiktok-charting.html">TikTok Charting</a>
-            <a href="#packages" data-i18n="nav_packages">Packages</a>
             <a href="preisliste.html">Preisliste</a>
             <a href="contact.html" data-i18n="nav_contact">Kontakt</a>
             
