@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenu.className = 'mobile-menu';
         mobileMenu.innerHTML = `
             <a href="#features" data-i18n="nav_features">Features</a>
-            <a href="how-it-works.html">TikTok Charting</a>
+            <a href="tiktok-charting.html">TikTok Charting</a>
             <a href="#packages" data-i18n="nav_packages">Packages</a>
             <a href="contact.html" data-i18n="nav_contact">Kontakt</a>
             
@@ -376,3 +376,4 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('%c Modern Website by Fred 🚀 ', 'background: #1f2937; color: #a855f7; font-size: 14px; padding: 5px;');
     console.log('%c Try the Konami Code! ⬆️⬆️⬇️⬇️⬅️➡️⬅️➡️BA ', 'color: #6b7280; font-size: 12px;');
 });
+
