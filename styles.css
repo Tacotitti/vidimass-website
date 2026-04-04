@@ -6,6 +6,24 @@
     box-sizing: border-box;
 }
 
+/* Remove focus outline from buttons and links (except burger menu) */
+button:focus,
+a:focus,
+.cta-button:focus,
+.nav-link:focus,
+.lang-option:focus,
+.lang-current:focus,
+.package-card a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Keep focus for accessibility in burger menu */
+.mobile-menu-toggle:focus {
+    outline: 2px solid rgba(139, 92, 246, 0.5);
+    outline-offset: 2px;
+}
+
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
