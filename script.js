@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const mobileMenu = document.createElement('div');
         mobileMenu.className = 'mobile-menu';
         mobileMenu.innerHTML = `
-            <a href="#features" data-i18n="nav_features">Features</a>
+            <a href="index.html#features" data-i18n="nav_features">Features</a>
             <a href="social-media-charting.html">Social Media Charting</a>
             <a href="preisliste.html">Preisliste</a>
             <a href="contact.html" data-i18n="nav_contact">Kontakt</a>
