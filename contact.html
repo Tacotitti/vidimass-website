@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt - MediaMass</title>
+    <title data-i18n="contact_page_title">Kontakt - MediaMass</title>
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="favicon.ico?v=202604040312">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=202604040312">
@@ -68,11 +68,11 @@
                 <!-- Header -->
                 <div class="text-center mb-12">
                     <h1 class="hero-title text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
-                        <span class="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent">
+                        <span class="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent" data-i18n="contact_heading">
                             Kontaktieren Sie uns
                         </span>
                     </h1>
-                    <p class="text-xl text-gray-300 mb-8">
+                    <p class="text-xl text-gray-300 mb-8" data-i18n="contact_subheading">
                         Füllen Sie das Formular aus und wir melden uns innerhalb von 24 Stunden bei Ihnen
                     </p>
                 </div>
@@ -88,59 +88,60 @@
                         
                         <!-- Name -->
                         <div>
-                            <label for="name" class="block text-sm font-semibold text-gray-300 mb-2">Name *</label>
+                            <label for="name" class="block text-sm font-semibold text-gray-300 mb-2"><span data-i18n="contact_label_name">Name</span> *</label>
                             <input 
                                 type="text" 
                                 id="name" 
                                 name="name" 
                                 required
                                 class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent text-white placeholder-gray-500 transition-all"
+                                data-i18n-placeholder="contact_placeholder_name"
                                 placeholder="Ihr vollständiger Name"
                             >
                         </div>
 
                         <!-- Email -->
                         <div>
-                            <label for="email" class="block text-sm font-semibold text-gray-300 mb-2">E-Mail *</label>
+                            <label for="email" class="block text-sm font-semibold text-gray-300 mb-2"><span data-i18n="contact_label_email">E-Mail</span> *</label>
                             <input 
                                 type="email" 
                                 id="email" 
                                 name="email" 
                                 required
                                 class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent text-white placeholder-gray-500 transition-all"
-                                placeholder="ihre.email@beispiel.de"
+                                data-i18n-placeholder="contact_placeholder_email" placeholder="ihre.email@beispiel.de"
                             >
                         </div>
 
                         <!-- Category -->
                         <div>
-                            <label for="category" class="block text-sm font-semibold text-gray-300 mb-2">Kategorie *</label>
+                            <label for="category" class="block text-sm font-semibold text-gray-300 mb-2"><span data-i18n="contact_label_category">Kategorie</span> *</label>
                             <select 
                                 id="category" 
                                 name="category" 
                                 required
                                 class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent text-white transition-all"
                             >
-                                <option value="" class="bg-slate-900">Bitte auswählen</option>
-                                <option value="tiktok" class="bg-slate-900">TikTok Mass Posting</option>
-                                <option value="instagram" class="bg-slate-900">Instagram Mass Posting</option>
-                                <option value="multi" class="bg-slate-900">Multi-Plattform</option>
-                                <option value="label" class="bg-slate-900">Musik-Label/Artist Charting</option>
-                                <option value="enterprise" class="bg-slate-900">Unternehmen</option>
-                                <option value="other" class="bg-slate-900">Sonstiges</option>
+                                <option value="" class="bg-slate-900" data-i18n="contact_placeholder_category">Bitte auswählen</option>
+                                <option value="tiktok_mass_posting" class="bg-slate-900" data-i18n="contact_category_tiktok">TikTok Mass Posting</option>
+                                <option value="instagram_mass_posting" class="bg-slate-900" data-i18n="contact_category_instagram">Instagram Mass Posting</option>
+                                <option value="multi_plattform" class="bg-slate-900" data-i18n="contact_category_multi">Multi-Plattform</option>
+                                <option value="musik_label_artist_charting" class="bg-slate-900" data-i18n="contact_category_label">Musik-Label/Artist Charting</option>
+                                <option value="unternehmen" class="bg-slate-900" data-i18n="contact_category_enterprise">Unternehmen</option>
+                                <option value="sonstiges" class="bg-slate-900" data-i18n="contact_category_other">Sonstiges</option>
                             </select>
                         </div>
 
                         <!-- Package Selection -->
                         <div>
-                            <label for="package" class="block text-sm font-semibold text-gray-300 mb-2">Gewünschtes Paket (optional)</label>
+                            <label for="package" class="block text-sm font-semibold text-gray-300 mb-2" data-i18n="contact_label_package">Gewünschtes Paket (optional)</label>
                             <select 
                                 id="package" 
                                 name="package"
                                 class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent text-white transition-all"
                             >
-                                <option value="" class="bg-slate-900">-- Paket auswählen --</option>
-                                <optgroup label="🎵 TikTok Videos" class="bg-slate-900">
+                                <option value="" class="bg-slate-900" data-i18n="contact_placeholder_package">-- Paket auswählen --</option>
+                                <optgroup data-i18n-label="contact_package_group_tiktok" label="🎵 TikTok Videos" class="bg-slate-900">
                                     <option value="tiktok-1k" class="bg-slate-900">TikTok - 1,000 Videos ($79)</option>
                                     <option value="tiktok-5k" class="bg-slate-900">TikTok - 5,000 Videos ($199)</option>
                                     <option value="tiktok-15k" class="bg-slate-900">TikTok - 15,000 Videos ($399)</option>
@@ -151,7 +152,7 @@
                                     <option value="tiktok-500k" class="bg-slate-900">TikTok - 500,000 Videos ($6,999)</option>
                                     <option value="tiktok-1m" class="bg-slate-900">TikTok - 1,000,000 Videos ($11,999)</option>
                                 </optgroup>
-                                <optgroup label="📸 Instagram Reels" class="bg-slate-900">
+                                <optgroup data-i18n-label="contact_package_group_instagram" label="📸 Instagram Reels" class="bg-slate-900">
                                     <option value="instagram-1k" class="bg-slate-900">Instagram - 1,000 Reels (139€)</option>
                                     <option value="instagram-5k" class="bg-slate-900">Instagram - 5,000 Reels (399€)</option>
                                     <option value="instagram-15k" class="bg-slate-900">Instagram - 15,000 Reels (749€)</option>
@@ -167,14 +168,14 @@
 
                         <!-- Message -->
                         <div>
-                            <label for="message" class="block text-sm font-semibold text-gray-300 mb-2">Nachricht *</label>
+                            <label for="message" class="block text-sm font-semibold text-gray-300 mb-2"><span data-i18n="contact_label_message">Nachricht</span> *</label>
                             <textarea 
                                 id="message" 
                                 name="message" 
                                 rows="6" 
                                 required
                                 class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent text-white placeholder-gray-500 transition-all resize-none"
-                                placeholder="Beschreiben Sie Ihre Anfrage..."
+                                data-i18n-placeholder="contact_placeholder_message" placeholder="Beschreiben Sie Ihre Anfrage..."
                             ></textarea>
                         </div>
 
@@ -194,7 +195,7 @@
 
                     <!-- Alternative Contact -->
                     <div class="mt-12 pt-8 border-t border-white/10">
-                        <h3 class="text-xl font-bold mb-4 text-center">Alternative Kontaktmöglichkeiten</h3>
+                        <h3 class="text-2xl font-bold mb-6 text-center" data-i18n="contact_alt_heading">Alternative Kontaktmöglichkeiten</h3>
                         
                         <!-- Contact Methods -->
                         <div class="flex flex-col md:flex-row items-start justify-center gap-8 text-gray-300 mb-8">

@@ -27,12 +27,7 @@
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
             if (trans[key]) {
-                // Check if it's an input placeholder
-                if (element.hasAttribute('placeholder')) {
-                    element.setAttribute('placeholder', trans[key]);
-                } else {
-                    element.textContent = trans[key];
-                }
+                element.textContent = trans[key];
             }
         });
         
@@ -41,6 +36,22 @@
             const key = element.getAttribute('data-i18n-html');
             if (trans[key]) {
                 element.innerHTML = trans[key];
+            }
+        });
+        
+        // 1c. Translate placeholders with data-i18n-placeholder
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+            const key = element.getAttribute('data-i18n-placeholder');
+            if (trans[key]) {
+                element.setAttribute('placeholder', trans[key]);
+            }
+        });
+        
+        // 1d. Translate optgroup labels with data-i18n-label
+        document.querySelectorAll('[data-i18n-label]').forEach(element => {
+            const key = element.getAttribute('data-i18n-label');
+            if (trans[key]) {
+                element.setAttribute('label', trans[key]);
             }
         });
         
