@@ -79,7 +79,13 @@
 
                 <!-- Contact Form -->
                 <div class="glass-card p-8 md:p-12 rounded-2xl backdrop-blur-sm bg-white/5 border border-white/10">
-                    <form id="contactForm" class="space-y-6">
+                    <form id="contactForm" action="https://formsubmit.co/info@masspost.store" method="POST" class="space-y-6">
+                        <!-- FormSubmit.co Configuration -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://www.masspost.store/contact.html?success=true">
+                        <input type="hidden" name="_subject" value="[MediaMass Kontakt] Neue Anfrage">
+                        <input type="text" name="_honey" style="display:none">
+                        
                         <!-- Name -->
                         <div>
                             <label for="name" class="block text-sm font-semibold text-gray-300 mb-2">Name *</label>

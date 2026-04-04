@@ -1,9 +1,12 @@
-// Contact Form Handler with Web3Forms (Free Email Forwarding)
+// Contact Form Handler with EmailJS (Free 200 emails/month)
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     const formMessage = document.getElementById('formMessage');
 
     if (!contactForm) return;
+
+    // Initialize EmailJS
+    emailjs.init('JuX8vF9gKhO4L7mP2'); // MediaMass Public Key
 
     contactForm.addEventListener('submit', async function(e) {
         e.preventDefault();
@@ -31,34 +34,32 @@ document.addEventListener('DOMContentLoaded', function() {
             'other': 'Sonstiges'
         };
 
-        // Prepare data for Web3Forms
-        const formData = new FormData();
-        formData.append('access_key', 'e08c4d5f-6b7a-4c9e-8d2f-1a3b5e7c9f4d'); // MediaMass Contact Form Key
-        formData.append('subject', `[MediaMass Kontakt] ${categoryLabels[category]} - ${name}`);
-        formData.append('from_name', `${name} via MediaMass Kontaktformular`);
-        formData.append('email', email);
-        formData.append('name', name);
-        formData.append('Kategorie', categoryLabels[category]);
-        formData.append('message', message);
-        formData.append('redirect', 'https://www.masspost.store/contact.html?success=true');
+        // Template parameters for EmailJS
+        const templateParams = {
+            from_name: name,
+            from_email: email,
+            category: categoryLabels[category],
+            message: message,
+            to_email: 'info@masspost.store'
+        };
 
         try {
-            const response = await fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                body: formData
-            });
+            // Send via EmailJS
+            const response = await emailjs.send(
+                'service_masspost', // Service ID
+                'template_contact', // Template ID
+                templateParams
+            );
 
-            const result = await response.json();
-
-            if (result.success) {
+            if (response.status === 200) {
                 showMessage('✅ Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.', 'success');
                 contactForm.reset();
             } else {
-                showMessage('❌ Fehler beim Senden: ' + (result.message || 'Bitte versuchen Sie es erneut.'), 'error');
+                showMessage('❌ Fehler beim Senden. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.', 'error');
             }
         } catch (error) {
-            console.error('Form submission error:', error);
-            showMessage('❌ Verbindungsfehler. Bitte kontaktieren Sie uns direkt per E-Mail: info@masspost.store', 'error');
+            console.error('EmailJS error:', error);
+            showMessage('❌ Fehler beim Senden. Bitte kontaktieren Sie uns direkt per E-Mail: info@masspost.store', 'error');
         } finally {
             // Re-enable button
             submitButton.disabled = false;
@@ -78,19 +79,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Scroll to message
         formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
-        // Auto-hide after 8 seconds
+        // Auto-hide success after 8 seconds
         if (type === 'success') {
             setTimeout(() => {
                 formMessage.classList.add('hidden');
             }, 8000);
         }
-    }
-
-    // Check for success parameter in URL
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('success') === 'true') {
-        showMessage('✅ Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.', 'success');
-        // Clean URL
-        window.history.replaceState({}, document.title, window.location.pathname);
     }
 });
