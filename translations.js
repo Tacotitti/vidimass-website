@@ -36,7 +36,7 @@ const translations = {
         features_subtitle: "Built for creators and brands who need massive scale and reliability",
         
         feature_1_title: "Creation Velocity",
-        feature_1_desc: "TikTok's algorithm prioritizes growth rate over total count. 250K creations in 48 hours triggers viral push mechanisms and trending status.",
+        feature_1_desc: "هاشتاجات مخصصة وتعليقات فيديو في كل تحميل لأقصى دفع فيروسي. محرك الذكاء الاصطناعي لدينا ينتج #علامات وتسميات فريدة تحفز بشكل مثالي نظام توصيات TikTok وتضاعف الوصول العضوي.",
         
         feature_2_title: "Viral Thresholds",
         feature_2_desc: "Break critical milestones: 10K creations = Trending eligibility, 50K = Top 100 charts, 100K+ = mainstream media attention and label deals.",
