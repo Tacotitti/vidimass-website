@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const formData = new FormData(contactForm);
 
         try {
-            // Send to PHP backend
-            const response = await fetch('contact-submit.php', {
+            // Send to Cloudflare Pages Function
+            const response = await fetch('/api/contact', {
                 method: 'POST',
                 body: formData
             });
