@@ -67,21 +67,32 @@
         };
         
         const langNameMap = {
-            'en': 'EN',
-            'de': 'DE',
-            'tr': 'TR',
-            'pt': 'PT',
-            'es': 'ES',
-            'ru': 'RU',
-            'zh': 'ZH',
-            'ar': 'AR'
+            'en': 'English',
+            'de': 'Deutsch',
+            'tr': 'Türkçe',
+            'pt': 'Português',
+            'es': 'Español',
+            'ru': 'Русский',
+            'zh': '中文',
+            'ar': 'العربية'
         };
         
-        // Update desktop selector
-        const desktopBtn = document.querySelector('.language-selector button');
+        // Update desktop selector button
+        const desktopBtn = document.getElementById('lang-button');
         if (desktopBtn) {
-            desktopBtn.innerHTML = `${flagMap[lang]} <span class="lang-code">${langNameMap[lang]}</span>`;
+            const flagSpan = desktopBtn.querySelector('.flag');
+            const nameSpan = desktopBtn.querySelector('.lang-name');
+            if (flagSpan) flagSpan.textContent = flagMap[lang];
+            if (nameSpan) nameSpan.textContent = langNameMap[lang];
         }
+        
+        // Update active state in dropdown
+        document.querySelectorAll('.lang-option').forEach(opt => {
+            opt.classList.remove('active');
+            if (opt.getAttribute('data-lang') === lang) {
+                opt.classList.add('active');
+            }
+        });
         
         // Update mobile selector
         const mobileBtn = document.querySelector('.mobile-language-selector button');
@@ -98,7 +109,7 @@
         applyLanguage(initialLang);
         
         // Desktop language selector
-        const desktopOptions = document.querySelectorAll('.language-dropdown button[data-lang]');
+        const desktopOptions = document.querySelectorAll('.lang-dropdown button[data-lang]');
         desktopOptions.forEach(btn => {
             btn.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -106,21 +117,21 @@
                 applyLanguage(lang);
                 
                 // Close dropdown
-                const dropdown = this.closest('.language-dropdown');
+                const dropdown = document.getElementById('lang-dropdown');
                 if (dropdown) {
-                    dropdown.style.display = 'none';
+                    dropdown.classList.remove('active');
                 }
             });
         });
         
         // Desktop dropdown toggle
-        const desktopToggle = document.querySelector('.language-selector button');
+        const desktopToggle = document.getElementById('lang-button');
         if (desktopToggle) {
             desktopToggle.addEventListener('click', function(e) {
                 e.stopPropagation();
-                const dropdown = document.querySelector('.language-dropdown');
+                const dropdown = document.getElementById('lang-dropdown');
                 if (dropdown) {
-                    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                    dropdown.classList.toggle('active');
                 }
             });
         }
@@ -155,8 +166,8 @@
         
         // Close dropdowns when clicking outside
         document.addEventListener('click', function() {
-            const dropdown = document.querySelector('.language-dropdown');
-            if (dropdown) dropdown.style.display = 'none';
+            const dropdown = document.getElementById('lang-dropdown');
+            if (dropdown) dropdown.classList.remove('active');
             
             const mobileMenu = document.querySelector('.mobile-lang-menu');
             if (mobileMenu) mobileMenu.classList.remove('active');
