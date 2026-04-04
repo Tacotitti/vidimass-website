@@ -55,17 +55,6 @@
     
     // Update language selector display
     function updateLanguageSelector(lang) {
-        const flagMap = {
-            'en': '🇬🇧',
-            'de': '🇩🇪',
-            'tr': '🇹🇷',
-            'pt': '🇵🇹',
-            'es': '🇪🇸',
-            'ru': '🇷🇺',
-            'zh': '🇨🇳',
-            'ar': '🇸🇦'
-        };
-        
         const langNameMap = {
             'en': 'English',
             'de': 'Deutsch',
@@ -77,13 +66,16 @@
             'ar': 'العربية'
         };
         
-        // Update desktop selector button
+        // Update desktop selector button (NO FLAGS, just text)
         const desktopBtn = document.getElementById('lang-button');
         if (desktopBtn) {
-            const flagSpan = desktopBtn.querySelector('.flag');
             const nameSpan = desktopBtn.querySelector('.lang-name');
-            if (flagSpan) flagSpan.textContent = flagMap[lang];
-            if (nameSpan) nameSpan.textContent = langNameMap[lang];
+            if (nameSpan) {
+                nameSpan.textContent = langNameMap[lang];
+            }
+            // Hide flag span
+            const flagSpan = desktopBtn.querySelector('.flag');
+            if (flagSpan) flagSpan.style.display = 'none';
         }
         
         // Update active state in dropdown
@@ -92,12 +84,15 @@
             if (opt.getAttribute('data-lang') === lang) {
                 opt.classList.add('active');
             }
+            // Hide flags in dropdown too
+            const flag = opt.querySelector('.flag');
+            if (flag) flag.style.display = 'none';
         });
         
-        // Update mobile selector
+        // Update mobile selector (NO FLAGS)
         const mobileBtn = document.querySelector('.mobile-language-selector button');
         if (mobileBtn) {
-            mobileBtn.textContent = `${flagMap[lang]} ${langNameMap[lang]}`;
+            mobileBtn.textContent = langNameMap[lang];
         }
     }
     

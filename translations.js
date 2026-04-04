@@ -7,6 +7,12 @@ const translations = {
         nav_stats: "Stats",
         nav_packages: "Packages",
         nav_get_started: "Get Started",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Pricing",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Pricing",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Pricing",
         
         // Hero Section
         hero_badge: "24/7 Distribution Active",
@@ -103,6 +109,12 @@ const translations = {
         nav_stats: "Statistiken",
         nav_packages: "Pakete",
         nav_get_started: "Jetzt starten",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Preisliste",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Preisliste",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Pricing",
         
         // Hero Section
         hero_badge: "24/7 Verteilung Aktiv",
@@ -199,6 +211,12 @@ const translations = {
         nav_stats: "İstatistikler",
         nav_packages: "Paketler",
         nav_get_started: "Başla",
+        nav_charting: "Sosyal Medya Charting",
+        nav_pricing: "Fiyatlandırma",
+        nav_charting: "Sosyal Medya Charting",
+        nav_pricing: "Fiyatlandırma",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Pricing",
         
         // Hero Section
         hero_badge: "7/24 Dağıtım Aktif",
@@ -295,6 +313,12 @@ const translations = {
         nav_stats: "Estatísticas",
         nav_packages: "Pacotes",
         nav_get_started: "Começar",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Preços",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Preços",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Pricing",
         
         // Hero Section
         hero_badge: "Distribuição 24/7 Ativa",
@@ -391,6 +415,12 @@ const translations = {
         nav_stats: "Estadísticas",
         nav_packages: "Paquetes",
         nav_get_started: "Empezar",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Precios",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Precios",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Pricing",
         
         // Hero Section
         hero_badge: "Distribución 24/7 Activa",
@@ -487,6 +517,12 @@ const translations = {
         nav_stats: "Статистика",
         nav_packages: "Пакеты",
         nav_get_started: "Начать",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Цены",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Цены",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Pricing",
         
         // Hero Section
         hero_badge: "Круглосуточная дистрибуция",
@@ -583,6 +619,12 @@ const translations = {
         nav_stats: "统计",
         nav_packages: "套餐",
         nav_get_started: "开始使用",
+        nav_charting: "社交媒体排行",
+        nav_pricing: "价格",
+        nav_charting: "社交媒体排行",
+        nav_pricing: "价格",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Pricing",
         
         // Hero Section
         hero_badge: "24/7 分发活跃",
@@ -679,6 +721,12 @@ const translations = {
         nav_stats: "الإحصائيات",
         nav_packages: "الباقات",
         nav_get_started: "ابدأ الآن",
+        nav_charting: "تصنيف وسائل التواصل الاجتماعي",
+        nav_pricing: "الأسعار",
+        nav_charting: "تصنيف وسائل التواصل الاجتماعي",
+        nav_pricing: "الأسعار",
+        nav_charting: "Social Media Charting",
+        nav_pricing: "Pricing",
         
         // Hero Section
         hero_badge: "التوزيع نشط 24/7",
