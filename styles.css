@@ -13,7 +13,11 @@ a:focus,
 .nav-link:focus,
 .lang-option:focus,
 .lang-current:focus,
-.package-card a:focus {
+.package-card a:focus,
+.logo:focus,
+.logo a:focus,
+h1:focus,
+h1 a:focus {
     outline: none;
     box-shadow: none;
 }
