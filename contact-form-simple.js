@@ -1,4 +1,4 @@
-// Contact Form - AJAX Submit (stays on page, no redirect!)
+// Contact Form - Direct PHP Backend Email Sending
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     const formMessage = document.getElementById('formMessage');
@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!contactForm) return;
 
     contactForm.addEventListener('submit', async function(e) {
-        e.preventDefault(); // Prevent page redirect
+        e.preventDefault();
 
         // Disable submit button
         const submitButton = contactForm.querySelector('button[type="submit"]');
@@ -18,24 +18,23 @@ document.addEventListener('DOMContentLoaded', function() {
         const formData = new FormData(contactForm);
 
         try {
-            // Send via AJAX to Getform
-            const response = await fetch('https://getform.io/f/bvrrrmda', {
+            // Send to PHP backend
+            const response = await fetch('contact-submit.php', {
                 method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
+                body: formData
             });
 
-            if (response.ok) {
+            const result = await response.json();
+
+            if (result.success) {
                 showMessage('✅ Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.', 'success');
                 contactForm.reset();
             } else {
-                showMessage('❌ Fehler beim Senden. Bitte kontaktieren Sie uns direkt per E-Mail: info@masspost.store', 'error');
+                showMessage('❌ ' + (result.error || 'Fehler beim Senden. Bitte versuchen Sie es erneut.'), 'error');
             }
         } catch (error) {
             console.error('Form submission error:', error);
-            showMessage('❌ Verbindungsfehler. Bitte kontaktieren Sie uns direkt per E-Mail: info@masspost.store', 'error');
+            showMessage('❌ Fehler beim Senden. Bitte kontaktieren Sie uns direkt per E-Mail: info@masspost.store', 'error');
         } finally {
             // Re-enable button
             submitButton.disabled = false;
