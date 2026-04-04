@@ -31,8 +31,16 @@
                 if (element.hasAttribute('placeholder')) {
                     element.setAttribute('placeholder', trans[key]);
                 } else {
-                    element.innerHTML = trans[key];
+                    element.textContent = trans[key];
                 }
+            }
+        });
+        
+        // 1b. Translate elements with data-i18n-html (preserves HTML)
+        document.querySelectorAll('[data-i18n-html]').forEach(element => {
+            const key = element.getAttribute('data-i18n-html');
+            if (trans[key]) {
+                element.innerHTML = trans[key];
             }
         });
         
