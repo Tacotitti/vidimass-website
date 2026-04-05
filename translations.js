@@ -86,6 +86,9 @@ const translations = {
         pricing_custom_note: "💡 Custom Volumes: Any quantity over 125K Reels at a flat rate of €0.026 per Reel",
         pricing_cta_title: "Custom Packages Available",
         pricing_cta_desc: "Need a custom package or have questions about our pricing?",
+        btn_book_tiktok: "Book TikTok Package",
+        btn_book_instagram: "Book Instagram Package",
+        btn_contact_now: "Contact Now",
 
         
         // Hero Section
@@ -540,6 +543,9 @@ const translations = {
         pricing_custom_note: "💡 Custom Volumes: Beliebige Menge über 125K Reels zum Flat-Rate-Preis von €0.026 pro Reel",
         pricing_cta_title: "Individuelle Pakete verfügbar",
         pricing_cta_desc: "Benötigen Sie ein Custom Package oder haben Fragen zu unseren Preisen?",
+        btn_book_tiktok: "TikTok Package buchen",
+        btn_book_instagram: "Instagram Package buchen",
+        btn_contact_now: "Jetzt Kontakt aufnehmen",
 
         
         // Hero Section
@@ -1060,6 +1066,12 @@ const translations = {
         why_2_desc: "TikTok Mass Posting ile TikTok Trend Sayfasına ve SoundOn Top 10%'a ulaşmanız garanti edilir.",
         why_3_desc: "TikTok Viral → Spotify Charting. Parçalarımız Mass Post'tan sonra ortalama +%500 Spotify akışına ulaşıyor.",
         why_4_desc: "TikTok, Instagram, YouTube Shorts'ta aynı anda toplu bir gönderi. Maksimum verimlilik.",
+        
+        // Pricing Page Buttons
+        btn_book_tiktok: "TikTok Paketi Rezerve Edin",
+        btn_book_instagram: "Instagram Paketi Rezerve Edin",
+        btn_contact_now: "Şimdi İletişime Geçin",
+        
         service_tiktok_title: "TikTok Toplu Paylaşım",
         service_instagram_title: "Instagram Toplu Gönderi",
         service_spotify_title: "Spotify Charting",
@@ -1374,6 +1386,12 @@ const translations = {
         why_2_desc: "Com o TikTok Mass Posting tem a garantia de chegar à página de tendências do TikTok e ao SoundOn Top 10%.",
         why_3_desc: "TikTok Viral → Spotify Charting. As nossas faixas atingem uma média de +500% de streams no Spotify após o Mass Post.",
         why_4_desc: "Uma publicação em massa no TikTok, Instagram, YouTube Shorts ao mesmo tempo. Máxima eficiência.",
+        
+        // Pricing Page Buttons
+        btn_book_tiktok: "Reservar Pacote TikTok",
+        btn_book_instagram: "Reservar Pacote Instagram",
+        btn_contact_now: "Contactar Agora",
+        
         service_tiktok_title: "Publicação em massa no TikTok",
         service_instagram_title: "Publicação em massa no Instagram",
         service_spotify_title: "Gráficos Spotify",
@@ -1688,6 +1706,12 @@ const translations = {
         why_2_desc: "Con TikTok Mass Posting tienes garantizado llegar a la TikTok Trending Page y al Top 10% de SoundOn.",
         why_3_desc: "TikTok Viral → Spotify Charting. Nuestras canciones alcanzan una media de +500% de streams en Spotify después del Mass Post.",
         why_4_desc: "Una publicación masiva en TikTok, Instagram, YouTube Shorts al mismo tiempo. Máxima eficacia.",
+        
+        // Pricing Page Buttons
+        btn_book_tiktok: "Reservar Paquete TikTok",
+        btn_book_instagram: "Reservar Paquete Instagram",
+        btn_contact_now: "Contactar Ahora",
+        
         service_tiktok_title: "Publicación masiva en TikTok",
         service_instagram_title: "Publicación masiva en Instagram",
         service_spotify_title: "Gráficos de Spotify",
