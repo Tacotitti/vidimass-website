@@ -42,18 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         <span class="flag">🇪🇸</span>
                         <span class="name">Español</span>
                     </button>
-                    <button class="mobile-lang-btn" data-lang="ru">
-                        <span class="flag">🇷🇺</span>
-                        <span class="name">Русский</span>
-                    </button>
-                    <button class="mobile-lang-btn" data-lang="zh">
-                        <span class="flag">🇨🇳</span>
-                        <span class="name">中文</span>
-                    </button>
-                    <button class="mobile-lang-btn" data-lang="ar">
-                        <span class="flag">🇸🇦</span>
-                        <span class="name">العربية</span>
-                    </button>
                 </div>
             </div>
             
