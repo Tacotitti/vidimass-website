@@ -1,0 +1,12 @@
+{
+  "name": "vidimass-website",
+  "version": "1.0.0",
+  "description": "MediaMass Website - Mass Video Posting Service",
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "translate": "node translate_critical.py"
+  }
+}

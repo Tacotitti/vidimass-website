@@ -5,8 +5,16 @@ Step 1: Test the API key and translate a sample text
 
 import requests
 import json
+import os
+from dotenv import load_dotenv
 
-DEEPL_API_KEY = "47c6210a-e21d-4b9b-856a-06ad267eedb4"  # Try without suffix first
+# Load environment variables from .env file
+load_dotenv()
+
+# Get API key from environment (NEVER hardcode API keys!)
+DEEPL_API_KEY = os.getenv('DEEPL_API_KEY')
+if not DEEPL_API_KEY:
+    raise ValueError("DEEPL_API_KEY not found! Create .env file with your API key.")
 
 def test_deepl_api():
     """Test if DeepL API key works"""
