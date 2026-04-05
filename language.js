@@ -150,41 +150,40 @@
             });
         }
         
-        // Mobile language selector
-        const mobileOptions = document.querySelectorAll('.mobile-lang-grid button[data-lang]');
-        mobileOptions.forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                const lang = this.getAttribute('data-lang');
-                applyLanguage(lang);
-                
-                // Close mobile menu
-                const langMenu = this.closest('.mobile-lang-menu');
-                if (langMenu) {
-                    langMenu.classList.remove('active');
-                }
-            });
-        });
-        
-        // Mobile language menu toggle
-        const mobileLangBtn = document.querySelector('.mobile-language-selector button');
-        if (mobileLangBtn) {
-            mobileLangBtn.addEventListener('click', function(e) {
-                e.stopPropagation();
-                const menu = document.querySelector('.mobile-lang-menu');
-                if (menu) {
-                    menu.classList.toggle('active');
-                }
+        // Mobile language selector (FIXED - targets .mobile-lang-btn)
+        function attachMobileLangListeners() {
+            const mobileOptions = document.querySelectorAll('.mobile-lang-btn[data-lang]');
+            mobileOptions.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const lang = this.getAttribute('data-lang');
+                    applyLanguage(lang);
+                    
+                    // Update active state in mobile selector
+                    document.querySelectorAll('.mobile-lang-btn').forEach(opt => {
+                        opt.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+                    // Close mobile menu
+                    const mobileMenu = document.querySelector('.mobile-menu');
+                    const overlay = document.querySelector('.mobile-overlay');
+                    if (mobileMenu) mobileMenu.classList.remove('active');
+                    if (overlay) overlay.classList.remove('active');
+                });
             });
         }
+        
+        // Attach mobile listeners immediately
+        attachMobileLangListeners();
+        
+        // Re-attach after script.js creates mobile menu (delay for DOM update)
+        setTimeout(attachMobileLangListeners, 100);
         
         // Close dropdowns when clicking outside
         document.addEventListener('click', function() {
             const dropdown = document.getElementById('lang-dropdown');
             if (dropdown) dropdown.classList.remove('active');
-            
-            const mobileMenu = document.querySelector('.mobile-lang-menu');
-            if (mobileMenu) mobileMenu.classList.remove('active');
         });
         
         console.log('✓ Language system initialized');

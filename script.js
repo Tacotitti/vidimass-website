@@ -87,17 +87,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        // Language button click handlers (will be re-attached by language.js)
-        // Placeholder - language.js will handle the actual switching
-        mobileMenu.querySelectorAll('.mobile-lang-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const lang = btn.dataset.lang;
-                // This will be overridden by language.js if loaded
-                console.log('Language button clicked:', lang);
-                mobileMenu.classList.remove('active');
-                overlay.classList.remove('active');
-            });
-        });
+        // Language button click handlers are attached by language.js
+        // No event listeners here - language.js handles it
     }
     
     // ============================================
