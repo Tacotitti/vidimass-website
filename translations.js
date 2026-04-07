@@ -456,7 +456,33 @@ const translations = {
         why_3_title: "Spotify Viral Impact",
         why_4_desc: "A mass post on TikTok, Instagram, YouTube Shorts at the same time. Maximum efficiency.",
         why_4_title: "Multi-Platform Mass Posting",
-        why_title: "Why Mass Posting with MediaMass?"
+        why_title: "Why Mass Posting with MediaMass?",
+        
+        // Additional keys for complete coverage (2026-04-07)
+        badge_popular: "POPULAR",
+        badge_best_value: "BEST VALUE",
+        pricing_table_per_reel: "Per Reel",
+        pricing_flat_rate: "Flat Rate",
+        pricing_custom_volumes_label: "💡 Custom Volumes:",
+        pricing_custom_volumes_text: "Any quantity over 125K Reels available at flat-rate price of €0.026 per Reel",
+        footer_imprint: "Imprint",
+        pricing_videos_1k: "1,000 Videos",
+        pricing_videos_5k: "5,000 Videos",
+        pricing_videos_15k: "15,000 Videos",
+        pricing_videos_30k: "30,000 Videos",
+        pricing_videos_60k: "60,000 Videos",
+        pricing_videos_125k: "125,000 Videos",
+        pricing_videos_250k: "250,000 Videos",
+        pricing_videos_500k: "500,000 Videos",
+        pricing_videos_1m: "1,000,000 Videos",
+        pricing_reels_1k: "1,000 Reels",
+        pricing_reels_5k: "5,000 Reels",
+        pricing_reels_15k: "15,000 Reels",
+        pricing_reels_30k: "30,000 Reels",
+        pricing_reels_60k: "60,000 Reels",
+        pricing_reels_125k_plus: "125,000+ Reels",
+        pricing_reels_125k: "125,000 Reels",
+        pricing_reels_250k: "250,000 Reels"
     },
     
     de: {
@@ -914,7 +940,33 @@ const translations = {
         why_3_title: "Spotify Viral Impact",
         why_4_desc: "Ein Mass Post auf TikTok, Instagram, YouTube Shorts gleichzeitig. Maximale Effizienz.",
         why_4_title: "Multi-Platform Mass Posting",
-        why_title: "Warum Mass Posting mit MediaMass?"
+        why_title: "Warum Mass Posting mit MediaMass?",
+        
+        // Additional keys for complete coverage (2026-04-07)
+        badge_popular: "BELIEBT",
+        badge_best_value: "BESTER WERT",
+        pricing_table_per_reel: "Pro Reel",
+        pricing_flat_rate: "Pauschalpreis",
+        pricing_custom_volumes_label: "💡 Custom Volumes:",
+        pricing_custom_volumes_text: "Beliebige Menge über 125K Reels zum Flat-Rate-Preis von 0.026€ pro Reel verfügbar",
+        footer_imprint: "Impressum",
+        pricing_videos_1k: "1.000 Videos",
+        pricing_videos_5k: "5.000 Videos",
+        pricing_videos_15k: "15.000 Videos",
+        pricing_videos_30k: "30.000 Videos",
+        pricing_videos_60k: "60.000 Videos",
+        pricing_videos_125k: "125.000 Videos",
+        pricing_videos_250k: "250.000 Videos",
+        pricing_videos_500k: "500.000 Videos",
+        pricing_videos_1m: "1.000.000 Videos",
+        pricing_reels_1k: "1.000 Reels",
+        pricing_reels_5k: "5.000 Reels",
+        pricing_reels_15k: "15.000 Reels",
+        pricing_reels_30k: "30.000 Reels",
+        pricing_reels_60k: "60.000 Reels",
+        pricing_reels_125k_plus: "125.000+ Reels",
+        pricing_reels_125k: "125.000 Reels",
+        pricing_reels_250k: "250.000 Reels"
     },
     
     tr: {
@@ -1307,7 +1359,33 @@ const translations = {
         why_3_desc: "TikTok Viral → Spotify Charting. Parçalarımız Mass Post'tan sonra ortalama +%500 Spotify akışına ulaşıyor.",
         why_3_title: "Spotify Viral Etkisi",
         why_4_desc: "TikTok, Instagram, YouTube Shorts'ta aynı anda toplu bir gönderi. Maksimum verimlilik.",
-        why_4_title: "Çok Platformlu Toplu Gönderi"
+        why_4_title: "Çok Platformlu Toplu Gönderi",
+        
+        // Additional keys for complete coverage (2026-04-07)
+        badge_popular: "POPÜLER",
+        badge_best_value: "EN İYİ DEĞER",
+        pricing_table_per_reel: "Reel Başına",
+        pricing_flat_rate: "Sabit Ücret",
+        pricing_custom_volumes_label: "💡 Özel Hacimler:",
+        pricing_custom_volumes_text: "125K Reel üzeri herhangi bir miktar, Reel başına 0,026€ sabit fiyatla mevcut",
+        footer_imprint: "Künye",
+        pricing_videos_1k: "1.000 Video",
+        pricing_videos_5k: "5.000 Video",
+        pricing_videos_15k: "15.000 Video",
+        pricing_videos_30k: "30.000 Video",
+        pricing_videos_60k: "60.000 Video",
+        pricing_videos_125k: "125.000 Video",
+        pricing_videos_250k: "250.000 Video",
+        pricing_videos_500k: "500.000 Video",
+        pricing_videos_1m: "1.000.000 Video",
+        pricing_reels_1k: "1.000 Reel",
+        pricing_reels_5k: "5.000 Reel",
+        pricing_reels_15k: "15.000 Reel",
+        pricing_reels_30k: "30.000 Reel",
+        pricing_reels_60k: "60.000 Reel",
+        pricing_reels_125k_plus: "125.000+ Reel",
+        pricing_reels_125k: "125.000 Reel",
+        pricing_reels_250k: "250.000 Reel"
     },
     
     pt: {
@@ -1701,7 +1779,33 @@ const translations = {
         why_3_desc: "TikTok Viral → Spotify Charting. As nossas faixas atingem uma média de +500% de streams no Spotify após o Mass Post.",
         why_3_title: "Impacto viral do Spotify",
         why_4_desc: "Uma publicação em massa no TikTok, Instagram, YouTube Shorts ao mesmo tempo. Máxima eficiência.",
-        why_4_title: "Publicação em massa multiplataforma"
+        why_4_title: "Publicação em massa multiplataforma",
+        
+        // Additional keys for complete coverage (2026-04-07)
+        badge_popular: "POPULAR",
+        badge_best_value: "MELHOR VALOR",
+        pricing_table_per_reel: "Por Reel",
+        pricing_flat_rate: "Taxa Fixa",
+        pricing_custom_volumes_label: "💡 Volumes Personalizados:",
+        pricing_custom_volumes_text: "Qualquer quantidade acima de 125K Reels disponível a uma taxa fixa de €0,026 por Reel",
+        footer_imprint: "Imprensa",
+        pricing_videos_1k: "1.000 Vídeos",
+        pricing_videos_5k: "5.000 Vídeos",
+        pricing_videos_15k: "15.000 Vídeos",
+        pricing_videos_30k: "30.000 Vídeos",
+        pricing_videos_60k: "60.000 Vídeos",
+        pricing_videos_125k: "125.000 Vídeos",
+        pricing_videos_250k: "250.000 Vídeos",
+        pricing_videos_500k: "500.000 Vídeos",
+        pricing_videos_1m: "1.000.000 Vídeos",
+        pricing_reels_1k: "1.000 Reels",
+        pricing_reels_5k: "5.000 Reels",
+        pricing_reels_15k: "15.000 Reels",
+        pricing_reels_30k: "30.000 Reels",
+        pricing_reels_60k: "60.000 Reels",
+        pricing_reels_125k_plus: "125.000+ Reels",
+        pricing_reels_125k: "125.000 Reels",
+        pricing_reels_250k: "250.000 Reels"
     },
     
     es: {
@@ -2095,7 +2199,33 @@ const translations = {
         why_3_desc: "TikTok Viral → Spotify Charting. Nuestras canciones alcanzan una media de +500% de streams en Spotify después del Mass Post.",
         why_3_title: "Impacto viral de Spotify",
         why_4_desc: "Una publicación masiva en TikTok, Instagram, YouTube Shorts al mismo tiempo. Máxima eficacia.",
-        why_4_title: "Publicación masiva multiplataforma"
+        why_4_title: "Publicación masiva multiplataforma",
+        
+        // Additional keys for complete coverage (2026-04-07)
+        badge_popular: "POPULAR",
+        badge_best_value: "MEJOR VALOR",
+        pricing_table_per_reel: "Por Reel",
+        pricing_flat_rate: "Tarifa Plana",
+        pricing_custom_volumes_label: "💡 Volúmenes Personalizados:",
+        pricing_custom_volumes_text: "Cualquier cantidad superior a 125K Reels disponible a una tarifa fija de €0,026 por Reel",
+        footer_imprint: "Aviso Legal",
+        pricing_videos_1k: "1.000 Videos",
+        pricing_videos_5k: "5.000 Videos",
+        pricing_videos_15k: "15.000 Videos",
+        pricing_videos_30k: "30.000 Videos",
+        pricing_videos_60k: "60.000 Videos",
+        pricing_videos_125k: "125.000 Videos",
+        pricing_videos_250k: "250.000 Videos",
+        pricing_videos_500k: "500.000 Videos",
+        pricing_videos_1m: "1.000.000 Videos",
+        pricing_reels_1k: "1.000 Reels",
+        pricing_reels_5k: "5.000 Reels",
+        pricing_reels_15k: "15.000 Reels",
+        pricing_reels_30k: "30.000 Reels",
+        pricing_reels_60k: "60.000 Reels",
+        pricing_reels_125k_plus: "125.000+ Reels",
+        pricing_reels_125k: "125.000 Reels",
+        pricing_reels_250k: "250.000 Reels"
     },
     
     ru: {
