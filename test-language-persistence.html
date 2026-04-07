@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Persistence Test</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #1a1a2e;
+            color: white;
+        }
+        .test-section {
+            background: #16213e;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .status {
+            background: #0f3460;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+        .success { color: #4ecca3; }
+        .error { color: #ff6b6b; }
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover { color: #764ba2; }
+    </style>
+</head>
+<body>
+    <h1>🌍 Language Persistence Test</h1>
+    
+    <div class="test-section">
+        <h2>Current Status</h2>
+        <div class="status">
+            <strong>Saved Language:</strong> <span id="saved-lang" class="success">-</span><br>
+            <strong>HTML lang:</strong> <span id="html-lang" class="success">-</span><br>
+            <strong>URL Parameter:</strong> <span id="url-param">-</span>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test Actions</h2>
+        <button onclick="setLanguage('de')">🇩🇪 Deutsch</button>
+        <button onclick="setLanguage('en')">🇬🇧 English</button>
+        <button onclick="setLanguage('tr')">🇹🇷 Türkçe</button>
+        <button onclick="setLanguage('es')">🇪🇸 Español</button>
+        <button onclick="clearLanguage()">❌ Clear Storage</button>
+    </div>
+    
+    <div class="test-section">
+        <h2>Navigation Test</h2>
+        <p>Select a language above, then navigate to:</p>
+        <a href="index.html">→ Homepage</a><br>
+        <a href="preisliste.html">→ Preisliste</a><br>
+        <a href="contact.html">→ Kontakt</a><br>
+        <a href="social-media-charting.html">→ Social Media Charting</a>
+        <p><small>Language should persist across all pages!</small></p>
+    </div>
+    
+    <div class="test-section">
+        <h2>URL Parameter Test</h2>
+        <p>Test with URL parameters:</p>
+        <a href="?lang=tr">→ This page + ?lang=tr</a><br>
+        <a href="preisliste.html?lang=es">→ Preisliste + ?lang=es</a><br>
+        <p><small>URL language should be auto-saved to localStorage</small></p>
+    </div>
+    
+    <script>
+        function updateStatus() {
+            const savedLang = localStorage.getItem('selectedLanguage') || 'none';
+            const htmlLang = document.documentElement.lang || 'none';
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLang = urlParams.get('lang') || 'none';
+            
+            document.getElementById('saved-lang').textContent = savedLang;
+            document.getElementById('html-lang').textContent = htmlLang;
+            document.getElementById('url-param').textContent = urlLang;
+            
+            if (urlLang !== 'none' && urlLang !== savedLang) {
+                document.getElementById('url-param').className = 'error';
+            } else {
+                document.getElementById('url-param').className = '';
+            }
+        }
+        
+        function setLanguage(lang) {
+            localStorage.setItem('selectedLanguage', lang);
+            document.documentElement.lang = lang;
+            updateStatus();
+            alert(`✓ Language set to: ${lang}\n\nNow navigate to another page to test persistence!`);
+        }
+        
+        function clearLanguage() {
+            localStorage.removeItem('selectedLanguage');
+            document.documentElement.lang = 'de';
+            updateStatus();
+            alert('❌ Language storage cleared!\n\nPage will default to German (de).');
+        }
+        
+        // Check if URL has lang parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlLang = urlParams.get('lang');
+        if (urlLang) {
+            localStorage.setItem('selectedLanguage', urlLang);
+            document.documentElement.lang = urlLang;
+            console.log('✓ URL language saved:', urlLang);
+        }
+        
+        // Update status on load
+        updateStatus();
+        setInterval(updateStatus, 1000);
+    </script>
+</body>
+</html>
