@@ -273,21 +273,72 @@ function initLanguageSystem() {
 }
 
 // ============================================
-// 9. AUTO-START
+// 9. MUTATION OBSERVER FOR DYNAMIC CONTENT
 // ============================================
-if (document.readyState === 'loading') {
-    // DOM not ready yet
-    document.addEventListener('DOMContentLoaded', initLanguageSystem);
-} else {
-    // DOM already loaded
-    initLanguageSystem();
+function observeDynamicContent() {
+    logDebug('Starting MutationObserver for dynamic content...');
+    
+    const observer = new MutationObserver((mutations) => {
+        let needsRetranslation = false;
+        
+        mutations.forEach((mutation) => {
+            mutation.addedNodes.forEach((node) => {
+                // Check if added node or its children have data-i18n
+                if (node.nodeType === 1) { // Element node
+                    if (node.hasAttribute && node.hasAttribute('data-i18n')) {
+                        needsRetranslation = true;
+                        logDebug('New translatable element detected:', node);
+                    }
+                    // Check children
+                    if (node.querySelectorAll) {
+                        const translatableChildren = node.querySelectorAll('[data-i18n]');
+                        if (translatableChildren.length > 0) {
+                            needsRetranslation = true;
+                            logDebug(`New container with ${translatableChildren.length} translatable children detected`);
+                        }
+                    }
+                }
+            });
+        });
+        
+        if (needsRetranslation) {
+            const currentLang = detectLanguage();
+            logDebug('Re-translating page due to DOM changes...');
+            translatePage(currentLang);
+            updateLanguageButtons(currentLang);
+        }
+    });
+    
+    // Observe the entire body for changes
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+    
+    logDebug('MutationObserver active');
 }
 
 // ============================================
-// 10. EXPOSE API FOR DEBUGGING
+// 10. AUTO-START
+// ============================================
+if (document.readyState === 'loading') {
+    // DOM not ready yet
+    document.addEventListener('DOMContentLoaded', () => {
+        initLanguageSystem();
+        // Start observing AFTER initial translation
+        setTimeout(() => observeDynamicContent(), 500);
+    });
+} else {
+    // DOM already loaded
+    initLanguageSystem();
+    setTimeout(() => observeDynamicContent(), 500);
+}
+
+// ============================================
+// 11. EXPOSE API FOR DEBUGGING
 // ============================================
 window.LanguageSystemV3 = {
-    version: '3.0.0',
+    version: '3.1.0', // Updated version
     config: LANG_CONFIG,
     getCurrentLanguage: detectLanguage,
     switchLanguage: switchLanguage,
@@ -297,4 +348,4 @@ window.LanguageSystemV3 = {
     disableDebug: () => { LANG_CONFIG.debugMode = false; }
 };
 
-logDebug('Language System v3 loaded. Access via window.LanguageSystemV3');
+logDebug('Language System v3.1 loaded with MutationObserver. Access via window.LanguageSystemV3');
