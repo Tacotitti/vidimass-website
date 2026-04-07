@@ -8,9 +8,12 @@
     function getInitialLanguage() {
         const urlParams = new URLSearchParams(window.location.search);
         const urlLang = urlParams.get('lang');
-        if (urlLang && translations[urlLang]) {
+        // Check if URL lang is valid (safely check if translations exists)
+        if (urlLang && typeof translations !== 'undefined' && translations[urlLang]) {
+            localStorage.setItem('selectedLanguage', urlLang); // Save URL lang
             return urlLang;
         }
+        // Return saved language or default
         return localStorage.getItem('selectedLanguage') || 'de';
     }
     
