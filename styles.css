@@ -700,3 +700,28 @@ body.rtl .lang-option:hover {
 .mobile-lang-btn .name {
     font-size: 13px;
 }
+
+/* ============================================
+   Pricing Table Styles
+   ============================================ */
+
+/* Ensure all table cells have correct colors */
+.pricing-table td,
+table td {
+    color: inherit; /* Don't override - let Tailwind classes work */
+}
+
+/* Force white color for video/reel count cells */
+table tbody td:first-child {
+    color: #fff !important;
+}
+
+/* Ensure price cells keep their gradient colors */
+table tbody td:nth-child(2) {
+    /* Violet, pink, orange from Tailwind classes */
+}
+
+/* Ensure "per unit" cells stay gray */
+table tbody td:nth-child(3) {
+    color: #9ca3af !important; /* text-gray-400 */
+}
