@@ -348,6 +348,14 @@ nav {
         width: 200px;
         height: 200px;
     }
+    
+    /* Fix Burger Menu Position */
+    .mobile-menu-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
 }
 
 /* Loading State */
