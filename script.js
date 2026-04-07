@@ -9,10 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const body = document.body;
     
     // Create mobile menu and overlay if they don't exist
-    if (!document.querySelector('.mobile-menu')) {
+    if (mobileMenuToggle && !document.querySelector('.mobile-menu')) {
         const mobileMenu = document.createElement('div');
         mobileMenu.className = 'mobile-menu';
         mobileMenu.innerHTML = `
+            <a href="index.html" data-i18n="nav_home">Home</a>
             <a href="index.html#features" data-i18n="nav_features">Features</a>
             <a href="social-media-charting.html" data-i18n="nav_charting">Social Media Charting</a>
             <a href="preisliste.html" data-i18n="nav_pricing">Preisliste</a>
@@ -45,9 +46,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             </div>
             
-            <button class="w-full mt-4 px-6 py-3 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg transition-all">
+            <a href="contact.html" class="block w-full mt-4 px-6 py-3 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg transition-all text-center">
                 <span data-i18n="nav_get_started">Get Started</span>
-            </button>
+            </a>
         `;
         body.appendChild(mobileMenu);
         
@@ -56,9 +57,12 @@ document.addEventListener('DOMContentLoaded', function() {
         body.appendChild(overlay);
         
         // Mobile menu toggle functionality
-        mobileMenuToggle.addEventListener('click', function() {
+        mobileMenuToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
             mobileMenu.classList.toggle('active');
             overlay.classList.toggle('active');
+            console.log('Burger menu toggled:', mobileMenu.classList.contains('active'));
         });
         
         // Close menu when clicking overlay
@@ -67,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
             overlay.classList.remove('active');
         });
         
-        // Close menu when clicking links
+        // Close menu when clicking links (except language buttons)
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', function() {
                 mobileMenu.classList.remove('active');
