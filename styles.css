@@ -726,21 +726,34 @@ table tbody td:nth-child(3) {
     color: #9ca3af !important; /* text-gray-400 */
 }
 
-/* Mobile Pricing Table Fix - Ensure 3rd column is fully visible */
+/* Mobile Pricing Table Fix - Hide 3rd column, 2-column layout */
 @media (max-width: 768px) {
-    table td:nth-child(3),
-    table th:nth-child(3) {
-        min-width: 120px; /* Mehr Platz für "~$0.0" Text */
-        white-space: normal; /* Umbruch erlauben */
-        padding-left: 12px;
-        padding-right: 12px;
+    /* Komplett verstecken: 3. Spalte (Pro Video/Reel) */
+    table thead th:nth-child(3),
+    table tbody td:nth-child(3) {
+        display: none !important;
     }
     
-    /* Alternative: Falls zu eng, komplett ausblenden auf Mobile */
-    /* 
-    table td:nth-child(3),
-    table th:nth-child(3) {
-        display: none;
+    /* 2-Spalten Layout optimieren: Videos/Reels | Preis */
+    table thead th:nth-child(1),
+    table tbody td:nth-child(1) {
+        width: 60%;
+        text-align: left;
     }
-    */
+    
+    table thead th:nth-child(2),
+    table tbody td:nth-child(2) {
+        width: 40%;
+        text-align: right;
+    }
+    
+    /* Tabelle responsive machen */
+    table {
+        font-size: 14px;
+    }
+    
+    table td,
+    table th {
+        padding: 12px 8px;
+    }
 }
