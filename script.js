@@ -84,6 +84,37 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // ============================================
+    // Desktop Language Dropdown Toggle
+    // ============================================
+    const langButton = document.getElementById('lang-button');
+    const langDropdown = document.getElementById('lang-dropdown');
+    
+    if (langButton && langDropdown) {
+        // Toggle dropdown on button click
+        langButton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            langDropdown.classList.toggle('active');
+            console.log('Language dropdown toggled:', langDropdown.classList.contains('active'));
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!langButton.contains(e.target) && !langDropdown.contains(e.target)) {
+                langDropdown.classList.remove('active');
+            }
+        });
+        
+        // Close dropdown after selecting a language
+        langDropdown.querySelectorAll('[data-lang]').forEach(btn => {
+            btn.addEventListener('click', function() {
+                setTimeout(() => {
+                    langDropdown.classList.remove('active');
+                }, 100);
+            });
+        });
+    }
+    
+    // ============================================
     // Smooth Scroll with Offset for Fixed Nav
     // ============================================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
