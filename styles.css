@@ -725,3 +725,22 @@ table tbody td:nth-child(2) {
 table tbody td:nth-child(3) {
     color: #9ca3af !important; /* text-gray-400 */
 }
+
+/* Mobile Pricing Table Fix - Ensure 3rd column is fully visible */
+@media (max-width: 768px) {
+    table td:nth-child(3),
+    table th:nth-child(3) {
+        min-width: 120px; /* Mehr Platz für "~$0.0" Text */
+        white-space: normal; /* Umbruch erlauben */
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    
+    /* Alternative: Falls zu eng, komplett ausblenden auf Mobile */
+    /* 
+    table td:nth-child(3),
+    table th:nth-child(3) {
+        display: none;
+    }
+    */
+}
