@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="contact_page_title">Kontakt - MediaMass</title>
+    <title>Contact - MediaMass</title>
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.masspost.store/contact.html">
@@ -31,7 +31,7 @@
 </head>
 <body class="bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 text-white overflow-x-hidden">
     
-    <!-- Navigation (same as homepage) -->
+    <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/30 border-b border-white/5">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
@@ -44,12 +44,12 @@
                     </a>
                 </div>
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="index.html#features" class="nav-link text-gray-300 hover:text-white transition-colors"><span data-i18n="nav_features">Features</span></a>
+                    <a href="index.html#features" class="nav-link text-gray-300 hover:text-white transition-colors">Features</a>
                     <a href="social-media-charting.html" class="nav-link text-gray-300 hover:text-white transition-colors">Social Media Charting</a>
-                    <a href="index.html#packages" class="nav-link text-gray-300 hover:text-white transition-colors"><span data-i18n="nav_packages">Packages</span></a>
-                    <a href="contact.html" class="nav-link text-violet-400 transition-colors"><span data-i18n="nav_contact">Kontakt</span></a>
+                    <a href="preisliste.html" class="nav-link text-gray-300 hover:text-white transition-colors">Pricing</a>
+                    <a href="contact.html" class="nav-link text-violet-400 transition-colors">Contact</a>
                     <a href="contact.html" class="cta-button px-6 py-2.5 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/50 transition-all">
-                        <span data-i18n="nav_get_started">Get Started</span>
+                        Get Started
                     </a>
                 </div>
                 <button class="md:hidden mobile-menu-toggle text-white">
@@ -63,7 +63,7 @@
 
     <!-- Contact Section -->
     <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-        <!-- Animated Background Elements (same as homepage) -->
+        <!-- Animated Background Elements -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none">
             <div class="floating-orb floating-orb-1"></div>
             <div class="floating-orb floating-orb-2"></div>
@@ -75,12 +75,12 @@
                 <!-- Header -->
                 <div class="text-center mb-12">
                     <h1 class="hero-title text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
-                        <span class="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent" data-i18n="contact_heading">
-                            Kontaktieren Sie uns
+                        <span class="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent">
+                            Contact Us
                         </span>
                     </h1>
-                    <p class="text-xl text-gray-300 mb-8" data-i18n="contact_subheading">
-                        Füllen Sie das Formular aus und wir melden uns innerhalb von 24 Stunden bei Ihnen
+                    <p class="text-xl text-gray-300 mb-8">
+                        Fill out the form and we will get back to you within 24 hours
                     </p>
                 </div>
 
@@ -90,80 +90,79 @@
                         <!-- FormSubmit.co Configuration -->
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="https://www.masspost.store/contact.html?success=true">
-                        <input type="hidden" name="_subject" value="[MediaMass Kontakt] Neue Anfrage">
+                        <input type="hidden" name="_subject" value="[MediaMass Contact] New Inquiry">
                         <input type="text" name="_honey" style="display:none">
                         
                         <!-- Name -->
                         <div>
-                            <label for="name" class="block text-sm font-semibold text-gray-300 mb-2"><span data-i18n="contact_label_name">Name</span> *</label>
+                            <label for="name" class="block text-sm font-semibold text-gray-300 mb-2">Name *</label>
                             <input 
                                 type="text" 
                                 id="name" 
                                 name="name" 
                                 required
                                 class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent text-white placeholder-gray-500 transition-all"
-                                data-i18n-placeholder="contact_placeholder_name"
-                                placeholder="Ihr vollständiger Name"
+                                placeholder="Your full name"
                             >
                         </div>
 
                         <!-- Email -->
                         <div>
-                            <label for="email" class="block text-sm font-semibold text-gray-300 mb-2"><span data-i18n="contact_label_email">E-Mail</span> *</label>
+                            <label for="email" class="block text-sm font-semibold text-gray-300 mb-2">Email *</label>
                             <input 
                                 type="email" 
                                 id="email" 
                                 name="email" 
                                 required
                                 class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent text-white placeholder-gray-500 transition-all"
-                                data-i18n-placeholder="contact_placeholder_email" placeholder="ihre.email@beispiel.de"
+                                placeholder="your.email@example.com"
                             >
                         </div>
 
                         <!-- Category -->
                         <div>
-                            <label for="category" class="block text-sm font-semibold text-gray-300 mb-2"><span data-i18n="contact_label_category">Kategorie</span> *</label>
+                            <label for="category" class="block text-sm font-semibold text-gray-300 mb-2">Category *</label>
                             <select 
                                 id="category" 
                                 name="category" 
                                 required
                                 class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent text-white transition-all"
                             >
-                                <option value="" class="bg-slate-900" data-i18n="contact_placeholder_category">Bitte auswählen</option>
-                                <option value="tiktok_mass_posting" class="bg-slate-900" data-i18n="contact_category_tiktok">TikTok Mass Posting</option>
-                                <option value="instagram_mass_posting" class="bg-slate-900" data-i18n="contact_category_instagram">Instagram Mass Posting</option>
-                                <option value="multi_plattform" class="bg-slate-900" data-i18n="contact_category_multi">Multi-Plattform</option>
-                                <option value="musik_label_artist_charting" class="bg-slate-900" data-i18n="contact_category_label">Musik-Label/Artist Charting</option>
-                                <option value="unternehmen" class="bg-slate-900" data-i18n="contact_category_enterprise">Unternehmen</option>
-                                <option value="sonstiges" class="bg-slate-900" data-i18n="contact_category_other">Sonstiges</option>
+                                <option value="" class="bg-slate-900">Please select</option>
+                                <option value="tiktok_mass_posting" class="bg-slate-900">TikTok Mass Posting</option>
+                                <option value="instagram_mass_posting" class="bg-slate-900">Instagram Mass Posting</option>
+                                <option value="multi_platform" class="bg-slate-900">Multi-Platform</option>
+                                <option value="music_label_artist_charting" class="bg-slate-900">Music Label/Artist Charting</option>
+                                <option value="enterprise" class="bg-slate-900">Enterprise</option>
+                                <option value="other" class="bg-slate-900">Other</option>
                             </select>
                         </div>
 
                         <!-- Package Selection -->
                         <div>
-                            <label for="package" class="block text-sm font-semibold text-gray-300 mb-2" data-i18n="contact_label_package">Gewünschtes Paket (optional)</label>
+                            <label for="package" class="block text-sm font-semibold text-gray-300 mb-2">Desired Package (optional)</label>
                             <select 
                                 id="package" 
                                 name="package"
                                 class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent text-white transition-all"
                             >
-                                <option value="" class="bg-slate-900" data-i18n="contact_placeholder_package">-- Paket auswählen --</option>
-                                <optgroup data-i18n-label="contact_package_group_tiktok" label="🎵 TikTok Videos" class="bg-slate-900">
+                                <option value="" class="bg-slate-900">-- Select package --</option>
+                                <optgroup label="🎵 TikTok Videos" class="bg-slate-900">
                                     <option value="tiktok-1k" class="bg-slate-900">TikTok - 1,000 Videos ($79)</option>
                                     <option value="tiktok-5k" class="bg-slate-900">TikTok - 5,000 Videos ($199)</option>
                                     <option value="tiktok-15k" class="bg-slate-900">TikTok - 15,000 Videos ($399)</option>
-                                    <option value="tiktok-30k" class="bg-slate-900">TikTok - 30,000 Videos ($749) ⭐ BELIEBT</option>
+                                    <option value="tiktok-30k" class="bg-slate-900">TikTok - 30,000 Videos ($749) ⭐ POPULAR</option>
                                     <option value="tiktok-60k" class="bg-slate-900">TikTok - 60,000 Videos ($1,299)</option>
                                     <option value="tiktok-125k" class="bg-slate-900">TikTok - 125,000 Videos ($2,199)</option>
                                     <option value="tiktok-250k" class="bg-slate-900">TikTok - 250,000 Videos ($3,999) 💎 BEST VALUE</option>
                                     <option value="tiktok-500k" class="bg-slate-900">TikTok - 500,000 Videos ($6,999)</option>
                                     <option value="tiktok-1m" class="bg-slate-900">TikTok - 1,000,000 Videos ($11,999)</option>
                                 </optgroup>
-                                <optgroup data-i18n-label="contact_package_group_instagram" label="📸 Instagram Reels" class="bg-slate-900">
+                                <optgroup label="📸 Instagram Reels" class="bg-slate-900">
                                     <option value="instagram-1k" class="bg-slate-900">Instagram - 1,000 Reels (139€)</option>
                                     <option value="instagram-5k" class="bg-slate-900">Instagram - 5,000 Reels (399€)</option>
                                     <option value="instagram-15k" class="bg-slate-900">Instagram - 15,000 Reels (749€)</option>
-                                    <option value="instagram-30k" class="bg-slate-900">Instagram - 30,000 Reels (1,199€) ⭐ BELIEBT</option>
+                                    <option value="instagram-30k" class="bg-slate-900">Instagram - 30,000 Reels (1,199€) ⭐ POPULAR</option>
                                     <option value="instagram-60k" class="bg-slate-900">Instagram - 60,000 Reels (1,999€)</option>
                                     <option value="instagram-125k" class="bg-slate-900">Instagram - 125,000+ Reels (0.026€/Reel) 💎 BEST VALUE</option>
                                     <option value="instagram-125k-flat" class="bg-slate-900">Instagram - 125,000 Reels (3,250€)</option>
@@ -175,14 +174,14 @@
 
                         <!-- Message -->
                         <div>
-                            <label for="message" class="block text-sm font-semibold text-gray-300 mb-2"><span data-i18n="contact_label_message">Nachricht</span> *</label>
+                            <label for="message" class="block text-sm font-semibold text-gray-300 mb-2">Message *</label>
                             <textarea 
                                 id="message" 
                                 name="message" 
                                 rows="6" 
                                 required
                                 class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent text-white placeholder-gray-500 transition-all resize-none"
-                                data-i18n-placeholder="contact_placeholder_message" placeholder="Beschreiben Sie Ihre Anfrage..."
+                                placeholder="Describe your inquiry..."
                             ></textarea>
                         </div>
 
@@ -192,7 +191,7 @@
                                 type="submit" 
                                 class="w-full px-8 py-4 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-violet-500/50 transition-all transform hover:scale-105"
                             >
-                                <span data-i18n="contact_button_submit">Nachricht senden</span>
+                                Send Message
                             </button>
                         </div>
 
@@ -202,7 +201,7 @@
 
                     <!-- Alternative Contact -->
                     <div class="mt-12 pt-8 border-t border-white/10">
-                        <h3 class="text-2xl font-bold mb-6 text-center" data-i18n="contact_alt_heading">Alternative Kontaktmöglichkeiten</h3>
+                        <h3 class="text-2xl font-bold mb-6 text-center">Alternative Contact Methods</h3>
                         
                         <!-- Contact Methods -->
                         <div class="flex flex-col md:flex-row items-start justify-center gap-8 text-gray-300 mb-8">
@@ -231,7 +230,7 @@
         </div>
     </section>
 
-    <!-- Footer (same as homepage) -->
+    <!-- Footer -->
     <footer class="footer-section py-12 border-t border-white/5">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center justify-between gap-4">
@@ -239,26 +238,17 @@
                     MediaMass
                 </div>
                 <div class="flex items-center gap-6 text-gray-400 text-sm">
-                    <a href="datenschutz.html" class="hover:text-white transition-colors"><span data-i18n="footer_privacy">Datenschutz</span></a>
-                    <a href="nutzungsbedingungen.html" class="hover:text-white transition-colors"><span data-i18n="footer_terms">Nutzungsbedingungen</span></a>
-                    <a href="contact.html" class="hover:text-white transition-colors"><span data-i18n="footer_contact">Contact</span></a>
+                    <a href="datenschutz.html" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="nutzungsbedingungen.html" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
                 </div>
-                <div class="text-gray-500 text-sm" data-i18n="footer_copyright">© 2026 MediaMass. Alle Rechte vorbehalten.</div>
+                <div class="text-gray-500 text-sm">© 2026 MediaMass. All rights reserved.</div>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
-    <script src="language-preload.js"></script>`n    <script src="translations.js"></script>
-    <script src="language-preload.js"></script>`n    <script src="translations.js"></script>
-    <script src="language.js"></script>
     <script src="contact-form-simple.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-

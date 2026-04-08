@@ -10,10 +10,7 @@
 button:focus,
 a:focus,
 .cta-button:focus,
-.nav-link:focus,
-.lang-option:focus,
-.lang-current:focus,
-.package-card a:focus,
+.nav-link:focus.package-card a:focus,
 .logo:focus,
 .logo a:focus,
 h1:focus,
@@ -472,180 +469,64 @@ a:focus {
    Language Selector Styles
    ============================================ */
 
-.language-selector {
-    position: relative;
-    display: inline-block;
-    margin-right: 16px;
-}
 
-.lang-current {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 16px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 12px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 14px;
-    font-weight: 500;
-    white-space: nowrap;
-}
 
-.lang-current:hover {
-    background: rgba(139, 92, 246, 0.15);
-    border-color: rgba(139, 92, 246, 0.5);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
-}
 
-.lang-current .flag {
-    font-size: 20px;
-    line-height: 1;
-}
 
-.lang-current .lang-name {
-    font-weight: 600;
-    font-size: 14px;
-}
 
-.lang-current .chevron {
-    transition: transform 0.3s ease;
-    color: rgba(255, 255, 255, 0.6);
-    margin-left: 4px;
-}
 
-.lang-dropdown.active + .lang-current .chevron,
-.lang-current:hover .chevron {
-    transform: rotate(180deg);
-}
 
-.lang-dropdown {
-    position: absolute;
-    top: calc(100% + 12px);
-    right: 0;
-    min-width: 220px;
-    max-height: 400px;
-    overflow-y: auto;
-    background: rgba(15, 15, 26, 0.98);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(139, 92, 246, 0.3);
-    border-radius: 16px;
-    padding: 12px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(139, 92, 246, 0.1);
-    z-index: 1000;
-}
 
-.lang-dropdown.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
 
-.lang-dropdown::-webkit-scrollbar {
-    width: 6px;
-}
 
-.lang-dropdown::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 3px;
-}
 
-.lang-dropdown::-webkit-scrollbar-thumb {
-    background: rgba(139, 92, 246, 0.5);
-    border-radius: 3px;
-}
 
-.lang-dropdown::-webkit-scrollbar-thumb:hover {
-    background: rgba(139, 92, 246, 0.7);
-}
 
-.lang-option {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-    padding: 12px 14px;
-    background: transparent;
-    border: none;
-    border-radius: 10px;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-    transition: all 0.2s ease;
-    text-align: left;
-    font-size: 14px;
-    font-weight: 500;
-}
 
-.lang-option:hover {
-    background: rgba(139, 92, 246, 0.2);
-    color: white;
-    transform: translateX(4px);
-}
 
-.lang-option.active {
-    background: rgba(139, 92, 246, 0.25);
-    color: #c4b5fd;
-    border: 1px solid rgba(139, 92, 246, 0.3);
-}
 
-.lang-option .flag {
-    font-size: 22px;
-    line-height: 1;
-}
 
-.lang-option .name {
-    flex: 1;
-}
 
-.lang-option .checkmark {
-    color: #a78bfa;
-    font-weight: bold;
-    font-size: 16px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* RTL Support for Arabic */
 body.rtl {
     direction: rtl;
 }
 
-body.rtl .language-selector {
-    margin-left: 16px;
-    margin-right: 0;
-}
+body.rtl 
 
-body.rtl .lang-dropdown {
-    left: 0;
-    right: auto;
-}
+body.rtl 
 
-body.rtl .lang-option:hover {
-    transform: translateX(-4px);
-}
+body.rtl 
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
-    .language-selector {
-        margin-right: 8px;
-    }
     
-    .lang-current {
-        padding: 8px 12px;
-    }
     
-    .lang-current .lang-name {
-        display: none;
-    }
     
-    .lang-dropdown {
-        min-width: 180px;
-    }
+    
+    
+    
+    
 }
 
 /* Mobile Language Selector */
