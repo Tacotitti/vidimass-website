@@ -714,6 +714,7 @@ table td {
 /* Force white color for video/reel count cells */
 table tbody td:first-child {
     color: #fff !important;
+    font-weight: 600;
 }
 
 /* Ensure price cells keep their gradient colors */
