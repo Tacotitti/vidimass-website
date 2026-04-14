@@ -41,8 +41,7 @@
 </style>
 </head>
 <body class="bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 text-white overflow-x-hidden">
-    
-    <!-- Navigation -->
+<!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/30 border-b border-white/5">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
@@ -290,8 +289,45 @@
 
     <!-- JavaScript -->`n
     <script src="app.js"></script>
+<script>
+// Mobile Menu - Inline v3
+document.addEventListener('DOMContentLoaded', function(){
+  var btn = document.querySelector('.mobile-menu-toggle');
+  if (!btn) return;
+  var existing = document.querySelector('.mobile-menu');
+  if (existing) existing.remove();
+  var menu = document.createElement('div');
+  menu.className = 'mobile-menu';
+  menu.innerHTML = '<a href="index.html">Home</a><a href="index.html#features">Features</a><a href="social-media-charting.html">Social Media Charting</a><a href="preisliste.html">Preisliste</a><a href="contact.html">Kontakt</a><a href="contact.html" style="display:block;width:100%;margin-top:16px;padding:12px 24px;background:linear-gradient(to right,#7c3aed,#db2777);border-radius:9999px;font-weight:600;text-align:center;color:white;text-decoration:none">Get Started</a>';
+  document.body.appendChild(menu);
+  var oldOv = document.querySelector('.mobile-overlay');
+  if (oldOv) oldOv.remove();
+  var ov = document.createElement('div');
+  ov.className = 'mobile-overlay';
+  document.body.appendChild(ov);
+  btn.addEventListener('click', function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    menu.classList.toggle('active');
+    ov.classList.toggle('active');
+  });
+  ov.addEventListener('click', function(){
+    menu.classList.remove('active');
+    ov.classList.remove('active');
+  });
+  var links = menu.querySelectorAll('a');
+  for(var i=0;i<links.length;i++){
+    links[i].addEventListener('click', function(){
+      menu.classList.remove('active');
+      ov.classList.remove('active');
+    });
+  }
+});
+</script>
 </body>
 </html>
+
+
 
 
 
