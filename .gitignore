@@ -8,9 +8,6 @@ __pycache__/
 *$py.class
 *.so
 
-# Translations output
-auto_translations.json
-
 # IDE
 .vscode/
 .idea/

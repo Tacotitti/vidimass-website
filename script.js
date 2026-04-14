@@ -13,41 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const mobileMenu = document.createElement('div');
         mobileMenu.className = 'mobile-menu';
         mobileMenu.innerHTML = `
-            <a href="index.html" data-i18n="nav_home">Home</a>
-            <a href="index.html#features" data-i18n="nav_features">Features</a>
-            <a href="social-media-charting.html" data-i18n="nav_charting">Social Media Charting</a>
-            <a href="preisliste.html" data-i18n="nav_pricing">Preisliste</a>
-            <a href="contact.html" data-i18n="nav_contact">Kontakt</a>
-            
-            <!-- Mobile Language Selector -->
-            <div class="mobile-lang-selector">
-                <div class="mobile-lang-title">🌍 Language / Sprache</div>
-                <div class="mobile-lang-grid" id="mobile-lang-grid">
-                    <button class="mobile-lang-btn active" data-lang="en">
-                        <span class="flag">🇬🇧</span>
-                        <span class="name">English</span>
-                    </button>
-                    <button class="mobile-lang-btn" data-lang="de">
-                        <span class="flag">🇩🇪</span>
-                        <span class="name">Deutsch</span>
-                    </button>
-                    <button class="mobile-lang-btn" data-lang="tr">
-                        <span class="flag">🇹🇷</span>
-                        <span class="name">Türkçe</span>
-                    </button>
-                    <button class="mobile-lang-btn" data-lang="pt">
-                        <span class="flag">🇵🇹</span>
-                        <span class="name">Português</span>
-                    </button>
-                    <button class="mobile-lang-btn" data-lang="es">
-                        <span class="flag">🇪🇸</span>
-                        <span class="name">Español</span>
-                    </button>
-                </div>
-            </div>
+            <a href="index.html">Home</a>
+            <a href="index.html#features">Features</a>
+            <a href="social-media-charting.html">Social Media Charting</a>
+            <a href="preisliste.html">Preisliste</a>
+            <a href="contact.html">Kontakt</a>
             
             <a href="contact.html" class="block w-full mt-4 px-6 py-3 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg transition-all text-center">
-                <span data-i18n="nav_get_started">Get Started</span>
+                <span>Get Started</span>
             </a>
         `;
         body.appendChild(mobileMenu);
@@ -71,45 +44,11 @@ document.addEventListener('DOMContentLoaded', function() {
             overlay.classList.remove('active');
         });
         
-        // Close menu when clicking links (except language buttons)
+        // Close menu when clicking links
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', function() {
                 mobileMenu.classList.remove('active');
                 overlay.classList.remove('active');
-            });
-        });
-        
-        // Language button click handlers are attached by language.js
-        // No event listeners here - language.js handles it
-    }
-    
-    // ============================================
-    // Desktop Language Dropdown Toggle
-    // ============================================
-    const langButton = document.getElementById('lang-button');
-    const langDropdown = document.getElementById('lang-dropdown');
-    
-    if (langButton && langDropdown) {
-        // Toggle dropdown on button click
-        langButton.addEventListener('click', function(e) {
-            e.stopPropagation();
-            langDropdown.classList.toggle('active');
-            console.log('Language dropdown toggled:', langDropdown.classList.contains('active'));
-        });
-        
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!langButton.contains(e.target) && !langDropdown.contains(e.target)) {
-                langDropdown.classList.remove('active');
-            }
-        });
-        
-        // Close dropdown after selecting a language
-        langDropdown.querySelectorAll('[data-lang]').forEach(btn => {
-            btn.addEventListener('click', function() {
-                setTimeout(() => {
-                    langDropdown.classList.remove('active');
-                }, 100);
             });
         });
     }
