@@ -68,10 +68,10 @@
                     </h1>
                 </a>
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="index.html#features" class="nav-link text-gray-300 hover:text-white transition-colors">Features</a>
-                    <a href="social-media-charting.html" class="nav-link text-violet-400 font-semibold">Social Media Charting</a>
-                    <a href="preisliste.html" class="nav-link text-gray-300 hover:text-white transition-colors">Pricing</a>
-                    <a href="contact.html" class="nav-link text-gray-300 hover:text-white transition-colors">Contact</a>
+                    <a href="index.html#features" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.features">Features</a>
+                    <a href="social-media-charting.html" class="nav-link text-violet-400 font-semibold" data-i18n="nav.social_media_charting">Social Media Charting</a>
+                    <a href="preisliste.html" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.pricing">Pricing</a>
+                    <a href="contact.html" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.contact">Contact</a>
                     <!-- Language Switcher -->
                     <div class="language-switcher flex items-center gap-2">
                         <button  class="lang-btn px-3 py-1.5 rounded-lg transition-all hover:bg-white/10" data-lang="de">
@@ -85,7 +85,7 @@
 
 
 
-                    <a href="contact.html" class="cta-button px-6 py-2.5 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/50 transition-all">
+                    <a href="contact.html" class="cta-button px-6 py-2.5 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/50 transition-all" data-i18n="nav.get_started">
                         Get Started
                     </a>
                 </div>
@@ -552,11 +552,11 @@
                     MediaMass
                 </a>
                 <div class="flex items-center gap-6 text-gray-400 text-sm">
-                    <a href="datenschutz.html" class="hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="nutzungsbedingungen.html" class="hover:text-white transition-colors">Terms of Service</a>
-                    <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+                    <a href="datenschutz.html" class="hover:text-white transition-colors" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a href="nutzungsbedingungen.html" class="hover:text-white transition-colors" data-i18n="footer.terms">Terms of Service</a>
+                    <a href="contact.html" class="hover:text-white transition-colors" data-i18n="footer.contact">Contact</a>
                 </div>
-                <div class="text-gray-500 text-sm">© 2026 MediaMass. All rights reserved.</div>
+                <div class="text-gray-500 text-sm" data-i18n="footer.copyright">© 2026 MediaMass. All rights reserved.</div>
             </div>
         </div>
     </footer>
@@ -572,7 +572,7 @@ document.addEventListener('DOMContentLoaded', function(){
   if (existing) existing.remove();
   var menu = document.createElement('div');
   menu.className = 'mobile-menu';
-  menu.innerHTML = '<a href="index.html">Home</a><a href="index.html#features">Features</a><a href="social-media-charting.html">Social Media Charting</a><a href="preisliste.html">Pricing</a><a href="contact.html">Contact</a><a href="contact.html" style="display:block;width:100%;margin-top:16px;padding:12px 24px;background:linear-gradient(to right,#7c3aed,#db2777);border-radius:9999px;font-weight:600;text-align:center;color:white;text-decoration:none">Get Started</a><div class="mobile-lang-switcher" style="display:flex;align-items:center;justify-content:center;gap:12px;padding-top:24px;margin-top:24px;border-top:1px solid rgba(255,255,255,0.1)"><button class="mobile-lang-btn" data-lang="de" data-lang="de" style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:14px;font-weight:500;cursor:pointer;transition:all 0.2s"><span style="font-size:20px">🇩🇪</span><span>Deutsch</span></button><button class="mobile-lang-btn" data-lang="en" data-lang="en" style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:14px;font-weight:500;cursor:pointer;transition:all 0.2s"><span style="font-size:20px">🇬🇧</span><span>English</span></button></div>';
+  menu.innerHTML = '<a href="index.html" data-i18n="nav.home">Home</a><a href="index.html#features" data-i18n="nav.features">Features</a><a href="social-media-charting.html" data-i18n="nav.social_media_charting">Social Media Charting</a><a href="preisliste.html" data-i18n="nav.pricing">Pricing</a><a href="contact.html" data-i18n="nav.contact">Contact</a><a href="contact.html" data-i18n="nav.get_started" style="display:block;width:100%;margin-top:16px;padding:12px 24px;background:linear-gradient(to right,#7c3aed,#db2777);border-radius:9999px;font-weight:600;text-align:center;color:white;text-decoration:none">Get Started</a><div class="mobile-lang-switcher" style="display:flex;align-items:center;justify-content:center;gap:12px;padding-top:24px;margin-top:24px;border-top:1px solid rgba(255,255,255,0.1)"><button class="mobile-lang-btn" data-lang="de" data-lang="de" style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:14px;font-weight:500;cursor:pointer;transition:all 0.2s"><span style="font-size:20px">🇩🇪</span><span>Deutsch</span></button><button class="mobile-lang-btn" data-lang="en" data-lang="en" style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:14px;font-weight:500;cursor:pointer;transition:all 0.2s"><span style="font-size:20px">🇬🇧</span><span>English</span></button></div>';
   document.body.appendChild(menu);
   var oldOv = document.querySelector('.mobile-overlay');
   if (oldOv) oldOv.remove();

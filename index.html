@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <!-- Build: 2026-04-08 - English Only -->
+    <!-- Build: 2026-04-18 - Multilingual with i18n -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mass Posting Service for TikTok, Instagram & Spotify Charting | MediaMass - Up to 250,000 Videos Daily</title>
-    <meta name="description" content="Professional mass posting service for TikTok, Instagram and Spotify charting. Post up to 250,000 videos daily automatically. Mass post for music industry, labels and artists. TikTok mass posting, Instagram mass post, Spotify viral charting. Get started now!">
-    <meta name="keywords" content="mass posting, mass post, tiktok mass posting, instagram mass posting, spotify charting, tiktok charting, viral marketing, music promotion, mass video posting, automated posting, tiktok viral, spotify viral charts, music industry marketing">
+    <title>Mass Posting Service for TikTok, Instagram & Spotify Charting | MediaMass</title>
+    <meta name="description" content="Professional mass posting service for TikTok, Instagram and Spotify charting.">
+    <meta name="keywords" content="mass posting, tiktok, instagram, spotify charting">
     
-    <!-- Canonical URL -->
+    <!-- Canonical URL (will be updated by i18n) -->
     <link rel="canonical" href="https://www.masspost.store/">
     
     <!-- Meta Robots Tag -->
@@ -18,14 +18,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.masspost.store/">
     <meta property="og:title" content="Mass Posting Service for TikTok, Instagram & Spotify Charting | MediaMass">
-    <meta property="og:description" content="Professional mass posting service. Post up to 250,000 videos daily on TikTok, Instagram. Spotify charting guaranteed.">
+    <meta property="og:description" content="Professional mass posting service.">
     <meta property="og:image" content="https://www.masspost.store/logo.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.masspost.store/">
-    <meta property="twitter:title" content="Mass Posting Service for TikTok, Instagram & Spotify Charting">
-    <meta property="twitter:description" content="Professional mass posting service. Up to 250,000 videos daily. TikTok & Spotify charting.">
+    <meta property="twitter:title" content="Mass Posting Service">
+    <meta property="twitter:description" content="Professional mass posting service.">
     <meta property="twitter:image" content="https://www.masspost.store/logo.png">
     
     <!-- Favicons -->
@@ -44,6 +44,10 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="main.css">
+    
+    <!-- i18n Translation System -->
+    <script src="i18n.js"></script>
+    
 <style>
 /* Inline Mobile Menu Fix - v2 */
 .mobile-menu{position:fixed;top:0;right:-300px;width:280px;height:100vh;background:rgba(15,15,26,0.98);backdrop-filter:blur(20px);z-index:1000;transition:right 0.3s ease;padding:80px 30px 30px;display:flex;flex-direction:column;gap:8px;overflow-y:auto}
@@ -54,25 +58,11 @@
 .mobile-overlay.active{opacity:1;pointer-events:auto}
 .mobile-menu-toggle{cursor:pointer;background:none;border:none;padding:8px}
 .mobile-menu-toggle:focus{outline:none}
-
-/* Language Switcher Styles */
-.lang-btn.active,
-.mobile-lang-btn.active {
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(219, 39, 119, 0.2) 100%);
-    border: 1px solid rgba(139, 92, 246, 0.4);
-}
-
-.lang-btn:hover,
-.mobile-lang-btn:hover {
-    transform: translateY(-1px);
-}
-
 </style>
-    <!-- i18n Translation System -->
-    <script src="i18n.js"></script>
 </head>
 <body class="bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 text-white overflow-x-hidden">
-<!-- Navigation -->
+
+    <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/30 border-b border-white/5">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
@@ -83,24 +73,12 @@
                     </h1>
                 </div>
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="index.html#features" class="nav-link text-gray-300 hover:text-white transition-colors">Features</a>
-                    <a href="social-media-charting.html" class="nav-link text-gray-300 hover:text-white transition-colors">Social Media Charting</a>
-                    <a href="preisliste.html" class="nav-link text-gray-300 hover:text-white transition-colors">Pricing</a>
-                    <a href="contact.html" class="nav-link text-gray-300 hover:text-white transition-colors">Contact</a>
-                    <!-- Language Switcher -->
-                    <div class="language-switcher flex items-center gap-2">
-                        <button  class="lang-btn px-3 py-1.5 rounded-lg transition-all hover:bg-white/10" data-lang="de">
-                            <span class="text-sm font-medium">🇩🇪 DE</span>
-                        </button>
-                        <span class="text-gray-600">|</span>
-                        <button  class="lang-btn px-3 py-1.5 rounded-lg transition-all hover:bg-white/10" data-lang="en">
-                            <span class="text-sm font-medium">🇬🇧 EN</span>
-                        </button>
-                    </div>
+                    <a href="index.html#features" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.features">Features</a>
+                    <a href="social-media-charting.html" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.social_media_charting">Social Media Charting</a>
+                    <a href="preisliste.html" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.pricing">Pricing</a>
+                    <a href="contact.html" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.contact">Contact</a>
 
-
-
-                    <a href="contact.html" class="cta-button px-6 py-2.5 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/50 transition-all">
+                    <a href="contact.html" class="cta-button px-6 py-2.5 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/50 transition-all" data-i18n="nav.get_started">
                         Get Started
                     </a>
                 </div>
@@ -124,25 +102,33 @@
 
         <div class="container mx-auto px-6 relative z-10">
             <div class="max-w-5xl mx-auto text-center">
-                <!-- Main Headline - Dynamic Mixed Typography -->
-                <h1 class="hero-title text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 leading-tight">
+                <!-- Main Headline -->
+                <h2 class="hero-title text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 leading-tight">
                     <span class="block mb-2">
-                        <span class="text-white font-black tracking-tight" style="font-family: 'Poppins', sans-serif;">MASS POSTING</span>
+                        <span class="text-white font-black tracking-tight" data-i18n="hero.headline_part1">Revolutionize Your</span>
                     </span>
-                    <span class="block text-4xl md:text-6xl lg:text-7xl mb-2" style="font-family: 'Inter', sans-serif; font-weight: 300; font-style: italic;">
-                        <span class="text-gray-400">for</span>
-                        <span class="bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent font-bold">TikTok</span>
-                        <span class="text-gray-400">&</span>
+                    <span class="block text-4xl md:text-6xl lg:text-7xl mb-2">
+                        <span class="bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent font-bold" data-i18n="hero.headline_part2">Social Media Marketing</span>
                     </span>
                     <span class="block">
-                        <span class="text-white font-black tracking-tight" style="font-family: 'Poppins', sans-serif;">Instagram Charting</span>
+                        <span class="text-white font-black tracking-tight" data-i18n="hero.headline_part3">with Mass Posting</span>
                     </span>
-                </h1>
+                </h2>
 
                 <!-- Subheadline -->
-                <h2 class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed font-normal">
-                    Distribute up to <strong>250,000 videos daily</strong> across TikTok, Instagram, and multiple platforms with enterprise-grade automation.
-                </h2>
+                <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed font-normal" data-i18n="hero.subheadline">
+                    Post up to 250,000 videos daily automatically on TikTok & Instagram. Guaranteed Spotify charting for music professionals.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+                    <a href="contact.html" class="cta-primary px-8 py-4 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-violet-500/50 transition-all transform hover:scale-105" data-i18n="hero.cta_primary">
+                        Get Started
+                    </a>
+                    <a href="#features" class="cta-secondary px-8 py-4 border-2 border-violet-500/50 rounded-full font-semibold text-lg hover:bg-violet-500/10 transition-all" data-i18n="hero.cta_secondary">
+                        Learn More
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -157,32 +143,37 @@
     <!-- Stats Section -->
     <section id="stats" class="stats-section py-24 relative">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
                 <!-- Stat Card 1 -->
                 <div class="stat-card glass-card p-8 rounded-2xl text-center transform hover:scale-105 transition-all">
                     <div class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent mb-2">
                         250K+
                     </div>
-                    <div class="text-gray-300 text-lg">Videos Per Day</div>
-                    <div class="text-gray-500 text-sm mt-2">Maximum Distribution Capacity</div>
+                    <div class="text-gray-300 text-lg" data-i18n="stats.videos_daily">Videos Daily</div>
                 </div>
 
                 <!-- Stat Card 2 -->
                 <div class="stat-card glass-card p-8 rounded-2xl text-center transform hover:scale-105 transition-all">
                     <div class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent mb-2">
-                        2+
+                        250K+
                     </div>
-                    <div class="text-gray-300 text-lg">Platforms</div>
-                    <div class="text-gray-500 text-sm mt-2">TikTok, Instagram & More</div>
+                    <div class="text-gray-300 text-lg" data-i18n="stats.accounts">TikTok Accounts</div>
                 </div>
 
                 <!-- Stat Card 3 -->
                 <div class="stat-card glass-card p-8 rounded-2xl text-center transform hover:scale-105 transition-all">
                     <div class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent mb-2">
-                        24/7
+                        99.9%
                     </div>
-                    <div class="text-gray-300 text-lg">Distribution</div>
-                    <div class="text-gray-500 text-sm mt-2">Automated & Always Active</div>
+                    <div class="text-gray-300 text-lg" data-i18n="stats.success_rate">Success Rate</div>
+                </div>
+
+                <!-- Stat Card 4 -->
+                <div class="stat-card glass-card p-8 rounded-2xl text-center transform hover:scale-105 transition-all">
+                    <div class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent mb-2">
+                        100%
+                    </div>
+                    <div class="text-gray-300 text-lg" data-i18n="stats.spotify_charts">Spotify Charts</div>
                 </div>
             </div>
         </div>
@@ -193,326 +184,154 @@
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold mb-4">
-                    <span class="bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent">
-                        Charting for Labels
-                    </span> and Artists Worldwide
+                    <span class="bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent" data-i18n="features.title">
+                        Why MediaMass?
+                    </span>
                 </h2>
-                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
-                    Built for creators and brands who need massive scale and reliability
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto" data-i18n="features.subtitle">
+                    The most powerful mass posting platform for music professionals, labels and content creators
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- Feature 1: Creation Velocity with Personalization -->
-                <div class="feature-card glass-card p-8 rounded-2xl hover:border-violet-500/50 transition-all">
-                    <div class="w-12 h-12 bg-gradient-to-r from-violet-600 to-pink-600 rounded-xl flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Creation Velocity</h3>
-                    <p class="text-gray-400">Personalized hashtags and video comments in every upload for maximum viral push. Our AI engine generates unique #tags and captions that optimally trigger TikTok's recommendation system and multiply organic reach.</p>
-                </div>
-
-                <!-- Feature 2: Algorithm Thresholds -->
-                <div class="feature-card glass-card p-8 rounded-2xl hover:border-violet-500/50 transition-all">
-                    <div class="w-12 h-12 bg-gradient-to-r from-violet-600 to-pink-600 rounded-xl flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Viral Thresholds</h3>
-                    <p class="text-gray-400">Break critical milestones: 10K creations = Trending eligibility, 50K = Top 100 charts, 100K+ = mainstream media attention and label deals.</p>
-                </div>
-
-                <!-- Feature 3: FYP Domination -->
+                <!-- Feature 1: TikTok Mass Posting -->
                 <div class="feature-card glass-card p-8 rounded-2xl hover:border-violet-500/50 transition-all">
                     <div class="w-12 h-12 bg-gradient-to-r from-violet-600 to-pink-600 rounded-xl flex items-center justify-center mb-4">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">FYP Domination</h3>
-                    <p class="text-gray-400">Mass creations flood the For You Page algorithm. Each video = new entry point for millions of users, multiplying organic reach exponentially.</p>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="features.tiktok.title">TikTok Mass Posting</h3>
+                    <p class="text-gray-400" data-i18n="features.tiktok.description">Post your videos to up to 250,000 TikTok accounts simultaneously. Automated, secure and fast.</p>
                 </div>
 
-                <!-- Feature 4: Streaming Conversion -->
+                <!-- Feature 2: Instagram Mass Reels -->
                 <div class="feature-card glass-card p-8 rounded-2xl hover:border-violet-500/50 transition-all">
                     <div class="w-12 h-12 bg-gradient-to-r from-violet-600 to-pink-600 rounded-xl flex items-center justify-center mb-4">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Spotify/Apple Explosion</h3>
-                    <p class="text-gray-400">TikTok users who hear your song in creations stream it 23x more on Spotify. High creation count = automatic playlist placements and Shazam spikes.</p>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="features.instagram.title">Instagram Mass Reels</h3>
+                    <p class="text-gray-400" data-i18n="features.instagram.description">Maximize your reach with automated Instagram Reels posts across thousands of accounts.</p>
                 </div>
 
-                <!-- Feature 5: Sound Discovery Features -->
+                <!-- Feature 3: Spotify Charting -->
                 <div class="feature-card glass-card p-8 rounded-2xl hover:border-violet-500/50 transition-all">
                     <div class="w-12 h-12 bg-gradient-to-r from-violet-600 to-pink-600 rounded-xl flex items-center justify-center mb-4">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Auto-Activated Features</h3>
-                    <p class="text-gray-400">At 10K+ creations, TikTok auto-enables: Trending badge, "Use This Sound" prominence, push notifications, and Spotify/Apple Music link integration.</p>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="features.spotify.title">Spotify Charting</h3>
+                    <p class="text-gray-400" data-i18n="features.spotify.description">Guaranteed chart placement through strategic TikTok music marketing and viral seeding.</p>
                 </div>
 
-                <!-- Feature 6: 48-Hour Window -->
+                <!-- Feature 4: Automation -->
                 <div class="feature-card glass-card p-8 rounded-2xl hover:border-violet-500/50 transition-all">
                     <div class="w-12 h-12 bg-gradient-to-r from-violet-600 to-pink-600 rounded-xl flex items-center justify-center mb-4">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Critical 48-Hour Window</h3>
-                    <p class="text-gray-400">First 48-72 hours determine viral potential. Our system delivers 250K creations instantly, overwhelming TikTok's trending threshold logic before momentum fades.</p>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="features.automation.title">Fully Automated</h3>
+                    <p class="text-gray-400" data-i18n="features.automation.description">Set up your campaign once and let our system do the rest - 24/7.</p>
+                </div>
+
+                <!-- Feature 5: Analytics -->
+                <div class="feature-card glass-card p-8 rounded-2xl hover:border-violet-500/50 transition-all">
+                    <div class="w-12 h-12 bg-gradient-to-r from-violet-600 to-pink-600 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="features.analytics.title">Real-time Analytics</h3>
+                    <p class="text-gray-400" data-i18n="features.analytics.description">Track performance, views, engagement and chart position in real-time.</p>
+                </div>
+
+                <!-- Feature 6: Support -->
+                <div class="feature-card glass-card p-8 rounded-2xl hover:border-violet-500/50 transition-all">
+                    <div class="w-12 h-12 bg-gradient-to-r from-violet-600 to-pink-600 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="features.support.title">24/7 Premium Support</h3>
+                    <p class="text-gray-400" data-i18n="features.support.description">Our expert team is available around the clock - in German and English.</p>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- SEO Content Section -->
-    <section class="py-20 bg-slate-950/50">
-        <div class="container mx-auto px-6">
-            <div class="max-w-6xl mx-auto">
-                <!-- Main SEO Content -->
-                <div class="glass-card p-8 md:p-12 rounded-2xl mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent">
-                        Mass Posting for TikTok, Instagram & Spotify Charting
-                    </h2>
-                    <div class="prose prose-invert max-w-none">
-                        <p class="text-lg text-gray-300 mb-4">
-                            MediaMass is the leading mass posting service for the music industry. Our professional TikTok Mass Posting Service enables labels, artists and influencers to automatically post up to 250,000 videos daily. With our mass post system you are guaranteed to reach the social media charting, Instagram viral charts and Spotify trending placements.
-                        </p>
-                        <p class="text-gray-300 mb-4">
-                            Our Mass Posting service utilizes advanced algorithms for TikTok Mass Posting, Instagram Mass Post and multi-platform distribution. Reach millions of users with a single mass post and break viral thresholds within 48 hours.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Grid: Platform-specific Info -->
-                <div class="grid md:grid-cols-3 gap-6 mb-12">
-                    <!-- TikTok Mass Posting -->
-                    <div class="glass-card p-6 rounded-xl hover:border-violet-500/50 transition-all">
-                        <div class="text-2xl mb-3">🎵</div>
-                        <h3 class="text-xl font-bold text-violet-400 mb-3">TikTok Mass Posting</h3>
-                        <p class="text-gray-300 text-sm mb-3">
-                            Professional TikTok Mass Posting with up to 100,000 videos per day. Achieve social media charting through creation velocity and FYP dominance.
-                        </p>
-                        <ul class="text-sm text-gray-400 space-y-1">
-                            <li>✓ Social media charting guaranteed</li>
-                            <li>✓ FYP Algorithm Optimization</li>
-                            <li>✓ SoundOn Engagement Tracking</li>
-                        </ul>
-                    </div>
-
-                    <!-- Instagram Mass Post -->
-                    <div class="glass-card p-6 rounded-xl hover:border-pink-500/50 transition-all">
-                        <div class="text-2xl mb-3">📸</div>
-                        <h3 class="text-xl font-bold text-pink-400 mb-3">Instagram Mass Post</h3>
-                        <p class="text-gray-300 text-sm mb-3">
-                            Automatic Instagram mass post for reels, stories and feed. Maximum reach through strategic mass posting.
-                        </p>
-                        <ul class="text-sm text-gray-400 space-y-1">
-                            <li>✓ Instagram Reels Mastering</li>
-                            <li>✓ Explore Page Targeting</li>
-                            <li>✓ Hashtag Optimization</li>
-                        </ul>
-                    </div>
-
-                    <!-- Spotify Charting -->
-                    <div class="glass-card p-6 rounded-xl hover:border-green-500/50 transition-all">
-                        <div class="text-2xl mb-3">🎧</div>
-                        <h3 class="text-xl font-bold text-green-400 mb-3">Spotify Charting</h3>
-                        <p class="text-gray-300 text-sm mb-3">
-                            With TikTok Mass Posting you automatically reach Spotify Viral Charts, Apple Music and streaming platforms.
-                        </p>
-                        <ul class="text-sm text-gray-400 space-y-1">
-                            <li>✓ Spotify Viral Charts</li>
-                            <li>✓ Apple Music Discovery</li>
-                            <li>✓ Cross-Platform Synergy</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Benefits List -->
-                <div class="glass-card p-8 md:p-10 rounded-2xl">
-                    <h3 class="text-2xl font-bold text-white mb-6">Why Mass Posting with MediaMass?</h3>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <h4 class="font-semibold text-violet-400 mb-2">🚀 Fastest Mass Post Solution</h4>
-                            <p class="text-gray-300 text-sm">Our mass posting system is 10x faster than manual methods. 250,000 videos in 24 hours.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-pink-400 mb-2">📊 Social Media Charting Guarantee</h4>
-                            <p class="text-gray-300 text-sm">With TikTok Mass Posting you are guaranteed to reach the TikTok Trending Page and SoundOn Top 10%.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-green-400 mb-2">🎵 Spotify Viral Impact</h4>
-                            <p class="text-gray-300 text-sm">TikTok Viral → Spotify Charting. Our tracks reach an average of +500% Spotify streams after Mass Post.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-cyan-400 mb-2">🔄 Multi-Platform Mass Posting</h4>
-                            <p class="text-gray-300 text-sm">A mass post on TikTok, Instagram, YouTube Shorts at the same time. Maximum efficiency.</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- CTA Section -->
+    <section class="cta-section py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-violet-600/20 to-pink-600/20"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6" data-i18n="cta_section.title">
+                    Ready to Get Started?
+                </h2>
+                <p class="text-xl text-gray-300 mb-8" data-i18n="cta_section.subtitle">
+                    Start your first mass posting campaign today
+                </p>
+                <a href="contact.html" class="inline-block px-10 py-4 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-violet-500/50 transition-all transform hover:scale-105" data-i18n="cta_section.button">
+                    Get Free Consultation
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer-section py-12 border-t border-white/5">
+    <footer class="footer py-16 relative border-t border-white/5">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-                <div class="text-2xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent">
-                    MediaMass
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="logo.png" alt="MediaMass Logo" class="h-8 w-auto">
+                        <h3 class="text-2xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent">
+                            MediaMass
+                        </h3>
+                    </div>
+                    <p class="text-gray-400 mb-6" data-i18n="footer.tagline">
+                        The #1 Mass Posting Platform for Music Professionals
+                    </p>
                 </div>
-                <div class="flex items-center gap-6 text-gray-400 text-sm">
-                    <a href="datenschutz.html" class="hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="nutzungsbedingungen.html" class="hover:text-white transition-colors">Terms of Service</a>
-                    <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer.quick_links">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="nav.home">Home</a></li>
+                        <li><a href="index.html#features" class="text-gray-400 hover:text-white transition-colors" data-i18n="nav.features">Features</a></li>
+                        <li><a href="preisliste.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="nav.pricing">Pricing</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="text-gray-500 text-sm">
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer.legal">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="datenschutz.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="nutzungsbedingungen.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="footer.terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-white/5 pt-8 text-center">
+                <p class="text-gray-500" data-i18n="footer.copyright">
                     © 2026 MediaMass. All rights reserved.
-                </div>
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- Mobile Menu (will be created by app.js) -->
+    <div class="mobile-overlay"></div>
+
+    <!-- Scripts -->
     <script src="app.js"></script>
-    
-    <!-- Schema.org Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "MediaMass",
-      "url": "https://www.masspost.store",
-      "logo": "https://www.masspost.store/logo.png",
-      "description": "Professional mass posting service for TikTok, Instagram and Spotify charting. Up to 250,000 videos daily.",
-      "foundingDate": "2024",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+49-000-0000000",
-        "contactType": "customer service",
-        "email": "info@masspost.store"
-      },
-      "sameAs": [
-        "https://t.me/sennaook"
-      ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Mass Posting Service",
-      "provider": {
-        "@type": "Organization",
-        "name": "MediaMass"
-      },
-      "areaServed": "Worldwide",
-      "description": "TikTok mass posting, Instagram mass post and Spotify charting service for the music industry",
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "EUR",
-        "lowPrice": "99",
-        "highPrice": "299"
-      }
-    }
-    </script>
-
-<script>
-// Mobile Menu - Inline v3
-document.addEventListener('DOMContentLoaded', function(){
-  var btn = document.querySelector('.mobile-menu-toggle');
-  if (!btn) return;
-  var existing = document.querySelector('.mobile-menu');
-  if (existing) existing.remove();
-  var menu = document.createElement('div');
-  menu.className = 'mobile-menu';
-  menu.innerHTML = '<a href="index.html">Home</a><a href="index.html#features">Features</a><a href="social-media-charting.html">Social Media Charting</a><a href="preisliste.html">Pricing</a><a href="contact.html">Contact</a><a href="contact.html" style="display:block;width:100%;margin-top:16px;padding:12px 24px;background:linear-gradient(to right,#7c3aed,#db2777);border-radius:9999px;font-weight:600;text-align:center;color:white;text-decoration:none">Get Started</a><div class="mobile-lang-switcher" style="display:flex;align-items:center;justify-content:center;gap:12px;padding-top:24px;margin-top:24px;border-top:1px solid rgba(255,255,255,0.1)"><button class="mobile-lang-btn" data-lang="de" data-lang="de" style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:14px;font-weight:500;cursor:pointer;transition:all 0.2s"><span style="font-size:20px">🇩🇪</span><span>Deutsch</span></button><button class="mobile-lang-btn" data-lang="en" data-lang="en" style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:14px;font-weight:500;cursor:pointer;transition:all 0.2s"><span style="font-size:20px">🇬🇧</span><span>English</span></button></div>';
-  document.body.appendChild(menu);
-  var oldOv = document.querySelector('.mobile-overlay');
-  if (oldOv) oldOv.remove();
-  var ov = document.createElement('div');
-  ov.className = 'mobile-overlay';
-  document.body.appendChild(ov);
-  btn.addEventListener('click', function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    menu.classList.toggle('active');
-    ov.classList.toggle('active');
-  });
-  ov.addEventListener('click', function(){
-    menu.classList.remove('active');
-    ov.classList.remove('active');
-  });
-  var links = menu.querySelectorAll('a');
-  
-  // Language switcher event listeners
-  setTimeout(function() {
-    var langBtns = menu.querySelectorAll('.mobile-lang-btn');
-    langBtns.forEach(function(btn) {
-      btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        var lang = this.getAttribute('data-lang');
-        if (window.i18n && window.i18n.switchLanguage) {
-          window.i18n.switchLanguage(lang);
-        }
-        menu.classList.remove('active');
-        ov.classList.remove('active');
-      });
-    });
-  }, 100);
-  for(var i=0;i<links.length;i++){
-    links[i].addEventListener('click', function(){
-      menu.classList.remove('active');
-      ov.classList.remove('active');
-    });
-  }
-});
-</script>
-
-    <script>
-    // Desktop Language Switcher Event Listeners
-    document.addEventListener('DOMContentLoaded', function() {
-        // Wait for i18n to be ready
-        function setupLanguageSwitchers() {
-            var desktopBtns = document.querySelectorAll('.language-switcher .lang-btn');
-            desktopBtns.forEach(function(btn) {
-                btn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    var lang = this.getAttribute('data-lang');
-                    if (window.i18n && window.i18n.switchLanguage) {
-                        window.i18n.switchLanguage(lang);
-                    } else {
-                        console.warn('i18n not ready yet, retrying...');
-                        setTimeout(function() {
-                            if (window.i18n && window.i18n.switchLanguage) {
-                                window.i18n.switchLanguage(lang);
-                            }
-                        }, 500);
-                    }
-                });
-            });
-        }
-        
-        // Try immediately and retry if needed
-        setTimeout(setupLanguageSwitchers, 100);
-    });
-    </script>
-
 </body>
 </html>
-
-
-
-
-
-
