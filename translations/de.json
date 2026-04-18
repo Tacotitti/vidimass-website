@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "lang": "de",
+    "title": "Mass Posting Service für TikTok, Instagram & Spotify Charting | MediaMass - Bis zu 250.000 Videos täglich",
+    "description": "Professioneller Mass Posting Service für TikTok, Instagram und Spotify Charting. Posten Sie bis zu 250.000 Videos täglich automatisch. Mass Post für die Musikindustrie, Labels und Künstler. Jetzt loslegen!",
+    "keywords": "Mass Posting, Mass Post, TikTok Mass Posting, Instagram Mass Posting, Spotify Charting, TikTok Charting, virales Marketing, Musikpromotion, Mass Video Posting, automatisiertes Posten, TikTok viral, Spotify Viral Charts, Musikindustrie-Marketing",
+    "og_title": "Mass Posting Service für TikTok, Instagram & Spotify Charting | MediaMass",
+    "og_description": "Professioneller Mass Posting Service. Posten Sie bis zu 250.000 Videos täglich auf TikTok, Instagram. Spotify Charting garantiert."
+  },
+  "nav": {
+    "features": "Features",
+    "social_media_charting": "Social Media Charting",
+    "pricing": "Preise",
+    "contact": "Kontakt",
+    "get_started": "Jetzt starten",
+    "home": "Startseite"
+  },
+  "hero": {
+    "headline_part1": "Revolutionieren Sie Ihr",
+    "headline_part2": "Social Media Marketing",
+    "headline_part3": "mit Mass Posting",
+    "subheadline": "Posten Sie bis zu 250.000 Videos täglich automatisch auf TikTok & Instagram. Garantiertes Spotify-Charting für Musikprofis.",
+    "cta_primary": "Jetzt starten",
+    "cta_secondary": "Mehr erfahren"
+  },
+  "stats": {
+    "videos_daily": "Videos täglich",
+    "accounts": "TikTok Accounts",
+    "success_rate": "Erfolgsrate",
+    "spotify_charts": "Spotify Charts Garantie"
+  },
+  "features": {
+    "title": "Warum MediaMass?",
+    "subtitle": "Die leistungsstärkste Mass Posting Plattform für Musikprofis, Labels und Content Creator",
+    "tiktok": {
+      "title": "TikTok Mass Posting",
+      "description": "Posten Sie Ihre Videos auf bis zu 250.000 TikTok-Accounts gleichzeitig. Automatisiert, sicher und schnell."
+    },
+    "instagram": {
+      "title": "Instagram Mass Reels",
+      "description": "Maximieren Sie Ihre Reichweite mit automatisierten Instagram Reels Posts auf Tausenden Accounts."
+    },
+    "spotify": {
+      "title": "Spotify Charting",
+      "description": "Garantierte Chart-Platzierung durch strategische TikTok-Musikvermarktung und virales Seeding."
+    },
+    "automation": {
+      "title": "Vollautomatisiert",
+      "description": "Setzen Sie Ihre Kampagne einmal auf und lassen Sie unser System den Rest erledigen - 24/7."
+    },
+    "analytics": {
+      "title": "Echtzeit-Analytics",
+      "description": "Verfolgen Sie Performance, Views, Engagement und Chart-Position in Echtzeit."
+    },
+    "support": {
+      "title": "24/7 Premium Support",
+      "description": "Unser Expertenteam steht Ihnen rund um die Uhr zur Verfügung - auf Deutsch und Englisch."
+    }
+  },
+  "how_it_works": {
+    "title": "So funktioniert's",
+    "subtitle": "In 3 einfachen Schritten zu viraler Reichweite",
+    "step1": {
+      "title": "1. Video hochladen",
+      "description": "Laden Sie Ihr Video oder Musikclip hoch und wählen Sie Ihre Zielgruppe."
+    },
+    "step2": {
+      "title": "2. Kampagne konfigurieren",
+      "description": "Wählen Sie Anzahl der Posts, Zeitplan und Targeting-Optionen."
+    },
+    "step3": {
+      "title": "3. Automatisch posten",
+      "description": "Unsere KI postet Ihr Video auf Tausenden Accounts - vollautomatisch."
+    }
+  },
+  "packages": {
+    "title": "Unsere Pakete",
+    "subtitle": "Wählen Sie das perfekte Paket für Ihre Bedürfnisse",
+    "starter": {
+      "name": "Starter",
+      "price": "499€",
+      "period": "/Monat",
+      "description": "Perfekt für Einzelkünstler und kleine Projekte",
+      "features": [
+        "Bis zu 5.000 TikTok Posts/Monat",
+        "1.000 Instagram Reels/Monat",
+        "Basic Analytics Dashboard",
+        "Email Support",
+        "1 aktive Kampagne"
+      ],
+      "cta": "Starter wählen"
+    },
+    "professional": {
+      "name": "Professional",
+      "price": "1.499€",
+      "period": "/Monat",
+      "popular": "Beliebteste Wahl",
+      "description": "Ideal für Labels und professionelle Künstler",
+      "features": [
+        "Bis zu 50.000 TikTok Posts/Monat",
+        "10.000 Instagram Reels/Monat",
+        "Advanced Analytics & Reporting",
+        "Spotify Charting Support",
+        "Priority Support 24/7",
+        "5 gleichzeitige Kampagnen",
+        "Dedizierter Account Manager"
+      ],
+      "cta": "Professional wählen"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "4.999€",
+      "period": "/Monat",
+      "description": "Maximale Power für große Labels und Agenturen",
+      "features": [
+        "Bis zu 250.000 TikTok Posts/Monat",
+        "50.000 Instagram Reels/Monat",
+        "Custom Analytics & AI Insights",
+        "Garantiertes Spotify Top 50 Charting",
+        "VIP Support 24/7 (DE/EN)",
+        "Unbegrenzte Kampagnen",
+        "Dediziertes Team + Strategieberatung",
+        "Custom API-Integration"
+      ],
+      "cta": "Enterprise wählen"
+    }
+  },
+  "cta_section": {
+    "title": "Bereit durchzustarten?",
+    "subtitle": "Starten Sie noch heute Ihre erste Mass Posting Kampagne",
+    "button": "Kostenlos beraten lassen"
+  },
+  "footer": {
+    "tagline": "Die #1 Mass Posting Plattform für Musikprofis",
+    "quick_links": "Quick Links",
+    "legal": "Rechtliches",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "copyright": "© 2026 MediaMass. Alle Rechte vorbehalten."
+  }
+}

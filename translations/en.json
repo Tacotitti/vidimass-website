@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "Mass Posting Service for TikTok, Instagram & Spotify Charting | MediaMass - Up to 250,000 Videos Daily",
+    "description": "Professional mass posting service for TikTok, Instagram and Spotify charting. Post up to 250,000 videos daily automatically. Mass post for music industry, labels and artists. Get started now!",
+    "keywords": "mass posting, mass post, tiktok mass posting, instagram mass posting, spotify charting, tiktok charting, viral marketing, music promotion, mass video posting, automated posting, tiktok viral, spotify viral charts, music industry marketing",
+    "og_title": "Mass Posting Service for TikTok, Instagram & Spotify Charting | MediaMass",
+    "og_description": "Professional mass posting service. Post up to 250,000 videos daily on TikTok, Instagram. Spotify charting guaranteed."
+  },
+  "nav": {
+    "features": "Features",
+    "social_media_charting": "Social Media Charting",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "get_started": "Get Started",
+    "home": "Home"
+  },
+  "hero": {
+    "headline_part1": "Revolutionize Your",
+    "headline_part2": "Social Media Marketing",
+    "headline_part3": "with Mass Posting",
+    "subheadline": "Post up to 250,000 videos daily automatically on TikTok & Instagram. Guaranteed Spotify charting for music professionals.",
+    "cta_primary": "Get Started",
+    "cta_secondary": "Learn More"
+  },
+  "stats": {
+    "videos_daily": "Videos Daily",
+    "accounts": "TikTok Accounts",
+    "success_rate": "Success Rate",
+    "spotify_charts": "Spotify Charts Guarantee"
+  },
+  "features": {
+    "title": "Why MediaMass?",
+    "subtitle": "The most powerful mass posting platform for music professionals, labels and content creators",
+    "tiktok": {
+      "title": "TikTok Mass Posting",
+      "description": "Post your videos to up to 250,000 TikTok accounts simultaneously. Automated, secure and fast."
+    },
+    "instagram": {
+      "title": "Instagram Mass Reels",
+      "description": "Maximize your reach with automated Instagram Reels posts across thousands of accounts."
+    },
+    "spotify": {
+      "title": "Spotify Charting",
+      "description": "Guaranteed chart placement through strategic TikTok music marketing and viral seeding."
+    },
+    "automation": {
+      "title": "Fully Automated",
+      "description": "Set up your campaign once and let our system do the rest - 24/7."
+    },
+    "analytics": {
+      "title": "Real-time Analytics",
+      "description": "Track performance, views, engagement and chart position in real-time."
+    },
+    "support": {
+      "title": "24/7 Premium Support",
+      "description": "Our expert team is available around the clock - in German and English."
+    }
+  },
+  "how_it_works": {
+    "title": "How It Works",
+    "subtitle": "3 simple steps to viral reach",
+    "step1": {
+      "title": "1. Upload Video",
+      "description": "Upload your video or music clip and select your target audience."
+    },
+    "step2": {
+      "title": "2. Configure Campaign",
+      "description": "Choose number of posts, schedule and targeting options."
+    },
+    "step3": {
+      "title": "3. Auto-Post",
+      "description": "Our AI posts your video across thousands of accounts - fully automated."
+    }
+  },
+  "packages": {
+    "title": "Our Packages",
+    "subtitle": "Choose the perfect package for your needs",
+    "starter": {
+      "name": "Starter",
+      "price": "€499",
+      "period": "/month",
+      "description": "Perfect for solo artists and small projects",
+      "features": [
+        "Up to 5,000 TikTok Posts/month",
+        "1,000 Instagram Reels/month",
+        "Basic Analytics Dashboard",
+        "Email Support",
+        "1 active campaign"
+      ],
+      "cta": "Choose Starter"
+    },
+    "professional": {
+      "name": "Professional",
+      "price": "€1,499",
+      "period": "/month",
+      "popular": "Most Popular",
+      "description": "Ideal for labels and professional artists",
+      "features": [
+        "Up to 50,000 TikTok Posts/month",
+        "10,000 Instagram Reels/month",
+        "Advanced Analytics & Reporting",
+        "Spotify Charting Support",
+        "Priority Support 24/7",
+        "5 simultaneous campaigns",
+        "Dedicated Account Manager"
+      ],
+      "cta": "Choose Professional"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "€4,999",
+      "period": "/month",
+      "description": "Maximum power for major labels and agencies",
+      "features": [
+        "Up to 250,000 TikTok Posts/month",
+        "50,000 Instagram Reels/month",
+        "Custom Analytics & AI Insights",
+        "Guaranteed Spotify Top 50 Charting",
+        "VIP Support 24/7 (DE/EN)",
+        "Unlimited campaigns",
+        "Dedicated team + strategy consulting",
+        "Custom API integration"
+      ],
+      "cta": "Choose Enterprise"
+    }
+  },
+  "cta_section": {
+    "title": "Ready to Get Started?",
+    "subtitle": "Start your first mass posting campaign today",
+    "button": "Get Free Consultation"
+  },
+  "footer": {
+    "tagline": "The #1 Mass Posting Platform for Music Professionals",
+    "quick_links": "Quick Links",
+    "legal": "Legal",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2026 MediaMass. All rights reserved."
+  }
+}

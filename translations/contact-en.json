@@ -1,0 +1,44 @@
+{
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Ready to get started? Let's talk about your project",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "✅ Message sent successfully!",
+      "error": "❌ Error sending message. Please try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "email_label": "Email",
+      "email": "info@masspost.store",
+      "telegram_label": "Telegram",
+      "telegram": "@MassPostSupport",
+      "hours_label": "Business Hours",
+      "hours": "24/7 Premium Support"
+    },
+    "reasons": {
+      "title": "Why Work With Us?",
+      "reason1": {
+        "title": "Instant Responses",
+        "description": "Our team responds within minutes, not days"
+      },
+      "reason2": {
+        "title": "Custom Solutions",
+        "description": "Every project gets an individual strategy"
+      },
+      "reason3": {
+        "title": "Transparent Pricing",
+        "description": "No hidden costs, clear quotes"
+      }
+    },
+    "cta": {
+      "title": "Book Your Free Consultation Now",
+      "button": "Schedule Meeting"
+    }
+  }
+}

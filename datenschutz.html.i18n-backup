@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms & Conditions - MediaMass</title>
+    <title>Privacy Policy - MediaMass</title>
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.masspost.store/nutzungsbedingungen.html">
+    <link rel="canonical" href="https://www.masspost.store/datenschutz.html">
     
     <!-- Meta Robots Tag -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -38,19 +38,6 @@
 .mobile-overlay.active{opacity:1;pointer-events:auto}
 .mobile-menu-toggle{cursor:pointer;background:none;border:none;padding:8px}
 .mobile-menu-toggle:focus{outline:none}
-
-/* Language Switcher Styles */
-.lang-btn.active,
-.mobile-lang-btn.active {
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(219, 39, 119, 0.2) 100%);
-    border: 1px solid rgba(139, 92, 246, 0.4);
-}
-
-.lang-btn:hover,
-.mobile-lang-btn:hover {
-    transform: translateY(-1px);
-}
-
 </style>
     <!-- i18n Translation System -->
     <script src="i18n.js"></script>
@@ -73,18 +60,6 @@
                     <a href="social-media-charting.html" class="nav-link text-gray-300 hover:text-white transition-colors">Social Media Charting</a>
                     <a href="index.html#packages" class="nav-link text-gray-300 hover:text-white transition-colors">Pricing</a>
                     <a href="contact.html" class="nav-link text-gray-300 hover:text-white transition-colors">Contact</a>
-                    <!-- Language Switcher -->
-                    <div class="language-switcher flex items-center gap-2">
-                        <button onclick="switchLanguage('de')" class="lang-btn px-3 py-1.5 rounded-lg transition-all hover:bg-white/10" data-lang="de">
-                            <span class="text-sm font-medium">🇩🇪 DE</span>
-                        </button>
-                        <span class="text-gray-600">|</span>
-                        <button onclick="switchLanguage('en')" class="lang-btn px-3 py-1.5 rounded-lg transition-all hover:bg-white/10" data-lang="en">
-                            <span class="text-sm font-medium">🇬🇧 EN</span>
-                        </button>
-                    </div>
-
-
                     <a href="contact.html" class="cta-button px-6 py-2.5 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/50 transition-all">
                         <span>Get Started</span>
                     </a>
@@ -98,7 +73,7 @@
         </div>
     </nav>
 
-    <!-- Terms Content -->
+    <!-- Privacy Content -->
     <section class="relative min-h-screen pt-32 pb-20 overflow-hidden">
         <!-- Animated Background Elements -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none">
@@ -113,7 +88,7 @@
                 <div class="text-center mb-12">
                     <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
                         <span class="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent">
-                            Terms & Conditions
+                            Privacy Policy
                         </span>
                     </h1>
                     <p class="text-xl text-gray-300">
@@ -121,118 +96,156 @@
                     </p>
                 </div>
 
-                <!-- Terms Content -->
+                <!-- Privacy Content -->
                 <div class="glass-card p-8 md:p-12 rounded-2xl backdrop-blur-sm bg-white/5 border border-white/10 space-y-8 text-gray-300">
                     
                     <section>
-                        <h2 class="text-2xl font-bold text-white mb-4">1. Scope</h2>
+                        <h2 class="text-2xl font-bold text-white mb-4">1. Data Controller</h2>
                         <p class="leading-relaxed">
-                            These terms and conditions apply to all services provided by MediaMass ("we", "us", "our") in the area of mass video posting and social media marketing. By using our services, you accept these terms in full.
+                            The entity responsible for data processing on this website and our services is:
+                        </p>
+                        <p class="mt-3">
+                            <strong>MediaMass</strong><br>
+                            Email: <a href="mailto:info@masspost.store" class="text-violet-400 hover:text-violet-300">info@masspost.store</a><br>
+                            Telegram: <a href="https://t.me/sennaook" target="_blank" class="text-violet-400 hover:text-violet-300">@sennaook</a>
                         </p>
                     </section>
 
                     <section>
-                        <h2 class="text-2xl font-bold text-white mb-4">2. Description of Services</h2>
+                        <h2 class="text-2xl font-bold text-white mb-4">2. Collection and Storage of Personal Data</h2>
                         <p class="leading-relaxed mb-3">
-                            MediaMass offers automated video distribution services for social media platforms, in particular TikTok, Instagram and other platforms. Our services include:
+                            We collect and process the following personal data:
                         </p>
                         <ul class="list-disc list-inside space-y-2 ml-4">
-                            <li>Automated uploading of videos to multiple platforms</li>
-                            <li>Distribution of up to 250,000 videos per day (depending on package)</li>
-                            <li>Analytics and performance tracking</li>
-                            <li>Technical support</li>
+                            <li><strong>Contact Data:</strong> Name, email address, phone number (if voluntarily provided)</li>
+                            <li><strong>Account Data:</strong> Username, password (encrypted)</li>
+                            <li><strong>Social Media Credentials:</strong> API tokens, OAuth credentials for TikTok, Instagram and other platforms (stored encrypted)</li>
+                            <li><strong>Usage Data:</strong> Video uploads, posting statistics, analytics data</li>
+                            <li><strong>Payment Data:</strong> Billing information (no credit card data is stored on our servers)</li>
+                            <li><strong>Technical Data:</strong> IP address, browser type, operating system, access timestamps</li>
                         </ul>
                     </section>
 
                     <section>
-                        <h2 class="text-2xl font-bold text-white mb-4">3. User Obligations</h2>
-                        <p class="leading-relaxed mb-3">The user agrees to:</p>
+                        <h2 class="text-2xl font-bold text-white mb-4">3. Purpose of Data Processing</h2>
+                        <p class="leading-relaxed mb-3">
+                            We process your data for the following purposes:
+                        </p>
                         <ul class="list-disc list-inside space-y-2 ml-4">
-                            <li>Only upload content for which they hold the necessary rights</li>
-                            <li>Not use copyrighted materials without authorization</li>
-                            <li>Comply with the community guidelines and terms of service of the respective platforms (TikTok, Instagram, etc.)</li>
-                            <li>Not distribute illegal, offensive, defamatory or harmful content</li>
-                            <li>Not post content that violates laws or harms third parties</li>
-                            <li>Keep login credentials secure and not share them with third parties</li>
+                            <li>Providing our mass video posting services</li>
+                            <li>Managing your user account</li>
+                            <li>Automatic uploading and distributing videos on social media platforms</li>
+                            <li>Creating analytics and performance reports</li>
+                            <li>Processing payments and invoicing</li>
+                            <li>Customer support and technical assistance</li>
+                            <li>Improving our services</li>
+                            <li>Compliance with legal retention requirements</li>
                         </ul>
                     </section>
 
                     <section>
-                        <h2 class="text-2xl font-bold text-white mb-4">4. Copyright and Content</h2>
+                        <h2 class="text-2xl font-bold text-white mb-4">4. Disclosure of Data to Third Parties</h2>
                         <p class="leading-relaxed mb-3">
-                            The user guarantees that all uploaded content is either their own property or that they hold the necessary licenses and permissions. MediaMass assumes no liability for copyright infringement caused by user content. The user indemnifies MediaMass against all third-party claims arising from the violation of rights through uploaded content.
-                        </p>
-                    </section>
-
-                    <section>
-                        <h2 class="text-2xl font-bold text-white mb-4">5. Platform Compliance</h2>
-                        <p class="leading-relaxed mb-3">
-                            MediaMass operates within the APIs and guidelines of the respective social media platforms. We reserve the right to restrict or terminate services if platforms change their terms of service. The user accepts that:
+                            Your data is shared with the following third parties:
                         </p>
                         <ul class="list-disc list-inside space-y-2 ml-4">
-                            <li>Platforms may suspend accounts without prior notice</li>
-                            <li>Algorithm changes may affect performance</li>
-                            <li>MediaMass provides no guarantee for specific reach or engagement rates</li>
-                            <li>Platform rate limits may affect posting speed</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h2 class="text-2xl font-bold text-white mb-4">6. Disclaimer of Liability</h2>
-                        <p class="leading-relaxed mb-3">
-                            MediaMass is not liable for:
-                        </p>
-                        <ul class="list-disc list-inside space-y-2 ml-4">
-                            <li>Account suspensions by social media platforms</li>
-                            <li>Loss of content due to technical issues or platform decisions</li>
-                            <li>Lost profits or indirect damages</li>
-                            <li>Service interruptions due to maintenance or force majeure</li>
-                            <li>Changes in third-party APIs or policies</li>
+                            <li><strong>Social Media Platforms:</strong> TikTok, Instagram, YouTube and other platforms receive the videos you upload as well as necessary metadata for posting</li>
+                            <li><strong>Hosting Provider:</strong> Our server infrastructure is hosted with secure cloud providers</li>
+                            <li><strong>Payment Service Providers:</strong> We use external payment providers for processing payments</li>
+                            <li><strong>Analytics Tools:</strong> We use anonymized analytics data to improve our services</li>
                         </ul>
                         <p class="leading-relaxed mt-3">
-                            Liability is limited to the amount the user has paid for the service in the last month.
+                            We do not share your data with third parties for advertising purposes.
                         </p>
                     </section>
 
                     <section>
-                        <h2 class="text-2xl font-bold text-white mb-4">7. Data Protection</h2>
-                        <p class="leading-relaxed">
-                            We are committed to protecting your data in accordance with the GDPR. Details can be found in our Privacy Policy. We only store and process data that is necessary for providing our services. Social media account credentials are stored encrypted.
-                        </p>
-                    </section>
-
-                    <section>
-                        <h2 class="text-2xl font-bold text-white mb-4">8. Payment and Subscription</h2>
+                        <h2 class="text-2xl font-bold text-white mb-4">5. Social Media Platforms and API Usage</h2>
                         <p class="leading-relaxed mb-3">
-                            All prices are exclusive of statutory value-added tax. Billing is monthly in advance. In the event of late payment, we reserve the right to suspend the service. Cancellations must be made in writing (by email) and are effective at the end of the current billing period.
+                            Our services interact with the APIs of the following platforms:
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li><strong>TikTok:</strong> Video posting, analytics, creator tools</li>
+                            <li><strong>Instagram:</strong> Video upload, story posting, reels distribution</li>
+                            <li><strong>YouTube:</strong> Video upload, playlist management</li>
+                            <li><strong>Other Platforms:</strong> Depending on the booked package</li>
+                        </ul>
+                        <p class="leading-relaxed mt-3">
+                            Please note that these platforms have their own privacy policies. We recommend familiarizing yourself with the privacy policies of TikTok, Instagram and other platforms used.
                         </p>
                     </section>
 
                     <section>
-                        <h2 class="text-2xl font-bold text-white mb-4">9. Termination</h2>
+                        <h2 class="text-2xl font-bold text-white mb-4">6. Data Security</h2>
+                        <p class="leading-relaxed">
+                            We implement technical and organizational security measures to protect your data:
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 ml-4 mt-3">
+                            <li>SSL/TLS encryption for all data transfers</li>
+                            <li>Encrypted storage of credentials and API tokens</li>
+                            <li>Regular security audits and updates</li>
+                            <li>Access restrictions on production servers</li>
+                            <li>Backups and disaster recovery plans</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-4">7. Data Retention Period</h2>
+                        <p class="leading-relaxed">
+                            We retain your data only for as long as necessary to provide our services or to comply with legal retention requirements:
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 ml-4 mt-3">
+                            <li>Account data: Until deletion of your account + 30 days</li>
+                            <li>Video content: Deleted after expiration of your subscription or upon request</li>
+                            <li>Billing data: 10 years (legal retention requirement)</li>
+                            <li>Analytics data: 24 months</li>
+                            <li>Log files: 90 days</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-4">8. Your Rights (GDPR)</h2>
                         <p class="leading-relaxed mb-3">
-                            Either party may terminate the agreement with 30 days' notice at the end of the month. MediaMass reserves the right to terminate the service without notice in the event of violations of these terms and conditions. In the case of termination without notice by us, a pro-rata refund will be issued.
+                            You have the following rights regarding your personal data:
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li><strong>Right of Access (Art. 15 GDPR):</strong> You may request information about your stored data</li>
+                            <li><strong>Right to Rectification (Art. 16 GDPR):</strong> You may request the correction of inaccurate data</li>
+                            <li><strong>Right to Erasure (Art. 17 GDPR):</strong> You may request the deletion of your data</li>
+                            <li><strong>Right to Restriction of Processing (Art. 18 GDPR):</strong> You may request the restriction of processing</li>
+                            <li><strong>Right to Data Portability (Art. 20 GDPR):</strong> You may receive your data in a structured format</li>
+                            <li><strong>Right to Object (Art. 21 GDPR):</strong> You may object to the processing of your data</li>
+                            <li><strong>Withdrawal of Consent (Art. 7 GDPR):</strong> You may withdraw your consent at any time</li>
+                        </ul>
+                        <p class="leading-relaxed mt-3">To exercise your rights, please contact us at <a href="mailto:info@masspost.store" class="text-violet-400 hover:text-violet-300">info@masspost.store</a>
                         </p>
                     </section>
 
                     <section>
-                        <h2 class="text-2xl font-bold text-white mb-4">10. Changes to the Terms & Conditions</h2>
+                        <h2 class="text-2xl font-bold text-white mb-4">9. Cookies and Tracking</h2>
                         <p class="leading-relaxed">
-                            We reserve the right to amend these terms and conditions at any time. Changes will be communicated by email and take effect 14 days after notification. In the event of significant changes, users have a special right of termination.
+                            Our website uses technically necessary cookies for functionality. We do not use tracking cookies or third-party cookies for advertising purposes. You can disable cookies in your browser settings; however, this may limit the functionality of the website.
                         </p>
                     </section>
 
                     <section>
-                        <h2 class="text-2xl font-bold text-white mb-4">11. Applicable Law</h2>
+                        <h2 class="text-2xl font-bold text-white mb-4">10. Changes to This Privacy Policy</h2>
                         <p class="leading-relaxed">
-                            The laws of the Federal Republic of Germany shall apply. The place of jurisdiction is the registered office of MediaMass, provided the user is a merchant, a legal entity under public law or a special fund under public law.
+                            We reserve the right to amend this privacy policy to adapt it to changes in the legal situation or to changes in our services. The current version is always available on this page. In the event of significant changes, we will notify you by email.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-4">11. Right to Lodge a Complaint with a Supervisory Authority</h2>
+                        <p class="leading-relaxed">
+                            You have the right to lodge a complaint with a data protection supervisory authority regarding our processing of your personal data.
                         </p>
                     </section>
 
                     <section>
                         <h2 class="text-2xl font-bold text-white mb-4">12. Contact</h2>
                         <p class="leading-relaxed">
-                            If you have any questions about these terms and conditions, please contact us at:
+                            If you have any questions about data protection or wish to exercise your rights, please contact us:
                         </p>
                         <p class="mt-3">
                             <strong>E-Mail:</strong> <a href="mailto:info@masspost.store" class="text-violet-400 hover:text-violet-300">info@masspost.store</a><br>
@@ -243,7 +256,7 @@
                     <section class="pt-6 border-t border-white/10">
                         <p class="text-sm text-gray-400 text-center">
                             Last updated: April 3, 2026<br>
-                            MediaMass - Professional Mass Video Distribution
+                            MediaMass - Your data, securely protected under GDPR
                         </p>
                     </section>
                     

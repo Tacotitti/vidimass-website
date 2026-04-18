@@ -38,19 +38,6 @@
 .mobile-overlay.active{opacity:1;pointer-events:auto}
 .mobile-menu-toggle{cursor:pointer;background:none;border:none;padding:8px}
 .mobile-menu-toggle:focus{outline:none}
-
-/* Language Switcher Styles */
-.lang-btn.active,
-.mobile-lang-btn.active {
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(219, 39, 119, 0.2) 100%);
-    border: 1px solid rgba(139, 92, 246, 0.4);
-}
-
-.lang-btn:hover,
-.mobile-lang-btn:hover {
-    transform: translateY(-1px);
-}
-
 </style>
     <!-- i18n Translation System -->
     <script src="i18n.js"></script>
@@ -73,18 +60,6 @@
                     <a href="social-media-charting.html" class="nav-link text-gray-300 hover:text-white transition-colors">Social Media Charting</a>
                     <a href="index.html#packages" class="nav-link text-gray-300 hover:text-white transition-colors">Pricing</a>
                     <a href="contact.html" class="nav-link text-gray-300 hover:text-white transition-colors">Contact</a>
-                    <!-- Language Switcher -->
-                    <div class="language-switcher flex items-center gap-2">
-                        <button onclick="switchLanguage('de')" class="lang-btn px-3 py-1.5 rounded-lg transition-all hover:bg-white/10" data-lang="de">
-                            <span class="text-sm font-medium">🇩🇪 DE</span>
-                        </button>
-                        <span class="text-gray-600">|</span>
-                        <button onclick="switchLanguage('en')" class="lang-btn px-3 py-1.5 rounded-lg transition-all hover:bg-white/10" data-lang="en">
-                            <span class="text-sm font-medium">🇬🇧 EN</span>
-                        </button>
-                    </div>
-
-
                     <a href="contact.html" class="cta-button px-6 py-2.5 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/50 transition-all">
                         <span>Get Started</span>
                     </a>

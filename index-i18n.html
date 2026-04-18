@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Build: 2026-04-18 - Multilingual with i18n -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Posting Service for TikTok, Instagram & Spotify Charting | MediaMass</title>
+    <meta name="description" content="Professional mass posting service for TikTok, Instagram and Spotify charting.">
+    <meta name="keywords" content="mass posting, tiktok, instagram, spotify charting">
+    
+    <!-- Canonical URL (will be updated by i18n) -->
+    <link rel="canonical" href="https://www.masspost.store/">
+    
+    <!-- Meta Robots Tag -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.masspost.store/">
+    <meta property="og:title" content="Mass Posting Service for TikTok, Instagram & Spotify Charting | MediaMass">
+    <meta property="og:description" content="Professional mass posting service.">
+    <meta property="og:image" content="https://www.masspost.store/logo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.masspost.store/">
+    <meta property="twitter:title" content="Mass Posting Service">
+    <meta property="twitter:description" content="Professional mass posting service.">
+    <meta property="twitter:image" content="https://www.masspost.store/logo.png">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=202604040312">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=202604040312">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=202604040312">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=202604040312">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="main.css">
+    
+    <!-- i18n Translation System -->
+    <script src="i18n.js"></script>
+    
+<style>
+/* Inline Mobile Menu Fix - v2 */
+.mobile-menu{position:fixed;top:0;right:-300px;width:280px;height:100vh;background:rgba(15,15,26,0.98);backdrop-filter:blur(20px);z-index:1000;transition:right 0.3s ease;padding:80px 30px 30px;display:flex;flex-direction:column;gap:8px;overflow-y:auto}
+.mobile-menu.active{right:0}
+.mobile-menu a{color:#d1d5db;text-decoration:none;padding:15px 0;border-bottom:1px solid rgba(255,255,255,0.08);font-size:16px;transition:color 0.3s}
+.mobile-menu a:hover{color:#fff}
+.mobile-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:999;opacity:0;pointer-events:none;transition:opacity 0.3s}
+.mobile-overlay.active{opacity:1;pointer-events:auto}
+.mobile-menu-toggle{cursor:pointer;background:none;border:none;padding:8px}
+.mobile-menu-toggle:focus{outline:none}
+</style>
+</head>
+<body class="bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 text-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/30 border-b border-white/5">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="logo flex items-center gap-3">
+                    <img src="logo.png" alt="MediaMass Logo" class="h-8 w-auto">
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent">
+                        MediaMass
+                    </h1>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html#features" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.features">Features</a>
+                    <a href="social-media-charting.html" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.social_media_charting">Social Media Charting</a>
+                    <a href="preisliste.html" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.pricing">Pricing</a>
+                    <a href="contact.html" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.contact">Contact</a>
+
+                    <a href="contact.html" class="cta-button px-6 py-2.5 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/50 transition-all" data-i18n="nav.get_started">
+                        Get Started
+                    </a>
+                </div>
+                <button class="md:hidden mobile-menu-toggle text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="floating-orb floating-orb-1"></div>
+            <div class="floating-orb floating-orb-2"></div>
+            <div class="floating-orb floating-orb-3"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-5xl mx-auto text-center">
+                <!-- Main Headline -->
+                <h2 class="hero-title text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 leading-tight">
+                    <span class="block mb-2">
+                        <span class="text-white font-black tracking-tight" data-i18n="hero.headline_part1">Revolutionize Your</span>
+                    </span>
+                    <span class="block text-4xl md:text-6xl lg:text-7xl mb-2">
+                        <span class="bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent font-bold" data-i18n="hero.headline_part2">Social Media Marketing</span>
+                    </span>
+                    <span class="block">
+                        <span class="text-white font-black tracking-tight" data-i18n="hero.headline_part3">with Mass Posting</span>
+                    </span>
+                </h2>
+
+                <!-- Subheadline -->
+                <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed font-normal" data-i18n="hero.subheadline">
+                    Post up to 250,000 videos daily automatically on TikTok & Instagram. Guaranteed Spotify charting for music professionals.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+                    <a href="contact.html" class="cta-primary px-8 py-4 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-violet-500/50 transition-all transform hover:scale-105" data-i18n="hero.cta_primary">
+                        Get Started
+                    </a>
+                    <a href="#features" class="cta-secondary px-8 py-4 border-2 border-violet-500/50 rounded-full font-semibold text-lg hover:bg-violet-500/10 transition-all" data-i18n="hero.cta_secondary">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section py-24 relative">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <!-- Stat Card 1 -->
+                <div class="stat-card glass-card p-8 rounded-2xl text-center transform hover:scale-105 transition-all">
+                    <div class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent mb-2">
+                        250K+
+                    </div>
+                    <div class="text-gray-300 text-lg" data-i18n="stats.videos_daily">Videos Daily</div>
+                </div>
+
+                <!-- Stat Card 2 -->
+                <div class="stat-card glass-card p-8 rounded-2xl text-center transform hover:scale-105 transition-all">
+                    <div class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent mb-2">
+                        250K+
+                    </div>
+                    <div class="text-gray-300 text-lg" data-i18n="stats.accounts">TikTok Accounts</div>
+                </div>
+
+                <!-- Stat Card 3 -->
+                <div class="stat-card glass-card p-8 rounded-2xl text-center transform hover:scale-105 transition-all">
+                    <div class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent mb-2">
+                        99.9%
+                    </div>
+                    <div class="text-gray-300 text-lg" data-i18n="stats.success_rate">Success Rate</div>
+                </div>
+
+                <!-- Stat Card 4 -->
+                <div class="stat-card glass-card p-8 rounded-2xl text-center transform hover:scale-105 transition-all">
+                    <div class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent mb-2">
+                        100%
+                    </div>
+                    <div class="text-gray-300 text-lg" data-i18n="stats.spotify_charts">Spotify Charts</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section py-24 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent" data-i18n="features.title">
+                        Why MediaMass?
+                    </span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto" data-i18n="features.subtitle">
+                    The most powerful mass posting platform for music professionals, labels and content creators
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Feature 1: TikTok Mass Posting -->
+                <div class="feature-card glass-card p-8 rounded-2xl hover:border-violet-500/50 transition-all">
+                    <div class="w-12 h-12 bg-gradient-to-r from-violet-600 to-pink-600 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="features.tiktok.title">TikTok Mass Posting</h3>
+                    <p class="text-gray-400" data-i18n="features.tiktok.description">Post your videos to up to 250,000 TikTok accounts simultaneously. Automated, secure and fast.</p>
+                </div>
+
+                <!-- Feature 2: Instagram Mass Reels -->
+                <div class="feature-card glass-card p-8 rounded-2xl hover:border-violet-500/50 transition-all">
+                    <div class="w-12 h-12 bg-gradient-to-r from-violet-600 to-pink-600 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="features.instagram.title">Instagram Mass Reels</h3>
+                    <p class="text-gray-400" data-i18n="features.instagram.description">Maximize your reach with automated Instagram Reels posts across thousands of accounts.</p>
+                </div>
+
+                <!-- Feature 3: Spotify Charting -->
+                <div class="feature-card glass-card p-8 rounded-2xl hover:border-violet-500/50 transition-all">
+                    <div class="w-12 h-12 bg-gradient-to-r from-violet-600 to-pink-600 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="features.spotify.title">Spotify Charting</h3>
+                    <p class="text-gray-400" data-i18n="features.spotify.description">Guaranteed chart placement through strategic TikTok music marketing and viral seeding.</p>
+                </div>
+
+                <!-- Feature 4: Automation -->
+                <div class="feature-card glass-card p-8 rounded-2xl hover:border-violet-500/50 transition-all">
+                    <div class="w-12 h-12 bg-gradient-to-r from-violet-600 to-pink-600 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="features.automation.title">Fully Automated</h3>
+                    <p class="text-gray-400" data-i18n="features.automation.description">Set up your campaign once and let our system do the rest - 24/7.</p>
+                </div>
+
+                <!-- Feature 5: Analytics -->
+                <div class="feature-card glass-card p-8 rounded-2xl hover:border-violet-500/50 transition-all">
+                    <div class="w-12 h-12 bg-gradient-to-r from-violet-600 to-pink-600 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="features.analytics.title">Real-time Analytics</h3>
+                    <p class="text-gray-400" data-i18n="features.analytics.description">Track performance, views, engagement and chart position in real-time.</p>
+                </div>
+
+                <!-- Feature 6: Support -->
+                <div class="feature-card glass-card p-8 rounded-2xl hover:border-violet-500/50 transition-all">
+                    <div class="w-12 h-12 bg-gradient-to-r from-violet-600 to-pink-600 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="features.support.title">24/7 Premium Support</h3>
+                    <p class="text-gray-400" data-i18n="features.support.description">Our expert team is available around the clock - in German and English.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-violet-600/20 to-pink-600/20"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6" data-i18n="cta_section.title">
+                    Ready to Get Started?
+                </h2>
+                <p class="text-xl text-gray-300 mb-8" data-i18n="cta_section.subtitle">
+                    Start your first mass posting campaign today
+                </p>
+                <a href="contact.html" class="inline-block px-10 py-4 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-violet-500/50 transition-all transform hover:scale-105" data-i18n="cta_section.button">
+                    Get Free Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-16 relative border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="logo.png" alt="MediaMass Logo" class="h-8 w-auto">
+                        <h3 class="text-2xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent">
+                            MediaMass
+                        </h3>
+                    </div>
+                    <p class="text-gray-400 mb-6" data-i18n="footer.tagline">
+                        The #1 Mass Posting Platform for Music Professionals
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer.quick_links">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="nav.home">Home</a></li>
+                        <li><a href="index.html#features" class="text-gray-400 hover:text-white transition-colors" data-i18n="nav.features">Features</a></li>
+                        <li><a href="preisliste.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="nav.pricing">Pricing</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer.legal">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="datenschutz.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="nutzungsbedingungen.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="footer.terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-white/5 pt-8 text-center">
+                <p class="text-gray-500" data-i18n="footer.copyright">
+                    © 2026 MediaMass. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu (will be created by app.js) -->
+    <div class="mobile-overlay"></div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

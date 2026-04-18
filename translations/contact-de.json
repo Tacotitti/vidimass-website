@@ -1,0 +1,44 @@
+{
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Bereit durchzustarten? Lassen Sie uns über Ihr Projekt sprechen",
+    "form": {
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail",
+      "subject": "Betreff",
+      "message": "Ihre Nachricht",
+      "submit": "Nachricht senden",
+      "sending": "Wird gesendet...",
+      "success": "✅ Nachricht erfolgreich gesendet!",
+      "error": "❌ Fehler beim Senden. Bitte versuchen Sie es erneut."
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "email_label": "E-Mail",
+      "email": "info@masspost.store",
+      "telegram_label": "Telegram",
+      "telegram": "@MassPostSupport",
+      "hours_label": "Öffnungszeiten",
+      "hours": "24/7 Premium Support"
+    },
+    "reasons": {
+      "title": "Warum mit uns arbeiten?",
+      "reason1": {
+        "title": "Sofortige Antworten",
+        "description": "Unser Team antwortet innerhalb von Minuten, nicht Tagen"
+      },
+      "reason2": {
+        "title": "Maßgeschneiderte Lösungen",
+        "description": "Jedes Projekt bekommt eine individuelle Strategie"
+      },
+      "reason3": {
+        "title": "Transparente Preise",
+        "description": "Keine versteckten Kosten, klare Angebote"
+      }
+    },
+    "cta": {
+      "title": "Jetzt kostenlose Beratung buchen",
+      "button": "Termin vereinbaren"
+    }
+  }
+}
