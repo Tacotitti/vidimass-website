@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Create mobile menu and overlay if they don't exist
     if (mobileMenuToggle && !document.querySelector('.mobile-menu')) {
+        console.log('Creating mobile menu...');
+        
         const mobileMenu = document.createElement('div');
         mobileMenu.className = 'mobile-menu';
         mobileMenu.innerHTML = `
@@ -36,9 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         body.appendChild(mobileMenu);
         
-        const overlay = document.createElement('div');
-        overlay.className = 'mobile-overlay';
-        body.appendChild(overlay);
+        // Use existing overlay or create new one
+        let overlay = document.querySelector('.mobile-overlay');
+        if (!overlay) {
+            console.log('Creating overlay...');
+            overlay = document.createElement('div');
+            overlay.className = 'mobile-overlay';
+            body.appendChild(overlay);
+        }
         
         // Apply translations to mobile menu
         if (window.i18n && window.i18n.updatePageContent) {
@@ -49,13 +56,14 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenuToggle.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
-            mobileMenu.classList.toggle('active');
+            const isActive = mobileMenu.classList.toggle('active');
             overlay.classList.toggle('active');
-            console.log('Burger menu toggled:', mobileMenu.classList.contains('active'));
+            console.log('✅ Burger menu toggled:', isActive ? 'OPEN' : 'CLOSED');
         });
         
         // Close menu when clicking overlay
         overlay.addEventListener('click', function() {
+            console.log('✅ Overlay clicked - closing menu');
             mobileMenu.classList.remove('active');
             overlay.classList.remove('active');
         });
@@ -63,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Close menu when clicking links
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', function() {
+                console.log('✅ Link clicked - closing menu');
                 mobileMenu.classList.remove('active');
                 overlay.classList.remove('active');
             });
@@ -74,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.preventDefault();
                 e.stopPropagation();
                 const lang = this.getAttribute('data-lang');
+                console.log('✅ Language switched to:', lang);
                 if (window.i18n && window.i18n.switchLanguage) {
                     window.i18n.switchLanguage(lang);
                 }
@@ -81,6 +91,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 overlay.classList.remove('active');
             });
         });
+        
+        console.log('✅ Mobile menu created successfully!');
+    } else if (!mobileMenuToggle) {
+        console.error('❌ Mobile menu toggle button not found!');
     }
     
     // ============================================
