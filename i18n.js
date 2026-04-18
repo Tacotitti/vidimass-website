@@ -329,34 +329,11 @@ class I18n {
         const nav = document.querySelector('nav .container .flex');
         if (!nav) return;
 
-        // Create switcher for desktop
-        const desktopNav = nav.querySelector('.hidden.md\\:flex');
-        if (desktopNav) {
-            const switcherHTML = `
-                <div class="language-switcher flex items-center gap-2 ml-4">
-                    <button class="lang-switch-btn px-3 py-1.5 rounded-lg transition-all duration-200 text-sm font-medium" data-lang="de">
-                        DE
-                    </button>
-                    <span class="text-gray-500">|</span>
-                    <button class="lang-switch-btn px-3 py-1.5 rounded-lg transition-all duration-200 text-sm font-medium" data-lang="en">
-                        EN
-                    </button>
-                </div>
-            `;
-            desktopNav.insertAdjacentHTML('beforeend', switcherHTML);
-        }
-
-        // Create switcher for mobile menu
-        const mobileMenu = document.querySelector('.mobile-menu');
-        if (mobileMenu) {
-            const mobileSwitcherHTML = `
-                <div class="language-switcher-mobile flex items-center justify-center gap-4 mt-6 pt-6 border-t border-white/10">
-                    <button class="lang-switch-btn px-4 py-2 rounded-lg transition-all duration-200 font-medium" data-lang="de">
-                        🇩🇪 Deutsch
-                    </button>
-                    <button class="lang-switch-btn px-4 py-2 rounded-lg transition-all duration-200 font-medium" data-lang="en">
-                        🇬🇧 English
-                    </button>
+        // DESKTOP SWITCHER DISABLED - Only use mobile menu switcher
+        // Desktop language switching now happens via mobile menu buttons
+        
+        console.log('✅ Language switcher: Mobile-only mode');
+    }
                 </div>
             `;
             mobileMenu.insertAdjacentHTML('beforeend', mobileSwitcherHTML);
