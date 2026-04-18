@@ -139,62 +139,62 @@
                 <!-- TikTok Algorithm Phases -->
                 <div class="glass-card p-8 md:p-12 rounded-2xl mb-12">
                     <h2 class="text-3xl font-bold mb-8 text-white flex items-center gap-3">
-                        <span class="text-4xl">⚙️</span> <span data-i18n="charting.algorithm.title">TikTok's Algorithm: 3 Phases</span>
+                        <span class="text-4xl">⚙️</span> <span>TikTok's Algorithm: 3 Phases</span>
                     </h2>
                     
                     <!-- Phase 1 -->
                     <div class="mb-8 pb-8 border-b border-white/10">
-                        <h3 class="text-2xl font-bold text-violet-400 mb-4" data-i18n="charting.algorithm.phase1.title">Phase 1: Initial Test Pool</h3>
+                        <h3 class="text-2xl font-bold text-violet-400 mb-4">Phase 1: Initial Test Pool</h3>
                         <ul class="space-y-3 text-gray-300">
                             <li class="flex items-start gap-3">
                                 <span class="text-violet-400 mt-1">▸</span>
-                                <span data-i18n="charting.algorithm.phase1.point1">New creation video is shown to 300-500 random users</span>
+                                <span>New creation video is shown to 300-500 random users</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <span class="text-violet-400 mt-1">▸</span>
-                                <span data-i18n="charting.algorithm.phase1.point2">If engagement rate > 8% → advances to Phase 2</span>
+                                <span>If engagement rate > 8% → advances to Phase 2</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <span class="text-violet-400 mt-1">▸</span>
-                                <span data-i18n="charting.algorithm.phase1.point3">If < 8% → video dies</span>
+                                <span>If < 8% → video dies</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Phase 2 -->
                     <div class="mb-8 pb-8 border-b border-white/10">
-                        <h3 class="text-2xl font-bold text-pink-400 mb-4" data-i18n="charting.algorithm.phase2.title">Phase 2: Interest Graph Expansion</h3>
+                        <h3 class="text-2xl font-bold text-pink-400 mb-4">Phase 2: Interest Graph Expansion</h3>
                         <ul class="space-y-3 text-gray-300">
                             <li class="flex items-start gap-3">
                                 <span class="text-pink-400 mt-1">▸</span>
-                                <span data-i18n="charting.algorithm.phase2.point1">Video is shown to users who like similar sounds/hashtags</span>
+                                <span>Video is shown to users who like similar sounds/hashtags</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <span class="text-pink-400 mt-1">▸</span>
-                                <span data-i18n="charting.algorithm.phase2.point2">With each positive signal (Like, Share, Creation) → broader distribution</span>
+                                <span>With each positive signal (Like, Share, Creation) → broader distribution</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <span class="text-pink-400 mt-1">▸</span>
-                                <span data-i18n="charting.algorithm.phase2.point3">Songs with many creations have higher starting chance in Phase 2</span>
+                                <span>Songs with many creations have higher starting chance in Phase 2</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Phase 3 -->
                     <div>
-                        <h3 class="text-2xl font-bold text-fuchsia-400 mb-4" data-i18n="charting.algorithm.phase3.title">Phase 3: Viral Explosion</h3>
+                        <h3 class="text-2xl font-bold text-fuchsia-400 mb-4">Phase 3: Viral Explosion</h3>
                         <ul class="space-y-3 text-gray-300">
                             <li class="flex items-start gap-3">
                                 <span class="text-fuchsia-400 mt-1">▸</span>
-                                <span data-i18n="charting.algorithm.phase3.point1">When critical thresholds are exceeded (e.g., 10,000 creations in 24h)</span>
+                                <span>When critical thresholds are exceeded (e.g., 10,000 creations in 24h)</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <span class="text-fuchsia-400 mt-1">▸</span>
-                                <span data-i18n="charting.algorithm.phase3.point2">TikTok activates "Viral Push" mechanism</span>
+                                <span>TikTok activates "Viral Push" mechanism</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <span class="text-fuchsia-400 mt-1">▸</span>
-                                <span data-i18n="charting.algorithm.phase3.point3">Song is actively pushed in "Trending Sounds" section</span>
+                                <span>Song is actively pushed in "Trending Sounds" section</span>
                             </li>
                         </ul>
                     </div>
@@ -203,29 +203,29 @@
                 <!-- Creation Velocity -->
                 <div class="glass-card p-8 md:p-12 rounded-2xl mb-12">
                     <h2 class="text-3xl font-bold mb-6 text-white flex items-center gap-3">
-                        <span class="text-4xl">⚡</span> <span data-i18n="charting.velocity.title">Creation Velocity as Ranking Factor</span>
+                        <span class="text-4xl">⚡</span> <span>Creation Velocity as Ranking Factor</span>
                     </h2>
                     <p class="text-gray-300 text-lg mb-6">
-                        <span data-i18n="charting.velocity.intro">TikTok doesn't just measure total count, but <strong class="text-white">growth rate</strong>:</span>
+                        <span>TikTok doesn't just measure total count, but <strong class="text-white">growth rate</strong>:</span>
                     </p>
                     
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="bg-slate-900/50 p-6 rounded-xl border border-white/10">
-                            <div class="text-xl font-bold text-gray-400 mb-3" data-i18n="charting.velocity.slow_burn.title">🐌 Slow Burn</div>
-                            <p class="text-gray-300 mb-2" data-i18n="charting.velocity.slow_burn.description">100 creations/day × 30 days = 3,000 total</p>
-                            <div class="text-orange-400 font-semibold" data-i18n="charting.velocity.slow_burn.result">➜ Moderate Ranking</div>
+                            <div class="text-xl font-bold text-gray-400 mb-3">🐌 Slow Burn</div>
+                            <p class="text-gray-300 mb-2">100 creations/day × 30 days = 3,000 total</p>
+                            <div class="text-orange-400 font-semibold">➜ Moderate Ranking</div>
                         </div>
                         
                         <div class="bg-gradient-to-br from-violet-900/30 to-pink-900/30 p-6 rounded-xl border border-violet-500/30">
-                            <div class="text-xl font-bold text-violet-400 mb-3" data-i18n="charting.velocity.viral_spike.title">🚀 Viral Spike</div>
-                            <p class="text-gray-300 mb-2" data-i18n="charting.velocity.viral_spike.description">3,000 creations in 3 days = 3,000 total</p>
-                            <div class="text-green-400 font-semibold" data-i18n="charting.velocity.viral_spike.result">➜ TOP TRENDING</div>
+                            <div class="text-xl font-bold text-violet-400 mb-3">🚀 Viral Spike</div>
+                            <p class="text-gray-300 mb-2">3,000 creations in 3 days = 3,000 total</p>
+                            <div class="text-green-400 font-semibold">➜ TOP TRENDING</div>
                         </div>
                     </div>
 
                     <div class="mt-6 p-4 bg-violet-500/10 border border-violet-500/30 rounded-xl">
                         <p class="text-violet-300 font-semibold">
-                            <span data-i18n="charting.velocity.insight">💡 Why? TikTok wants to push <em>current</em> trends, not old ones.</span>
+                            <span>💡 Why? TikTok wants to push <em>current</em> trends, not old ones.</span>
                         </p>
                     </div>
                 </div>
@@ -233,37 +233,37 @@
                 <!-- Creator Tier Weighting -->
                 <div class="glass-card p-8 md:p-12 rounded-2xl mb-12">
                     <h2 class="text-3xl font-bold mb-6 text-white flex items-center gap-3">
-                        <span class="text-4xl">👥</span> <span data-i18n="charting.creator_tiers.title">Creator Tier Weighting</span>
+                        <span class="text-4xl">👥</span> <span>Creator Tier Weighting</span>
                     </h2>
-                    <p class="text-gray-300 text-lg mb-6" data-i18n="charting.creator_tiers.intro">Not all creations are equal:</p>
+                    <p class="text-gray-300 text-lg mb-6">Not all creations are equal:</p>
                     
                     <div class="overflow-x-auto">
                         <table class="w-full text-left border-collapse">
                             <thead>
                                 <tr class="border-b border-white/20">
-                                    <th class="py-3 px-4 text-violet-400 font-semibold" data-i18n="charting.creator_tiers.table.header_type">Creator Type</th>
-                                    <th class="py-3 px-4 text-violet-400 font-semibold" data-i18n="charting.creator_tiers.table.header_followers">Followers</th>
-                                    <th class="py-3 px-4 text-violet-400 font-semibold" data-i18n="charting.creator_tiers.table.header_weight">Algorithm Weight</th>
+                                    <th class="py-3 px-4 text-violet-400 font-semibold">Creator Type</th>
+                                    <th class="py-3 px-4 text-violet-400 font-semibold">Followers</th>
+                                    <th class="py-3 px-4 text-violet-400 font-semibold">Algorithm Weight</th>
                                 </tr>
                             </thead>
                             <tbody class="text-gray-300">
                                 <tr class="border-b border-white/10">
-                                    <td class="py-3 px-4 font-semibold" data-i18n="charting.creator_tiers.table.mega">Mega-Influencer</td>
+                                    <td class="py-3 px-4 font-semibold">Mega-Influencer</td>
                                     <td class="py-3 px-4">&gt;1M</td>
                                     <td class="py-3 px-4 text-green-400 font-bold">50x</td>
                                 </tr>
                                 <tr class="border-b border-white/10">
-                                    <td class="py-3 px-4 font-semibold" data-i18n="charting.creator_tiers.table.macro">Macro-Influencer</td>
+                                    <td class="py-3 px-4 font-semibold">Macro-Influencer</td>
                                     <td class="py-3 px-4">100K-1M</td>
                                     <td class="py-3 px-4 text-green-400 font-bold">10x</td>
                                 </tr>
                                 <tr class="border-b border-white/10">
-                                    <td class="py-3 px-4 font-semibold" data-i18n="charting.creator_tiers.table.micro">Micro-Influencer</td>
+                                    <td class="py-3 px-4 font-semibold">Micro-Influencer</td>
                                     <td class="py-3 px-4">10K-100K</td>
                                     <td class="py-3 px-4 text-blue-400 font-bold">3x</td>
                                 </tr>
                                 <tr>
-                                    <td class="py-3 px-4 font-semibold" data-i18n="charting.creator_tiers.table.normal">Normal Users</td>
+                                    <td class="py-3 px-4 font-semibold">Normal Users</td>
                                     <td class="py-3 px-4">&lt;10K</td>
                                     <td class="py-3 px-4 text-gray-400">1x</td>
                                 </tr>
@@ -273,7 +273,7 @@
 
                     <div class="mt-6 p-4 bg-pink-500/10 border border-pink-500/30 rounded-xl">
                         <p class="text-pink-300 font-semibold">
-                            <span data-i18n="charting.creator_tiers.insight">💡 One Charli D'Amelio creation = 50 normal user creations (algorithmically)</span>
+                            <span>💡 One Charli D'Amelio creation = 50 normal user creations (algorithmically)</span>
                         </p>
                     </div>
                 </div>
@@ -281,32 +281,32 @@
                 <!-- Sound Discoverability Features -->
                 <div class="glass-card p-8 md:p-12 rounded-2xl mb-12">
                     <h2 class="text-3xl font-bold mb-6 text-white">
-                        <span data-i18n="charting.auto_features.title">Auto-Activated Features</span>
+                        <span>Auto-Activated Features</span>
                     </h2>
                     <p class="text-gray-300 text-lg mb-6">
-                        <span data-i18n="charting.auto_features.intro">At high creation counts, TikTok automatically activates:</span>
+                        <span>At high creation counts, TikTok automatically activates:</span>
                     </p>
                     
                     <div class="grid md:grid-cols-2 gap-4">
                         <div class="flex items-start gap-3 p-4 bg-white/5 border border-white/10 rounded-lg">
                             <span class="text-white text-xl">•</span>
-                            <span class="text-gray-300"><span data-i18n="charting.auto_features.feature1">"Use This Sound" button becomes more prominent</span></span>
+                            <span class="text-gray-300"><span>"Use This Sound" button becomes more prominent</span></span>
                         </div>
                         <div class="flex items-start gap-3 p-4 bg-white/5 border border-white/10 rounded-lg">
                             <span class="text-white text-xl">•</span>
-                            <span class="text-gray-300"><span data-i18n="charting.auto_features.feature2">"Similar Sounds" suggestions</span></span>
+                            <span class="text-gray-300"><span>"Similar Sounds" suggestions</span></span>
                         </div>
                         <div class="flex items-start gap-3 p-4 bg-white/5 border border-white/10 rounded-lg">
                             <span class="text-white text-xl">•</span>
-                            <span class="text-gray-300"><span data-i18n="charting.auto_features.feature3">Push notifications to users</span></span>
+                            <span class="text-gray-300"><span>Push notifications to users</span></span>
                         </div>
                         <div class="flex items-start gap-3 p-4 bg-white/5 border border-white/10 rounded-lg">
                             <span class="text-white text-xl">•</span>
-                            <span class="text-gray-300"><span data-i18n="charting.auto_features.feature4">"Trending Sounds" badge</span></span>
+                            <span class="text-gray-300"><span>"Trending Sounds" badge</span></span>
                         </div>
                         <div class="flex items-start gap-3 p-4 bg-white/5 border border-white/10 rounded-lg col-span-full">
                             <span class="text-white text-xl">•</span>
-                            <span class="text-gray-300"><span data-i18n="charting.auto_features.feature5">Spotify/Apple Music link integration (at 10,000+ creations)</span></span>
+                            <span class="text-gray-300"><span>Spotify/Apple Music link integration (at 10,000+ creations)</span></span>
                         </div>
                     </div>
                 </div>
@@ -314,65 +314,65 @@
                 <!-- Critical Thresholds -->
                 <div class="glass-card p-8 md:p-12 rounded-2xl mb-12">
                     <h2 class="text-3xl font-bold mb-6 text-white flex items-center gap-3">
-                        <span class="text-4xl">📊</span> <span data-i18n="charting.thresholds.title">Critical Thresholds</span>
+                        <span class="text-4xl">📊</span> <span>Critical Thresholds</span>
                     </h2>
                     
                     <div class="space-y-4">
                         <div class="flex items-center gap-4 p-4 bg-slate-900/50 rounded-xl border border-white/10">
-                            <div class="text-2xl font-bold text-violet-400 min-w-[100px]" data-i18n="charting.thresholds.tier1.count">100</div>
+                            <div class="text-2xl font-bold text-violet-400 min-w-[100px]">100</div>
                             <div class="flex-1">
-                                <div class="font-semibold text-white" data-i18n="charting.thresholds.tier1.label">Starting</div>
-                                <div class="text-gray-400 text-sm" data-i18n="charting.thresholds.tier1.description">Normal ranking</div>
+                                <div class="font-semibold text-white">Starting</div>
+                                <div class="text-gray-400 text-sm">Normal ranking</div>
                             </div>
                         </div>
 
                         <div class="flex items-center gap-4 p-4 bg-slate-900/50 rounded-xl border border-violet-500/20">
-                            <div class="text-2xl font-bold text-violet-400 min-w-[100px]" data-i18n="charting.thresholds.tier2.count">1,000</div>
+                            <div class="text-2xl font-bold text-violet-400 min-w-[100px]">1,000</div>
                             <div class="flex-1">
-                                <div class="font-semibold text-white" data-i18n="charting.thresholds.tier2.label">Growing</div>
-                                <div class="text-gray-400 text-sm" data-i18n="charting.thresholds.tier2.description">+20% FYP probability</div>
+                                <div class="font-semibold text-white">Growing</div>
+                                <div class="text-gray-400 text-sm">+20% FYP probability</div>
                             </div>
                         </div>
 
                         <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-violet-900/30 to-pink-900/30 rounded-xl border border-violet-500/30">
-                            <div class="text-2xl font-bold text-violet-400 min-w-[100px]" data-i18n="charting.thresholds.tier3.count">10,000</div>
+                            <div class="text-2xl font-bold text-violet-400 min-w-[100px]">10,000</div>
                             <div class="flex-1">
-                                <div class="font-semibold text-white" data-i18n="charting.thresholds.tier3.label">Popular</div>
-                                <div class="text-pink-400 text-sm" data-i18n="charting.thresholds.tier3.description">"Trending Sounds" eligibility</div>
+                                <div class="font-semibold text-white">Popular</div>
+                                <div class="text-pink-400 text-sm">"Trending Sounds" eligibility</div>
                             </div>
                         </div>
 
                         <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-pink-900/40 to-fuchsia-900/40 rounded-xl border border-pink-500/40">
-                            <div class="text-2xl font-bold text-pink-400 min-w-[100px]" data-i18n="charting.thresholds.tier4.count">50,000</div>
+                            <div class="text-2xl font-bold text-pink-400 min-w-[100px]">50,000</div>
                             <div class="flex-1">
-                                <div class="font-semibold text-white" data-i18n="charting.thresholds.tier4.label">Viral</div>
-                                <div class="text-green-400 text-sm" data-i18n="charting.thresholds.tier4.description">Top 100 Trending, Playlist features</div>
+                                <div class="font-semibold text-white">Viral</div>
+                                <div class="text-green-400 text-sm">Top 100 Trending, Playlist features</div>
                             </div>
                         </div>
 
                         <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-fuchsia-900/50 to-violet-900/50 rounded-xl border border-fuchsia-500/50 shadow-lg shadow-fuchsia-500/20">
-                            <div class="text-2xl font-bold text-fuchsia-400 min-w-[100px]" data-i18n="charting.thresholds.tier5.count">100,000+</div>
+                            <div class="text-2xl font-bold text-fuchsia-400 min-w-[100px]">100,000+</div>
                             <div class="flex-1">
-                                <div class="font-semibold text-white" data-i18n="charting.thresholds.tier5.label">Megahit</div>
-                                <div class="text-yellow-400 text-sm" data-i18n="charting.thresholds.tier5.description">Mainstream media attention, label deals</div>
+                                <div class="font-semibold text-white">Megahit</div>
+                                <div class="text-yellow-400 text-sm">Mainstream media attention, label deals</div>
                             </div>
                         </div>
                     </div>
 
                     <div class="mt-8 p-6 bg-gradient-to-br from-violet-500/20 to-pink-500/20 border border-violet-500/30 rounded-xl">
-                        <h3 class="text-xl font-bold text-white mb-3" data-i18n="charting.thresholds.timing.title">⏱️ Timing Is Critical</h3>
+                        <h3 class="text-xl font-bold text-white mb-3">⏱️ Timing Is Critical</h3>
                         <ul class="space-y-2 text-gray-300">
                             <li class="flex items-start gap-2">
                                 <span class="text-violet-400">•</span>
-                                <span><span data-i18n="charting.thresholds.timing.point1"><strong class="text-white">0-72 hours:</strong> First 1,000 creations determine viral potential</span></span>
+                                <span><span><strong class="text-white">0-72 hours:</strong> First 1,000 creations determine viral potential</span></span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <span class="text-pink-400">•</span>
-                                <span><span data-i18n="charting.thresholds.timing.point2"><strong class="text-white">Week 1:</strong> 10,000+ creations = song becomes "unstoppable"</span></span>
+                                <span><span><strong class="text-white">Week 1:</strong> 10,000+ creations = song becomes "unstoppable"</span></span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <span class="text-fuchsia-400">•</span>
-                                <span><span data-i18n="charting.thresholds.timing.point3"><strong class="text-white">Month 1:</strong> If momentum fades, algorithm deprioritizes the song</span></span>
+                                <span><span><strong class="text-white">Month 1:</strong> If momentum fades, algorithm deprioritizes the song</span></span>
                             </li>
                         </ul>
                     </div>
@@ -381,33 +381,33 @@
                 <!-- Real-World Example -->
                 <div class="glass-card p-8 md:p-12 rounded-2xl mb-12 bg-gradient-to-br from-violet-900/20 to-pink-900/20 border-2 border-violet-500/30">
                     <h2 class="text-3xl font-bold mb-6 text-white flex items-center gap-3">
-                        <span class="text-4xl">💡</span> <span data-i18n="charting.example.title">Real-World Example</span>
+                        <span class="text-4xl">💡</span> <span>Real-World Example</span>
                     </h2>
                     
-                    <h3 class="text-2xl font-bold text-violet-400 mb-4"><span data-i18n="charting.example.song_title">Lil Nas X - "Old Town Road" (2019)</span></h3>
+                    <h3 class="text-2xl font-bold text-violet-400 mb-4"><span>Lil Nas X - "Old Town Road" (2019)</span></h3>
                     
                     <div class="space-y-4 mb-6">
                         <div class="flex items-start gap-4">
-                            <div class="text-lg font-bold text-violet-400 min-w-[120px]" data-i18n="charting.example.day1_3">Day 1-3:</div>
-                            <div class="text-gray-300"><span data-i18n="charting.example.day1_3_desc">5,000 Creations (Dance Challenge)</span></div>
+                            <div class="text-lg font-bold text-violet-400 min-w-[120px]">Day 1-3:</div>
+                            <div class="text-gray-300"><span>5,000 Creations (Dance Challenge)</span></div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="text-lg font-bold text-pink-400 min-w-[120px]" data-i18n="charting.example.week1">Week 1:</div>
-                            <div class="text-gray-300"><span data-i18n="charting.example.week1_desc">50,000 Creations →</span> <span class="text-pink-400 font-semibold"><span data-i18n="charting.example.week1_result">TikTok Trending #1</span></span></div>
+                            <div class="text-lg font-bold text-pink-400 min-w-[120px]">Week 1:</div>
+                            <div class="text-gray-300">50,000 Creations → <span class="text-pink-400 font-semibold"><span>TikTok Trending #1</span></span></div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="text-lg font-bold text-fuchsia-400 min-w-[120px]" data-i18n="charting.example.month1">Month 1:</div>
-                            <div class="text-gray-300"><span data-i18n="charting.example.month1_desc">500,000 Creations →</span> <span class="text-fuchsia-400 font-semibold"><span data-i18n="charting.example.month1_result">Spotify Viral Charts</span></span></div>
+                            <div class="text-lg font-bold text-fuchsia-400 min-w-[120px]">Month 1:</div>
+                            <div class="text-gray-300">500,000 Creations → <span class="text-fuchsia-400 font-semibold"><span>Spotify Viral Charts</span></span></div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="text-lg font-bold text-green-400 min-w-[120px]" data-i18n="charting.example.month2">Month 2:</div>
-                            <div class="text-gray-300"><span data-i18n="charting.example.month2_desc">2 Million Creations →</span> <span class="text-green-400 font-semibold"><span data-i18n="charting.example.month2_result">Billboard #1 (17 weeks)</span></span></div>
+                            <div class="text-lg font-bold text-green-400 min-w-[120px]">Month 2:</div>
+                            <div class="text-gray-300">2 Million Creations → <span class="text-green-400 font-semibold"><span>Billboard #1 (17 weeks)</span></span></div>
                         </div>
                     </div>
 
                     <div class="p-6 bg-gradient-to-r from-violet-500/20 to-pink-500/20 rounded-xl border border-violet-500/40">
                         <p class="text-lg font-semibold text-white">
-                            <span data-i18n="charting.example.result">🎯 Result: Song became a world hit <strong class="text-violet-400">completely through TikTok creations</strong>, NOT through radio/label push.</span>
+                            <span>🎯 Result: Song became a world hit <strong class="text-violet-400">completely through TikTok creations</strong>, NOT through radio/label push.</span>
                         </p>
                     </div>
                 </div>
@@ -416,59 +416,59 @@
                 <div class="glass-card p-8 md:p-12 rounded-2xl bg-gradient-to-br from-violet-600/10 via-fuchsia-600/10 to-pink-600/10 border-2 border-violet-500/50">
                     <h2 class="text-4xl font-bold mb-6 text-center">
                         <span class="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent">
-                            <span data-i18n="charting.advantage.title">🚀 Why MediaMass Is The Game-Changer</span>
+                            <span>🚀 Why MediaMass Is The Game-Changer</span>
                         </span>
                     </h2>
                     
                     <div class="grid md:grid-cols-2 gap-6 mb-8">
                         <div class="p-6 bg-green-500/10 border border-green-500/30 rounded-xl">
-                            <div class="text-green-400 font-bold text-xl mb-3"><span data-i18n="charting.advantage.with_mediamass.title">✅ With MediaMass</span></div>
+                            <div class="text-green-400 font-bold text-xl mb-3"><span>✅ With MediaMass</span></div>
                             <ul class="space-y-2 text-gray-300">
                                 <li class="flex items-start gap-2">
                                     <span class="text-green-400">▸</span>
-                                    <span><span data-i18n="charting.advantage.with_mediamass.point1">250,000 creations in 24 hours</span></span>
+                                    <span><span>250,000 creations in 24 hours</span></span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="text-green-400">▸</span>
-                                    <span><span data-i18n="charting.advantage.with_mediamass.point2">Instant algorithm threshold breach</span></span>
+                                    <span><span>Instant algorithm threshold breach</span></span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="text-green-400">▸</span>
-                                    <span><span data-i18n="charting.advantage.with_mediamass.point3">Guaranteed trending status</span></span>
+                                    <span><span>Guaranteed trending status</span></span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="text-green-400">▸</span>
-                                    <span><span data-i18n="charting.advantage.with_mediamass.point4">Spotify/Apple Music explosion</span></span>
+                                    <span><span>Spotify/Apple Music explosion</span></span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="text-green-400">▸</span>
-                                    <span><span data-i18n="charting.advantage.with_mediamass.point5">Proven data for label deals</span></span>
+                                    <span><span>Proven data for label deals</span></span>
                                 </li>
                             </ul>
                         </div>
 
                         <div class="p-6 bg-red-500/10 border border-red-500/30 rounded-xl">
-                            <div class="text-red-400 font-bold text-xl mb-3"><span data-i18n="charting.advantage.traditional.title">❌ Traditional Method</span></div>
+                            <div class="text-red-400 font-bold text-xl mb-3"><span>❌ Traditional Method</span></div>
                             <ul class="space-y-2 text-gray-300">
                                 <li class="flex items-start gap-2">
                                     <span class="text-red-400">▸</span>
-                                    <span><span data-i18n="charting.advantage.traditional.point1">Hope for organic virality (0.001% chance)</span></span>
+                                    <span><span>Hope for organic virality (0.001% chance)</span></span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="text-red-400">▸</span>
-                                    <span><span data-i18n="charting.advantage.traditional.point2">Slow growth over weeks/months</span></span>
+                                    <span><span>Slow growth over weeks/months</span></span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="text-red-400">▸</span>
-                                    <span><span data-i18n="charting.advantage.traditional.point3">No control over timing</span></span>
+                                    <span><span>No control over timing</span></span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="text-red-400">▸</span>
-                                    <span><span data-i18n="charting.advantage.traditional.point4">Algorithm might never notice</span></span>
+                                    <span><span>Algorithm might never notice</span></span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="text-red-400">▸</span>
-                                    <span><span data-i18n="charting.advantage.traditional.point5">Lost momentum = lost opportunity</span></span>
+                                    <span><span>Lost momentum = lost opportunity</span></span>
                                 </li>
                             </ul>
                         </div>
@@ -477,65 +477,65 @@
                     <!-- TikTok SoundOn Engagement Metrics -->
                     <div class="mt-8 p-6 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border-2 border-blue-500/30 rounded-xl">
                         <h3 class="text-2xl font-bold text-blue-400 mb-4 flex items-center gap-3">
-                            <span class="text-3xl">📊</span> <span data-i18n="charting.soundon.title">TikTok SoundOn Engagement Rankings</span>
+                            <span class="text-3xl">📊</span> <span>TikTok SoundOn Engagement Rankings</span>
                         </h3>
                         
                         <div class="mb-4">
                             <p class="text-gray-300 mb-3">
-                                <strong class="text-white" data-i18n="charting.soundon.formula_label">Track Engagement Formula:</strong><br>
-                                <code class="text-cyan-400 bg-slate-900/50 px-3 py-1 rounded mt-2 inline-block" data-i18n="charting.soundon.formula">(Likes + Shares + Comments + Favorites) / Views</code>
+                                <strong class="text-white">Track Engagement Formula:</strong><br>
+                                <code class="text-cyan-400 bg-slate-900/50 px-3 py-1 rounded mt-2 inline-block">(Likes + Shares + Comments + Favorites) / Views</code>
                             </p>
                             <p class="text-gray-400 text-sm mb-4">
-                                <span data-i18n="charting.soundon.description">For all videos published by creators using your track.</span> <br>
-                                <span class="text-yellow-400" data-i18n="charting.soundon.minimum">⚠️ Minimum requirement: Video views > 5,000</span>
+                                For all videos published by creators using your track. <br>
+                                <span class="text-yellow-400">⚠️ Minimum requirement: Video views > 5,000</span>
                             </p>
                         </div>
 
                         <div class="grid md:grid-cols-5 gap-3">
                             <div class="p-4 bg-purple-500/20 border-2 border-purple-500 rounded-lg text-center">
                                 <div class="text-2xl mb-2">🏆</div>
-                                <div class="font-bold text-purple-400 mb-1" data-i18n="charting.soundon.outstanding.label">OUTSTANDING</div>
-                                <div class="text-sm text-gray-300" data-i18n="charting.soundon.outstanding.desc">Top 10%</div>
+                                <div class="font-bold text-purple-400 mb-1">OUTSTANDING</div>
+                                <div class="text-sm text-gray-300">Top 10%</div>
                             </div>
                             
                             <div class="p-4 bg-blue-500/20 border-2 border-blue-500 rounded-lg text-center">
                                 <div class="text-2xl mb-2">⭐</div>
-                                <div class="font-bold text-blue-400 mb-1" data-i18n="charting.soundon.great.label">GREAT</div>
-                                <div class="text-sm text-gray-300" data-i18n="charting.soundon.great.desc">Top 20%</div>
+                                <div class="font-bold text-blue-400 mb-1">GREAT</div>
+                                <div class="text-sm text-gray-300">Top 20%</div>
                             </div>
                             
                             <div class="p-4 bg-green-500/20 border-2 border-green-500 rounded-lg text-center">
                                 <div class="text-2xl mb-2">✓</div>
-                                <div class="font-bold text-green-400 mb-1" data-i18n="charting.soundon.good.label">GOOD</div>
-                                <div class="text-sm text-gray-300" data-i18n="charting.soundon.good.desc">Top 30%</div>
+                                <div class="font-bold text-green-400 mb-1">GOOD</div>
+                                <div class="text-sm text-gray-300">Top 30%</div>
                             </div>
                             
                             <div class="p-4 bg-yellow-500/20 border-2 border-yellow-500 rounded-lg text-center">
                                 <div class="text-2xl mb-2">👌</div>
-                                <div class="font-bold text-yellow-400 mb-1" data-i18n="charting.soundon.ok.label">OK</div>
-                                <div class="text-sm text-gray-300" data-i18n="charting.soundon.ok.desc">Top 50%</div>
+                                <div class="font-bold text-yellow-400 mb-1">OK</div>
+                                <div class="text-sm text-gray-300">Top 50%</div>
                             </div>
                             
                             <div class="p-4 bg-gray-500/20 border-2 border-gray-500 rounded-lg text-center">
                                 <div class="text-2xl mb-2">➖</div>
-                                <div class="font-bold text-gray-400 mb-1" data-i18n="charting.soundon.fair.label">FAIR</div>
-                                <div class="text-sm text-gray-300" data-i18n="charting.soundon.fair.desc">Bottom 50%</div>
+                                <div class="font-bold text-gray-400 mb-1">FAIR</div>
+                                <div class="text-sm text-gray-300">Bottom 50%</div>
                             </div>
                         </div>
 
                         <div class="mt-4 p-4 bg-violet-500/10 border border-violet-500/30 rounded-lg">
                             <p class="text-sm text-gray-300">
-                                <span data-i18n="charting.soundon.advantage"><strong class="text-violet-400">💡 MediaMass Advantage:</strong> With 250,000 videos we guarantee that your track massively exceeds the <strong class="text-white">5,000 views threshold</strong> and is catapulted into the <strong class="text-purple-400">Top 10% (Outstanding)</strong> rankings!</span>
+                                <span><strong class="text-violet-400">💡 MediaMass Advantage:</strong> With 250,000 videos we guarantee that your track massively exceeds the <strong class="text-white">5,000 views threshold</strong> and is catapulted into the <strong class="text-purple-400">Top 10% (Outstanding)</strong> rankings!</span>
                             </p>
                         </div>
                     </div>
 
                     <div class="text-center">
                         <p class="text-2xl font-bold text-white mb-6">
-                            <span data-i18n="charting.advantage.conclusion">Don't hope for viral success — <span class="text-violet-400">engineer it.</span></span>
+                            <span>Don't hope for viral success — <span class="text-violet-400">engineer it.</span></span>
                         </p>
                         <a href="index.html#packages" class="inline-block px-8 py-4 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-violet-500/50 transition-all transform hover:scale-105">
-                            <span data-i18n="charting.advantage.cta">Get Started Now</span>
+                            <span>Get Started Now</span>
                         </a>
                     </div>
                 </div>
