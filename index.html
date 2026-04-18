@@ -82,7 +82,7 @@
                         Get Started
                     </a>
                 </div>
-                <button class="md:hidden mobile-menu-toggle text-white">
+                <button class="md:hidden mobile-menu-toggle text-white" onclick="toggleMobileMenu()">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -90,6 +90,60 @@
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+        <a href="index.html" onclick="closeMobileMenu()" data-i18n="nav.home">Home</a>
+        <a href="index.html#features" onclick="closeMobileMenu()" data-i18n="nav.features">Features</a>
+        <a href="social-media-charting.html" onclick="closeMobileMenu()" data-i18n="nav.social_media_charting">Social Media Charting</a>
+        <a href="preisliste.html" onclick="closeMobileMenu()" data-i18n="nav.pricing">Pricing</a>
+        <a href="contact.html" onclick="closeMobileMenu()" data-i18n="nav.contact">Contact</a>
+        
+        <div class="mobile-lang-switcher" style="display:flex;align-items:center;justify-content:center;gap:12px;padding-top:24px;margin-top:24px;border-top:1px solid rgba(255,255,255,0.1)">
+            <button class="mobile-lang-btn" onclick="switchLang('de')" style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:14px;font-weight:500;cursor:pointer;transition:all 0.2s">
+                <span style="font-size:20px">🇩🇪</span>
+                <span>Deutsch</span>
+            </button>
+            <button class="mobile-lang-btn" onclick="switchLang('en')" style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:14px;font-weight:500;cursor:pointer;transition:all 0.2s">
+                <span style="font-size:20px">🇬🇧</span>
+                <span>English</span>
+            </button>
+        </div>
+        
+        <a href="contact.html" onclick="closeMobileMenu()" class="block w-full mt-4 px-6 py-3 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg transition-all text-center" data-i18n="nav.get_started">
+            Get Started
+        </a>
+    </div>
+    
+    <!-- Mobile Overlay -->
+    <div id="mobileOverlay" class="mobile-overlay" onclick="closeMobileMenu()"></div>
+
+    <script>
+    // Simple Mobile Menu Toggle - Inline for reliability
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('mobileOverlay');
+        menu.classList.toggle('active');
+        overlay.classList.toggle('active');
+        console.log('🍔 Menu toggled:', menu.classList.contains('active'));
+    }
+    
+    function closeMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('mobileOverlay');
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+        console.log('❌ Menu closed');
+    }
+    
+    function switchLang(lang) {
+        if (window.i18n && window.i18n.switchLanguage) {
+            window.i18n.switchLanguage(lang);
+        }
+        closeMobileMenu();
+        console.log('🌐 Language switched to:', lang);
+    }
+    </script>
 
     <!-- Hero Section -->
     <section class="hero-section relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
