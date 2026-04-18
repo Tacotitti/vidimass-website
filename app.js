@@ -13,13 +13,24 @@ document.addEventListener('DOMContentLoaded', function() {
         const mobileMenu = document.createElement('div');
         mobileMenu.className = 'mobile-menu';
         mobileMenu.innerHTML = `
-            <a href="index.html">Home</a>
-            <a href="index.html#features">Features</a>
-            <a href="social-media-charting.html">Social Media Charting</a>
-            <a href="preisliste.html">Preisliste</a>
-            <a href="contact.html">Kontakt</a>
+            <a href="index.html" data-i18n="nav.home">Home</a>
+            <a href="index.html#features" data-i18n="nav.features">Features</a>
+            <a href="social-media-charting.html" data-i18n="nav.social_media_charting">Social Media Charting</a>
+            <a href="preisliste.html" data-i18n="nav.pricing">Pricing</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact</a>
             
-            <a href="contact.html" class="block w-full mt-4 px-6 py-3 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg transition-all text-center">
+            <div class="mobile-lang-switcher" style="display:flex;align-items:center;justify-content:center;gap:12px;padding-top:24px;margin-top:24px;border-top:1px solid rgba(255,255,255,0.1)">
+                <button class="mobile-lang-btn" data-lang="de" style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:14px;font-weight:500;cursor:pointer;transition:all 0.2s">
+                    <span style="font-size:20px">🇩🇪</span>
+                    <span>Deutsch</span>
+                </button>
+                <button class="mobile-lang-btn" data-lang="en" style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:14px;font-weight:500;cursor:pointer;transition:all 0.2s">
+                    <span style="font-size:20px">🇬🇧</span>
+                    <span>English</span>
+                </button>
+            </div>
+            
+            <a href="contact.html" class="block w-full mt-4 px-6 py-3 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg transition-all text-center" data-i18n="nav.get_started">
                 <span>Get Started</span>
             </a>
         `;
@@ -28,6 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const overlay = document.createElement('div');
         overlay.className = 'mobile-overlay';
         body.appendChild(overlay);
+        
+        // Apply translations to mobile menu
+        if (window.i18n && window.i18n.updatePageContent) {
+            setTimeout(() => window.i18n.updatePageContent(), 100);
+        }
         
         // Mobile menu toggle functionality
         mobileMenuToggle.addEventListener('click', function(e) {
@@ -47,6 +63,20 @@ document.addEventListener('DOMContentLoaded', function() {
         // Close menu when clicking links
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+        });
+        
+        // Language switcher event listeners in mobile menu
+        mobileMenu.querySelectorAll('.mobile-lang-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                const lang = this.getAttribute('data-lang');
+                if (window.i18n && window.i18n.switchLanguage) {
+                    window.i18n.switchLanguage(lang);
+                }
                 mobileMenu.classList.remove('active');
                 overlay.classList.remove('active');
             });
@@ -330,5 +360,6 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('%c Try the Konami Code! ⬆️⬆️⬇️⬇️⬅️➡️⬅️➡️BA ', 'color: #6b7280; font-size: 12px;');
 });
 
-/ /   C a c h e   b u s t :   2 0 2 6 - 0 4 - 1 4   1 2 : 2 6 : 4 4  
+/ /   C a c h e   b u s t :   2 0 2 6 - 0 4 - 1 4   1 2 : 2 6 : 4 4 
+ 
  
