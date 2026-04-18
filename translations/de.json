@@ -132,149 +132,149 @@
   },
   "charting": {
     "hero": {
-      "title_part1": "How Mass Posting",
-      "title_part2": "Drives Viral Success",
-      "subtitle": "The science behind TikTok's algorithm and why creation velocity is the ultimate growth hack for music artists"
+      "title_part1": "Wie Mass Posting",
+      "title_part2": "Viralen Erfolg antreibt",
+      "subtitle": "Die Wissenschaft hinter dem TikTok-Algorithmus und warum Creation Velocity der ultimative Growth Hack für Musikkünstler ist"
     },
     "intro": {
-      "title": "🎵 Why Video Creations Are Everything",
-      "paragraph": "Video Creations (User-Generated Content with your song) are the most important ranking factor for musical success on TikTok. Here's the technical breakdown of how TikTok's algorithm works and why mass posting changes the game.",
-      "important_text": "the most important ranking factor"
+      "title": "🎵 Warum Video Creations alles sind",
+      "paragraph": "Video Creations (User-Generated Content mit Ihrem Song) sind der wichtigste Ranking-Faktor für musikalischen Erfolg auf TikTok. Hier ist die technische Aufschlüsselung, wie der TikTok-Algorithmus funktioniert und warum Mass Posting das Spiel verändert.",
+      "important_text": "der wichtigste Ranking-Faktor"
     },
     "algorithm": {
-      "title": "TikTok's Algorithm: 3 Phases",
+      "title": "TikToks Algorithmus: 3 Phasen",
       "phase1": {
-        "title": "Phase 1: Initial Test Pool",
-        "point1": "New creation video is shown to 300-500 random users",
-        "point2": "If engagement rate > 8% → advances to Phase 2",
-        "point3": "If < 8% → video dies"
+        "title": "Phase 1: Initialer Test Pool",
+        "point1": "Neues Creation-Video wird 300-500 zufälligen Nutzern gezeigt",
+        "point2": "Wenn Engagement-Rate > 8% → geht weiter zu Phase 2",
+        "point3": "Wenn < 8% → Video stirbt"
       },
       "phase2": {
         "title": "Phase 2: Interest Graph Expansion",
-        "point1": "Video is shown to users who like similar sounds/hashtags",
-        "point2": "With each positive signal (Like, Share, Creation) → broader distribution",
-        "point3": "Songs with many creations have higher starting chance in Phase 2"
+        "point1": "Video wird Nutzern gezeigt, die ähnliche Sounds/Hashtags mögen",
+        "point2": "Mit jedem positiven Signal (Like, Share, Creation) → breitere Verteilung",
+        "point3": "Songs mit vielen Creations haben höhere Startchance in Phase 2"
       },
       "phase3": {
-        "title": "Phase 3: Viral Explosion",
-        "point1": "When critical thresholds are exceeded (e.g., 10,000 creations in 24h)",
-        "point2": "TikTok activates \"Viral Push\" mechanism",
-        "point3": "Song is actively pushed in \"Trending Sounds\" section"
+        "title": "Phase 3: Virale Explosion",
+        "point1": "Wenn kritische Schwellenwerte überschritten werden (z.B. 10.000 Creations in 24h)",
+        "point2": "TikTok aktiviert \"Viral Push\"-Mechanismus",
+        "point3": "Song wird aktiv im \"Trending Sounds\"-Bereich gepusht"
       }
     },
     "velocity": {
-      "title": "Creation Velocity as Ranking Factor",
-      "intro": "TikTok doesn't just measure total count, but",
-      "growth_rate": "growth rate",
+      "title": "Creation Velocity als Ranking-Faktor",
+      "intro": "TikTok misst nicht nur die Gesamtzahl, sondern die",
+      "growth_rate": "Wachstumsrate",
       "slow_burn": {
-        "title": "🐌 Slow Burn",
-        "description": "100 creations/day × 30 days = 3,000 total",
-        "result": "➜ Moderate Ranking"
+        "title": "🐌 Langsames Wachstum",
+        "description": "100 Creations/Tag × 30 Tage = 3.000 gesamt",
+        "result": "➜ Moderates Ranking"
       },
       "viral_spike": {
-        "title": "🚀 Viral Spike",
-        "description": "3,000 creations in 3 days = 3,000 total",
+        "title": "🚀 Viraler Spike",
+        "description": "3.000 Creations in 3 Tagen = 3.000 gesamt",
         "result": "➜ TOP TRENDING"
       },
-      "insight": "💡 Why? TikTok wants to push current trends, not old ones.",
-      "current": "current"
+      "insight": "💡 Warum? TikTok möchte aktuelle Trends pushen, nicht alte.",
+      "current": "aktuelle"
     },
     "creator_tiers": {
-      "title": "Creator Tier Weighting",
-      "intro": "Not all creations are equal:",
+      "title": "Creator-Tier-Gewichtung",
+      "intro": "Nicht alle Creations sind gleich:",
       "table": {
-        "header_type": "Creator Type",
-        "header_followers": "Followers",
-        "header_weight": "Algorithm Weight",
+        "header_type": "Creator-Typ",
+        "header_followers": "Follower",
+        "header_weight": "Algorithmus-Gewichtung",
         "mega": "Mega-Influencer",
         "macro": "Macro-Influencer",
         "micro": "Micro-Influencer",
-        "normal": "Normal Users"
+        "normal": "Normale Nutzer"
       },
-      "insight": "💡 One Charli D'Amelio creation = 50 normal user creations (algorithmically)"
+      "insight": "💡 Eine Charli D'Amelio Creation = 50 normale Nutzer-Creations (algorithmisch)"
     },
     "auto_features": {
-      "title": "Auto-Activated Features",
-      "intro": "At high creation counts, TikTok automatically activates:",
-      "feature1": "\"Use This Sound\" button becomes more prominent",
-      "feature2": "\"Similar Sounds\" suggestions",
-      "feature3": "Push notifications to users",
-      "feature4": "\"Trending Sounds\" badge",
-      "feature5": "Spotify/Apple Music link integration (at 10,000+ creations)"
+      "title": "Automatisch aktivierte Features",
+      "intro": "Bei hohen Creation-Zahlen aktiviert TikTok automatisch:",
+      "feature1": "\"Diesen Sound verwenden\"-Button wird prominenter",
+      "feature2": "\"Ähnliche Sounds\"-Vorschläge",
+      "feature3": "Push-Benachrichtigungen an Nutzer",
+      "feature4": "\"Trending Sounds\"-Badge",
+      "feature5": "Spotify/Apple Music Link-Integration (ab 10.000+ Creations)"
     },
     "thresholds": {
-      "title": "Critical Thresholds",
+      "title": "Kritische Schwellenwerte",
       "tier1": {
         "count": "100",
-        "label": "Starting",
-        "description": "Normal ranking"
+        "label": "Start",
+        "description": "Normales Ranking"
       },
       "tier2": {
-        "count": "1,000",
-        "label": "Growing",
-        "description": "+20% FYP probability"
+        "count": "1.000",
+        "label": "Wachsend",
+        "description": "+20% FYP-Wahrscheinlichkeit"
       },
       "tier3": {
-        "count": "10,000",
-        "label": "Popular",
-        "description": "\"Trending Sounds\" eligibility"
+        "count": "10.000",
+        "label": "Beliebt",
+        "description": "\"Trending Sounds\"-Berechtigung"
       },
       "tier4": {
-        "count": "50,000",
+        "count": "50.000",
         "label": "Viral",
-        "description": "Top 100 Trending, Playlist features"
+        "description": "Top 100 Trending, Playlist-Features"
       },
       "tier5": {
-        "count": "100,000+",
+        "count": "100.000+",
         "label": "Megahit",
-        "description": "Mainstream media attention, label deals"
+        "description": "Mainstream-Medienaufmerksamkeit, Label-Deals"
       },
       "timing": {
-        "title": "⏱️ Timing Is Critical",
-        "point1": "0-72 hours: First 1,000 creations determine viral potential",
-        "first_hours": "0-72 hours:",
-        "first_hours_desc": "First 1,000 creations determine viral potential",
-        "point2": "Week 1: 10,000+ creations = song becomes \"unstoppable\"",
-        "week1": "Week 1:",
-        "week1_desc": "10,000+ creations = song becomes \"unstoppable\"",
-        "point3": "Month 1: If momentum fades, algorithm deprioritizes the song",
-        "month1": "Month 1:",
-        "month1_desc": "If momentum fades, algorithm deprioritizes the song"
+        "title": "⏱️ Timing ist entscheidend",
+        "point1": "0-72 Stunden: Erste 1.000 Creations bestimmen virales Potenzial",
+        "first_hours": "0-72 Stunden:",
+        "first_hours_desc": "Erste 1.000 Creations bestimmen virales Potenzial",
+        "point2": "Woche 1: 10.000+ Creations = Song wird \"unaufhaltsam\"",
+        "week1": "Woche 1:",
+        "week1_desc": "10.000+ Creations = Song wird \"unaufhaltsam\"",
+        "point3": "Monat 1: Wenn Momentum nachlässt, priorisiert der Algorithmus den Song herab",
+        "month1": "Monat 1:",
+        "month1_desc": "Wenn Momentum nachlässt, priorisiert der Algorithmus den Song herab"
       }
     },
     "example": {
-      "title": "💡 Real-World Example",
+      "title": "💡 Beispiel aus der Praxis",
       "song_title": "Lil Nas X - \"Old Town Road\" (2019)",
-      "day1_3": "Day 1-3:",
-      "day1_3_desc": "5,000 Creations (Dance Challenge)",
-      "week1": "Week 1:",
-      "week1_desc": "50,000 Creations →",
+      "day1_3": "Tag 1-3:",
+      "day1_3_desc": "5.000 Creations (Dance Challenge)",
+      "week1": "Woche 1:",
+      "week1_desc": "50.000 Creations →",
       "week1_result": "TikTok Trending #1",
-      "month1": "Month 1:",
-      "month1_desc": "500,000 Creations →",
+      "month1": "Monat 1:",
+      "month1_desc": "500.000 Creations →",
       "month1_result": "Spotify Viral Charts",
-      "month2": "Month 2:",
-      "month2_desc": "2 Million Creations →",
-      "month2_result": "Billboard #1 (17 weeks)",
-      "result": "🎯 Result: Song became a world hit completely through TikTok creations, NOT through radio/label push.",
-      "completely_through": "completely through TikTok creations"
+      "month2": "Monat 2:",
+      "month2_desc": "2 Millionen Creations →",
+      "month2_result": "Billboard #1 (17 Wochen)",
+      "result": "🎯 Ergebnis: Song wurde komplett durch TikTok-Creations zum Welthit, NICHT durch Radio/Label-Push.",
+      "completely_through": "komplett durch TikTok-Creations"
     },
     "soundon": {
       "title": "📊 TikTok SoundOn Engagement Rankings",
-      "formula_label": "Track Engagement Formula:",
-      "formula": "(Likes + Shares + Comments + Favorites) / Views",
-      "description": "For all videos published by creators using your track.",
-      "minimum": "⚠️ Minimum requirement: Video views > 5,000",
+      "formula_label": "Track Engagement Formel:",
+      "formula": "(Likes + Shares + Kommentare + Favoriten) / Views",
+      "description": "Für alle Videos, die von Creators mit Ihrem Track veröffentlicht wurden.",
+      "minimum": "⚠️ Mindestanforderung: Video-Views > 5.000",
       "outstanding": {
-        "label": "OUTSTANDING",
+        "label": "HERAUSRAGEND",
         "desc": "Top 10%"
       },
       "great": {
-        "label": "GREAT",
+        "label": "SEHR GUT",
         "desc": "Top 20%"
       },
       "good": {
-        "label": "GOOD",
+        "label": "GUT",
         "desc": "Top 30%"
       },
       "ok": {
@@ -282,34 +282,34 @@
         "desc": "Top 50%"
       },
       "fair": {
-        "label": "FAIR",
-        "desc": "Bottom 50%"
+        "label": "AUSREICHEND",
+        "desc": "Untere 50%"
       },
-      "advantage": "💡 MediaMass Advantage: With 250,000 videos we guarantee that your track massively exceeds the 5,000 views threshold and is catapulted into the Top 10% (Outstanding) rankings!",
-      "advantage_threshold": "5,000 views threshold",
-      "advantage_ranking": "Top 10% (Outstanding)"
+      "advantage": "💡 MediaMass Vorteil: Mit 250.000 Videos garantieren wir, dass Ihr Track die 5.000-Views-Schwelle massiv überschreitet und in die Top 10% (Herausragend) Rankings katapultiert wird!",
+      "advantage_threshold": "5.000-Views-Schwelle",
+      "advantage_ranking": "Top 10% (Herausragend)"
     },
     "advantage": {
-      "title": "🚀 Why MediaMass Is The Game-Changer",
+      "title": "🚀 Warum MediaMass der Game-Changer ist",
       "with_mediamass": {
-        "title": "✅ With MediaMass",
-        "point1": "250,000 creations in 24 hours",
-        "point2": "Instant algorithm threshold breach",
-        "point3": "Guaranteed trending status",
-        "point4": "Spotify/Apple Music explosion",
-        "point5": "Proven data for label deals"
+        "title": "✅ Mit MediaMass",
+        "point1": "250.000 Creations in 24 Stunden",
+        "point2": "Sofortiger Algorithmus-Schwellenwert-Durchbruch",
+        "point3": "Garantierter Trending-Status",
+        "point4": "Spotify/Apple Music Explosion",
+        "point5": "Nachgewiesene Daten für Label-Deals"
       },
       "traditional": {
-        "title": "❌ Traditional Method",
-        "point1": "Hope for organic virality (0.001% chance)",
-        "point2": "Slow growth over weeks/months",
-        "point3": "No control over timing",
-        "point4": "Algorithm might never notice",
-        "point5": "Lost momentum = lost opportunity"
+        "title": "❌ Traditionelle Methode",
+        "point1": "Hoffnung auf organische Viralität (0,001% Chance)",
+        "point2": "Langsames Wachstum über Wochen/Monate",
+        "point3": "Keine Kontrolle über Timing",
+        "point4": "Algorithmus bemerkt es möglicherweise nie",
+        "point5": "Verlorenes Momentum = verlorene Chance"
       },
-      "conclusion": "Don't hope for viral success —",
-      "engineer_it": "engineer it.",
-      "cta": "Get Started Now"
+      "conclusion": "Hoffen Sie nicht auf viralen Erfolg —",
+      "engineer_it": "erschaffen Sie ihn.",
+      "cta": "Jetzt starten"
     }
   },
   "pricing": {
