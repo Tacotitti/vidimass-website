@@ -52,7 +52,7 @@
 /* Inline Mobile Menu Fix - v2 */
 .mobile-menu{position:fixed;top:0;right:-300px;width:280px;height:100vh;background:rgba(15,15,26,0.98);backdrop-filter:blur(20px);z-index:1000;transition:right 0.3s ease;padding:80px 30px 30px;display:flex;flex-direction:column;gap:8px;overflow-y:auto}
 .mobile-menu.active{right:0}
-.mobile-menu a{color:#d1d5db;text-decoration:none;padding:15px 0;border-bottom:1px solid rgba(255.255,255,0.08);font-size:16px;transition:color 0.3s}
+.mobile-menu a{color:#d1d5db;text-decoration:none;padding:15px 0;border-bottom:1px solid rgba(255,255,255,0.08);font-size:16px;transition:color 0.3s}
 .mobile-menu a:hover{color:#fff}
 .mobile-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:999;opacity:0;pointer-events:none;transition:opacity 0.3s}
 .mobile-overlay.active{opacity:1;pointer-events:auto}
@@ -99,12 +99,12 @@
         <a href="preisliste.html" onclick="closeMobileMenu()" data-i18n="nav.pricing">Pricing</a>
         <a href="contact.html" onclick="closeMobileMenu()" data-i18n="nav.contact">Contact</a>
         
-        <div class="mobile-lang-switcher" style="display:flex;align-items:center;justify-content:center;gap:12px;padding-top:24px;margin-top:24px;border-top:1px solid rgba(255.255,255,0.1)">
-            <button class="mobile-lang-btn" onclick="switchLang('de')" style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:rgba(255.255,255,0.05);border:1px solid rgba(255.255,255,0.1);color:#fff;font-size:14px;font-weight:500;cursor:pointer;transition:all 0.2s">
+        <div class="mobile-lang-switcher" style="display:flex;align-items:center;justify-content:center;gap:12px;padding-top:24px;margin-top:24px;border-top:1px solid rgba(255,255,255,0.1)">
+            <button class="mobile-lang-btn" onclick="switchLang('de')" style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:14px;font-weight:500;cursor:pointer;transition:all 0.2s">
                 <span style="font-size:20px">🇩🇪</span>
                 <span>Deutsch</span>
             </button>
-            <button class="mobile-lang-btn" onclick="switchLang('en')" style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:rgba(255.255,255,0.05);border:1px solid rgba(255.255,255,0.1);color:#fff;font-size:14px;font-weight:500;cursor:pointer;transition:all 0.2s">
+            <button class="mobile-lang-btn" onclick="switchLang('en')" style="display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:14px;font-weight:500;cursor:pointer;transition:all 0.2s">
                 <span style="font-size:20px">🇬🇧</span>
                 <span>English</span>
             </button>
