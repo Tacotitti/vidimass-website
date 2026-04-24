@@ -6,11 +6,26 @@
     box-sizing: border-box;
 }
 
-/* Remove focus outline from buttons and links (except burger menu) */
+/* Remove focus outline from all interactive elements */
+*:focus,
+*:focus-visible,
+*:focus-within,
 button:focus,
 a:focus,
 .cta-button:focus,
-.nav-link:focus.package-card a:focus,
+.nav-link:focus,
+.package-card a:focus,
+.logo:focus,
+.logo a:focus,
+h1:focus,
+h1 a:focus,
+footer a:focus,
+.footer a:focus,
+.lang-btn:focus,
+.mobile-lang-btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
 .logo:focus,
 .logo a:focus,
 h1:focus,
