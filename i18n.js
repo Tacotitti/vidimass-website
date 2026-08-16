@@ -326,18 +326,9 @@ class I18n {
      * Create language switcher component in navigation
      */
     createLanguageSwitcher() {
-        const nav = document.querySelector('nav .container .flex');
-        if (!nav) return;
-
-        // DESKTOP SWITCHER DISABLED - Only use mobile menu switcher
-        // Desktop language switching now happens via mobile menu buttons
-        
-        console.log('✅ Language switcher: Mobile-only mode');
-    }
-                </div>
-            `;
-            mobileMenu.insertAdjacentHTML('beforeend', mobileSwitcherHTML);
-        }
+        // Language switcher buttons are embedded directly in HTML mobile menus.
+        // No dynamic creation needed.
+        console.log('✅ Language switcher: buttons embedded in HTML');
     }
 
     /**
