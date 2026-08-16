@@ -135,7 +135,7 @@
     
 <style>
 /* Inline Mobile Menu Fix - v2 */
-.mobile-menu{position:fixed;top:0;right:-300px;width:280px;height:100vh;background:rgba(15,15,26,0.98);backdrop-filter:blur(20px);z-index:1000;transition:right 0.3s ease;padding:80px 30px 30px;display:flex;flex-direction:column;gap:8px;overflow-y:auto}
+.mobile-menu{position:fixed;top:0;right:-105%;width:85%;max-width:320px;height:100vh;background:rgba(15,15,26,0.98);backdrop-filter:blur(20px);z-index:1000;transition:right 0.3s ease;padding:80px 24px 30px;display:flex;flex-direction:column;gap:8px;overflow-y:auto}
 .mobile-menu.active{right:0}
 .mobile-menu a{color:#d1d5db;text-decoration:none;padding:15px 0;border-bottom:1px solid rgba(255,255,255,0.08);font-size:16px;transition:color 0.3s}
 .mobile-menu a:hover{color:#fff}
@@ -189,17 +189,15 @@
         <a href="about.html" onclick="closeMobileMenu()">About Us</a>
         <a href="contact.html" onclick="closeMobileMenu()" data-i18n="nav.contact">Contact</a>
         
-        
-        
-        <a href="contact.html" onclick="closeMobileMenu()" class="block w-full mt-4 px-6 py-3 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg transition-all text-center" data-i18n="nav.get_started">
-            Get Started
-        </a>
-
         <!-- Language Switcher -->
-        <div class="flex gap-2 mt-4 pt-4 border-t border-white/10">
+        <div class="flex gap-2 mt-2 mb-1">
             <button class="lang-switch-btn mobile-lang-btn flex-1 py-2 rounded-full text-sm font-semibold border border-white/20 transition-all" data-lang="de">🇩🇪 DE</button>
             <button class="lang-switch-btn mobile-lang-btn flex-1 py-2 rounded-full text-sm font-semibold border border-white/20 transition-all" data-lang="en">🇬🇧 EN</button>
         </div>
+
+        <a href="contact.html" onclick="closeMobileMenu()" class="block w-full mt-2 px-6 py-3 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg transition-all text-center" data-i18n="nav.get_started">
+            Get Started
+        </a>
     </div>
     
     <!-- Mobile Overlay -->
