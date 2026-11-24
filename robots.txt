@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /backup_favicons/
 
 Sitemap: https://masspost.store/sitemap.xml

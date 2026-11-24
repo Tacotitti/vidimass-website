@@ -6,11 +6,11 @@
     <title>Contact MediaMass – Start Your Mass Posting Campaign</title>
     <meta name="description" content="Get in touch with MediaMass to start your TikTok or Instagram mass posting campaign. Free consultation. 250,000 accounts. Guaranteed Spotify charting.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <link rel="canonical" href="https://masspost.store/contact.html">
+    <link rel="canonical" href="https://masspost.store/contact">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://masspost.store/contact.html">
+    <meta property="og:url" content="https://masspost.store/contact">
     <meta property="og:title" content="Contact MediaMass – Start Your Mass Posting Campaign">
     <meta property="og:description" content="Get in touch with MediaMass to start your TikTok or Instagram mass posting campaign. Free consultation.">
     <meta property="og:image" content="https://masspost.store/logo.png">
@@ -31,13 +31,13 @@
           "@id": "https://masspost.store/#organization",
           "name": "MediaMass",
           "url": "https://masspost.store/",
-          "contactPoint": {"@type": "ContactPoint", "url": "https://masspost.store/contact.html", "contactType": "customer service"}
+          "contactPoint": {"@type": "ContactPoint", "url": "https://masspost.store/contact", "contactType": "customer service"}
         },
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://masspost.store/"},
-            {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://masspost.store/contact.html"}
+            {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://masspost.store/contact"}
           ]
         }
       ]
@@ -63,7 +63,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/tailwind.css">
     
     <!-- Custom Styles -->
     <link rel="stylesheet" href="main.css">
@@ -101,19 +101,19 @@
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="logo flex items-center gap-3">
-                    <a href="index.html" class="flex items-center gap-3">
+                    <a href="/" class="flex items-center gap-3">
                         <img src="logo.png" alt="MediaMass Logo" class="h-8 w-auto">
-                        <h1 class="text-2xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent">
+                        <div class="text-2xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent" style="font-family:\'Poppins\',sans-serif">
                             MediaMass
-                        </h1>
+                        </div>
                     </a>
                 </div>
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="index.html#features" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.features">Features</a>
-                    <a href="social-media-charting.html" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.social_media_charting">Social Media Charting</a>
-                    <a href="preisliste.html" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.pricing">Pricing</a>
-                    <a href="blog/" class="nav-link text-gray-300 hover:text-white transition-colors">Blog</a>
-                    <a href="contact.html" class="nav-link text-violet-400 transition-colors" data-i18n="nav.contact">Contact</a>
+                    <a href="/#features" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.features">Features</a>
+                    <a href="/social-media-charting" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.social_media_charting">Social Media Charting</a>
+                    <a href="/preisliste" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.pricing">Pricing</a>
+                    <a href="/blog/" class="nav-link text-gray-300 hover:text-white transition-colors">Blog</a>
+                    <a href="/contact" class="nav-link text-violet-400 transition-colors" data-i18n="nav.contact">Contact</a>
                     <!-- Language Switcher -->
                     <div class="language-switcher flex items-center gap-2">
                         <button  class="lang-btn px-3 py-1.5 rounded-lg transition-all hover:bg-white/10" data-lang="de">
@@ -126,7 +126,7 @@
                     </div>
 
 
-                    <a href="contact.html" class="cta-button px-6 py-2.5 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/50 transition-all" data-i18n="nav.get_started">
+                    <a href="/contact" class="cta-button px-6 py-2.5 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/50 transition-all" data-i18n="nav.get_started">
                         Get Started
                     </a>
                 </div>
@@ -167,7 +167,7 @@
                     <form id="contactForm" action="https://formsubmit.co/info@masspost.store" method="POST" class="space-y-6">
                         <!-- FormSubmit.co Configuration -->
                         <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://www.masspost.store/contact.html?success=true">
+                        <input type="hidden" name="_next" value="https://masspost.store/contact?success=true">
                         <input type="hidden" name="_subject" value="[MediaMass Contact] New Inquiry">
                         <input type="text" name="_honey" style="display:none">
                         
@@ -333,20 +333,22 @@
                     MediaMass
                 </div>
                 <div class="flex flex-wrap items-center gap-4 text-gray-400 text-sm">
-                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
-                    <a href="tiktok-mass-post.html" class="hover:text-white transition-colors">TikTok Mass Post</a>
-                    <a href="instagram-mass-post.html" class="hover:text-white transition-colors">Instagram Mass Post</a>
-                    <a href="music-promotion.html" class="hover:text-white transition-colors">Music Promotion</a>
-                    <a href="blog/" class="hover:text-white transition-colors">Blog</a>
-                    <a href="faq.html" class="hover:text-white transition-colors">FAQ</a>
-                    <a href="about.html" class="hover:text-white transition-colors">About</a>
-                    <a href="datenschutz.html" class="hover:text-white transition-colors" data-i18n="footer.privacy">Privacy Policy</a>
-                    <a href="nutzungsbedingungen.html" class="hover:text-white transition-colors" data-i18n="footer.terms">Terms of Service</a>
-                    <a href="contact.html" class="hover:text-white transition-colors" data-i18n="footer.contact">Contact</a>
+                    <a href="/" class="hover:text-white transition-colors">Home</a>
+                    <a href="/tiktok-mass-post" class="hover:text-white transition-colors">TikTok Mass Post</a>
+                    <a href="/instagram-mass-post" class="hover:text-white transition-colors">Instagram Mass Post</a>
+                    <a href="/music-promotion" class="hover:text-white transition-colors">Music Promotion</a>
+                    <a href="/blog/" class="hover:text-white transition-colors">Blog</a>
+                    <a href="/faq" class="hover:text-white transition-colors">FAQ</a>
+                    <a href="/about" class="hover:text-white transition-colors">About</a>
+                    <a href="/datenschutz" class="hover:text-white transition-colors" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a href="/nutzungsbedingungen" class="hover:text-white transition-colors" data-i18n="footer.terms">Terms of Service</a>
+                    <a href="/contact" class="hover:text-white transition-colors" data-i18n="footer.contact">Contact</a>
                 </div>
                 <div class="text-gray-500 text-sm" data-i18n="footer.copyright">© 2026 MediaMass. All rights reserved.</div>
             </div>
         </div>
+    
+        <div class="container mx-auto px-6 mt-8 text-center text-sm text-gray-400"><span class="text-gray-500">Markets:</span> <a href="/us/" hreflang="en-US" class="hover:text-white transition-colors">🇺🇸 USA</a> · <a href="/de/" hreflang="de" class="hover:text-white transition-colors">🇩🇪 Deutschland</a> · <a href="/ru/" hreflang="ru" class="hover:text-white transition-colors">🇷🇺 Россия и СНГ</a> · <a href="/br/" hreflang="pt-BR" class="hover:text-white transition-colors">🇧🇷 Brasil</a> · <a href="/latam/" hreflang="es" class="hover:text-white transition-colors">🌎 Latinoamérica</a> · <a href="/tr/" hreflang="tr" class="hover:text-white transition-colors">🇹🇷 Türkiye</a> · <a href="/ar/" hreflang="ar" class="hover:text-white transition-colors">🇦🇪 الشرق الأوسط</a></div>
     </footer>
 
     <!-- JavaScript -->
@@ -361,7 +363,7 @@ document.addEventListener('DOMContentLoaded', function(){
   if (existing) existing.remove();
   var menu = document.createElement('div');
   menu.className = 'mobile-menu';
-  menu.innerHTML = '<a href="index.html" data-i18n="nav.home">Home</a><a href="index.html#features" data-i18n="nav.features">Features</a><a href="social-media-charting.html" data-i18n="nav.social_media_charting">Social Media Charting</a><a href="preisliste.html" data-i18n="nav.pricing">Pricing</a><a href="contact.html" data-i18n="nav.contact">Contact</a><a href="contact.html" data-i18n="nav.get_started" style="display:block;width:100%;margin-top:16px;padding:12px 24px;background:linear-gradient(to right,#7c3aed,#db2777);border-radius:9999px;font-weight:600;text-align:center;color:white;text-decoration:none">Get Started</a>';
+  menu.innerHTML = '<a href="/" data-i18n="nav.home">Home</a><a href="/#features" data-i18n="nav.features">Features</a><a href="/social-media-charting" data-i18n="nav.social_media_charting">Social Media Charting</a><a href="/preisliste" data-i18n="nav.pricing">Pricing</a><a href="/contact" data-i18n="nav.contact">Contact</a><a href="/contact" data-i18n="nav.get_started" style="display:block;width:100%;margin-top:16px;padding:12px 24px;background:linear-gradient(to right,#7c3aed,#db2777);border-radius:9999px;font-weight:600;text-align:center;color:white;text-decoration:none">Get Started</a>';
   document.body.appendChild(menu);
   var oldOv = document.querySelector('.mobile-overlay');
   if (oldOv) oldOv.remove();

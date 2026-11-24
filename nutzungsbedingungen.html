@@ -6,7 +6,7 @@
     <title>Terms & Conditions - MediaMass</title>
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://masspost.store/nutzungsbedingungen.html">
+    <link rel="canonical" href="https://masspost.store/nutzungsbedingungen">
     
     <!-- Meta Robots Tag -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/tailwind.css">
     
     <!-- Custom Styles -->
     <link rel="stylesheet" href="main.css">
@@ -62,18 +62,18 @@
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="logo flex items-center gap-3">
-                    <a href="index.html" class="flex items-center gap-3">
+                    <a href="/" class="flex items-center gap-3">
                         <img src="logo.png" alt="MediaMass Logo" class="h-8 w-auto">
-                        <h1 class="text-2xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent">
+                        <div class="text-2xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent" style="font-family:\'Poppins\',sans-serif">
                             MediaMass
-                        </h1>
+                        </div>
                     </a>
                 </div>
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="index.html#features" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.features">Features</a>
-                    <a href="social-media-charting.html" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.social_media_charting">Social Media Charting</a>
-                    <a href="preisliste.html" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.pricing">Pricing</a>
-                    <a href="contact.html" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.contact">Contact</a>
+                    <a href="/#features" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.features">Features</a>
+                    <a href="/social-media-charting" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.social_media_charting">Social Media Charting</a>
+                    <a href="/preisliste" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.pricing">Pricing</a>
+                    <a href="/contact" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.contact">Contact</a>
                     <!-- Language Switcher -->
                     <div class="language-switcher flex items-center gap-2">
                         <button  class="lang-btn px-3 py-1.5 rounded-lg transition-all hover:bg-white/10" data-lang="de">
@@ -86,7 +86,7 @@
                     </div>
 
 
-                    <a href="contact.html" class="cta-button px-6 py-2.5 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/50 transition-all">
+                    <a href="/contact" class="cta-button px-6 py-2.5 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/50 transition-all">
                         <span data-i18n="nav.get_started">Get Started</span>
                     </a>
                 </div>
@@ -252,7 +252,7 @@
 
                 <!-- Back Button -->
                 <div class="text-center mt-12">
-                    <a href="index.html" class="inline-block px-8 py-4 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-violet-500/50 transition-all transform hover:scale-105">
+                    <a href="/" class="inline-block px-8 py-4 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-violet-500/50 transition-all transform hover:scale-105">
                         Back to Home
                     </a>
                 </div>
@@ -268,13 +268,15 @@
                     MediaMass
                 </div>
                 <div class="flex items-center gap-6 text-gray-400 text-sm">
-                    <a href="datenschutz.html" class="hover:text-white transition-colors" data-i18n="footer.privacy">Privacy Policy</a>
-                    <a href="nutzungsbedingungen.html" class="hover:text-white transition-colors" data-i18n="footer.terms">Terms of Service</a>
-                    <a href="contact.html" class="hover:text-white transition-colors" data-i18n="footer.contact">Contact</a>
+                    <a href="/datenschutz" class="hover:text-white transition-colors" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a href="/nutzungsbedingungen" class="hover:text-white transition-colors" data-i18n="footer.terms">Terms of Service</a>
+                    <a href="/contact" class="hover:text-white transition-colors" data-i18n="footer.contact">Contact</a>
                 </div>
                 <div class="text-gray-500 text-sm" data-i18n="footer.copyright">© 2026 MediaMass. All rights reserved.</div>
             </div>
         </div>
+    
+        <div class="container mx-auto px-6 mt-8 text-center text-sm text-gray-400"><span class="text-gray-500">Markets:</span> <a href="/us/" hreflang="en-US" class="hover:text-white transition-colors">🇺🇸 USA</a> · <a href="/de/" hreflang="de" class="hover:text-white transition-colors">🇩🇪 Deutschland</a> · <a href="/ru/" hreflang="ru" class="hover:text-white transition-colors">🇷🇺 Россия и СНГ</a> · <a href="/br/" hreflang="pt-BR" class="hover:text-white transition-colors">🇧🇷 Brasil</a> · <a href="/latam/" hreflang="es" class="hover:text-white transition-colors">🌎 Latinoamérica</a> · <a href="/tr/" hreflang="tr" class="hover:text-white transition-colors">🇹🇷 Türkiye</a> · <a href="/ar/" hreflang="ar" class="hover:text-white transition-colors">🇦🇪 الشرق الأوسط</a></div>
     </footer>
 
     <!-- JavaScript -->
@@ -288,7 +290,7 @@ document.addEventListener('DOMContentLoaded', function(){
   if (existing) existing.remove();
   var menu = document.createElement('div');
   menu.className = 'mobile-menu';
-  menu.innerHTML = '<a href="index.html" data-i18n="nav.home">Home</a><a href="index.html#features" data-i18n="nav.features">Features</a><a href="social-media-charting.html" data-i18n="nav.social_media_charting">Social Media Charting</a><a href="preisliste.html" data-i18n="nav.pricing">Pricing</a><a href="contact.html" data-i18n="nav.contact">Contact</a><a href="contact.html" data-i18n="nav.get_started" style="display:block;width:100%;margin-top:16px;padding:12px 24px;background:linear-gradient(to right,#7c3aed,#db2777);border-radius:9999px;font-weight:600;text-align:center;color:white;text-decoration:none">Get Started</a>';
+  menu.innerHTML = '<a href="/" data-i18n="nav.home">Home</a><a href="/#features" data-i18n="nav.features">Features</a><a href="/social-media-charting" data-i18n="nav.social_media_charting">Social Media Charting</a><a href="/preisliste" data-i18n="nav.pricing">Pricing</a><a href="/contact" data-i18n="nav.contact">Contact</a><a href="/contact" data-i18n="nav.get_started" style="display:block;width:100%;margin-top:16px;padding:12px 24px;background:linear-gradient(to right,#7c3aed,#db2777);border-radius:9999px;font-weight:600;text-align:center;color:white;text-decoration:none">Get Started</a>';
   document.body.appendChild(menu);
   var oldOv = document.querySelector('.mobile-overlay');
   if (oldOv) oldOv.remove();
