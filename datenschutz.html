@@ -38,19 +38,6 @@
 .mobile-overlay.active{opacity:1;pointer-events:auto}
 .mobile-menu-toggle{cursor:pointer;background:none;border:none;padding:8px}
 .mobile-menu-toggle:focus{outline:none}
-
-/* Language Switcher Styles */
-.lang-btn.active,
-.mobile-lang-btn.active {
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(219, 39, 119, 0.2) 100%);
-    border: 1px solid rgba(139, 92, 246, 0.4);
-}
-
-.lang-btn:hover,
-.mobile-lang-btn:hover {
-    transform: translateY(-1px);
-}
-
 </style>
     <!-- i18n Translation System -->
     <script src="i18n.js"></script>
@@ -74,16 +61,6 @@
                     <a href="/social-media-charting" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.social_media_charting">Social Media Charting</a>
                     <a href="/preisliste" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.pricing">Pricing</a>
                     <a href="/contact" class="nav-link text-gray-300 hover:text-white transition-colors" data-i18n="nav.contact">Contact</a>
-                    <!-- Language Switcher -->
-                    <div class="language-switcher flex items-center gap-2">
-                        <button  class="lang-btn px-3 py-1.5 rounded-lg transition-all hover:bg-white/10" data-lang="de">
-                            <span class="text-sm font-medium">DE</span>
-                        </button>
-                        <span class="text-gray-600">|</span>
-                        <button  class="lang-btn px-3 py-1.5 rounded-lg transition-all hover:bg-white/10" data-lang="en">
-                            <span class="text-sm font-medium">EN</span>
-                        </button>
-                    </div>
 
 
                     <a href="/contact" class="cta-button px-6 py-2.5 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/50 transition-all">
@@ -313,8 +290,6 @@
                 <div class="text-gray-500 text-sm" data-i18n="footer.copyright">© 2026 MediaMass. All rights reserved.</div>
             </div>
         </div>
-    
-        <div class="container mx-auto px-6 mt-8 text-center text-sm text-gray-400"><span class="text-gray-500">Markets:</span> <a href="/us/" hreflang="en-US" class="hover:text-white transition-colors">🇺🇸 USA</a> · <a href="/ca/" hreflang="en-CA" class="hover:text-white transition-colors">🇨🇦 Canada</a> · <a href="/uk/" hreflang="en-GB" class="hover:text-white transition-colors">🇬🇧 United Kingdom</a> · <a href="/de/" hreflang="de" class="hover:text-white transition-colors">🇩🇪 Deutschland</a> · <a href="/fr/" hreflang="en-FR" class="hover:text-white transition-colors">🇫🇷 France</a> · <a href="/es/" hreflang="en-ES" class="hover:text-white transition-colors">🇪🇸 Spain</a> · <a href="/it/" hreflang="en-IT" class="hover:text-white transition-colors">🇮🇹 Italy</a> · <a href="/latam/" hreflang="es" class="hover:text-white transition-colors">🌎 Latinoamérica</a> · <a href="/br/" hreflang="pt-BR" class="hover:text-white transition-colors">🇧🇷 Brasil</a> · <a href="/mx/" hreflang="en-MX" class="hover:text-white transition-colors">🇲🇽 Mexico</a> · <a href="/mena/" hreflang="ar" class="hover:text-white transition-colors">🇦🇪 الشرق الأوسط</a> · <a href="/tr/" hreflang="tr" class="hover:text-white transition-colors">🇹🇷 Türkiye</a> · <a href="/ru/" hreflang="ru" class="hover:text-white transition-colors">🇷🇺 Россия и СНГ</a> · <a href="/au/" hreflang="en-AU" class="hover:text-white transition-colors">🇦🇺 Australia</a> · <a href="/markets/" class="hover:text-white transition-colors font-semibold">🌍 All markets →</a></div>
     </footer>
 
     <!-- JavaScript -->
@@ -346,23 +321,6 @@ document.addEventListener('DOMContentLoaded', function(){
     ov.classList.remove('active');
   });
   var links = menu.querySelectorAll('a');
-  
-  // Language switcher event listeners
-  setTimeout(function() {
-    var langBtns = menu.querySelectorAll('.mobile-lang-btn');
-    langBtns.forEach(function(btn) {
-      btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        var lang = this.getAttribute('data-lang');
-        if (window.i18n && window.i18n.switchLanguage) {
-          window.i18n.switchLanguage(lang);
-        }
-        menu.classList.remove('active');
-        ov.classList.remove('active');
-      });
-    });
-  }, 100);
   for(var i=0;i<links.length;i++){
     links[i].addEventListener('click', function(){
       menu.classList.remove('active');
@@ -371,35 +329,6 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 });
 </script>
-
-    <script>
-    // Desktop Language Switcher Event Listeners
-    document.addEventListener('DOMContentLoaded', function() {
-        // Wait for i18n to be ready
-        function setupLanguageSwitchers() {
-            var desktopBtns = document.querySelectorAll('.language-switcher .lang-btn');
-            desktopBtns.forEach(function(btn) {
-                btn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    var lang = this.getAttribute('data-lang');
-                    if (window.i18n && window.i18n.switchLanguage) {
-                        window.i18n.switchLanguage(lang);
-                    } else {
-                        console.warn('i18n not ready yet, retrying...');
-                        setTimeout(function() {
-                            if (window.i18n && window.i18n.switchLanguage) {
-                                window.i18n.switchLanguage(lang);
-                            }
-                        }, 500);
-                    }
-                });
-            });
-        }
-        
-        // Try immediately and retry if needed
-        setTimeout(setupLanguageSwitchers, 100);
-    });
-    </script>
 
 <script src="/assets/translate.js" defer></script>
 </body>

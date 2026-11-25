@@ -238,12 +238,6 @@
         <a href="/faq" onclick="closeMobileMenu()">FAQ</a>
         <a href="/about" onclick="closeMobileMenu()">About Us</a>
         <a href="/contact" onclick="closeMobileMenu()" data-i18n="nav.contact">Contact</a>
-        
-        <!-- Language Switcher -->
-        <div class="flex gap-2 mt-2 mb-1">
-            <button class="lang-switch-btn mobile-lang-btn flex-1 py-2 rounded-full text-sm font-semibold border border-white/20 transition-all" data-lang="de">🇩🇪 DE</button>
-            <button class="lang-switch-btn mobile-lang-btn flex-1 py-2 rounded-full text-sm font-semibold border border-white/20 transition-all" data-lang="en">🇬🇧 EN</button>
-        </div>
 
         <a href="/contact" onclick="closeMobileMenu()" class="block w-full mt-2 px-6 py-3 bg-gradient-to-r from-violet-600 to-pink-600 rounded-full font-semibold hover:shadow-lg transition-all text-center" data-i18n="nav.get_started">
             Get Started
@@ -269,14 +263,6 @@
         menu.classList.remove('active');
         overlay.classList.remove('active');
         console.log('❌ Menu closed');
-    }
-    
-    function switchLang(lang) {
-        if (window.i18n && window.i18n.switchLanguage) {
-            window.i18n.switchLanguage(lang);
-        }
-        closeMobileMenu();
-        console.log('🌐 Language switched to:', lang);
     }
     </script>
 
@@ -567,28 +553,10 @@
                 </p>
             </div>
         </div>
-    
-        <div class="container mx-auto px-6 mt-8 text-center text-sm text-gray-400"><span class="text-gray-500">Markets:</span> <a href="/us/" hreflang="en-US" class="hover:text-white transition-colors">🇺🇸 USA</a> · <a href="/ca/" hreflang="en-CA" class="hover:text-white transition-colors">🇨🇦 Canada</a> · <a href="/uk/" hreflang="en-GB" class="hover:text-white transition-colors">🇬🇧 United Kingdom</a> · <a href="/de/" hreflang="de" class="hover:text-white transition-colors">🇩🇪 Deutschland</a> · <a href="/fr/" hreflang="en-FR" class="hover:text-white transition-colors">🇫🇷 France</a> · <a href="/es/" hreflang="en-ES" class="hover:text-white transition-colors">🇪🇸 Spain</a> · <a href="/it/" hreflang="en-IT" class="hover:text-white transition-colors">🇮🇹 Italy</a> · <a href="/latam/" hreflang="es" class="hover:text-white transition-colors">🌎 Latinoamérica</a> · <a href="/br/" hreflang="pt-BR" class="hover:text-white transition-colors">🇧🇷 Brasil</a> · <a href="/mx/" hreflang="en-MX" class="hover:text-white transition-colors">🇲🇽 Mexico</a> · <a href="/mena/" hreflang="ar" class="hover:text-white transition-colors">🇦🇪 الشرق الأوسط</a> · <a href="/tr/" hreflang="tr" class="hover:text-white transition-colors">🇹🇷 Türkiye</a> · <a href="/ru/" hreflang="ru" class="hover:text-white transition-colors">🇷🇺 Россия и СНГ</a> · <a href="/au/" hreflang="en-AU" class="hover:text-white transition-colors">🇦🇺 Australia</a> · <a href="/markets/" class="hover:text-white transition-colors font-semibold">🌍 All markets →</a></div>
     </footer>
 
     <!-- Scripts -->
     <script src="app.js"></script>
-
-<script>
-// Mobile Language Switcher
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-        document.querySelectorAll('.mobile-lang-btn').forEach(function(btn) {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                var lang = this.getAttribute('data-lang');
-                if (window.i18n && window.i18n.switchLanguage) {
-                    window.i18n.switchLanguage(lang);
-                }
-            });
-        });
-    }, 200);
-});
-</script><script src="/assets/translate.js" defer></script>
+<script src="/assets/translate.js" defer></script>
 </body>
 </html>
